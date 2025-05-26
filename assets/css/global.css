@@ -1,0 +1,237 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap');
+
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400 !important;
+}
+
+/* Heights */
+.h-screen {
+    height: 100dvh;
+}
+
+/* Font Sizes */
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-md {
+    font-size: 1rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+}
+
+.text-5xl {
+    font-size: 3rem;
+}
+
+/* Colors */
+.text-primary {
+    color: #DB4444 !important;
+}
+
+.bg-primary {
+    background-color: #DB4444 !important;
+}
+
+.border-primary {
+    border-color: #DB4444 !important;
+}
+
+.hover\:text-primary:hover {
+    color: #DB4444 !important;
+}
+
+.hover\:bg-primary:hover {
+    background-color: #DB4444 !important;
+}
+
+.text-danger {
+    color: #CB1A14;
+}
+
+.bg-danger {
+    background-color: #CB1A14;
+}
+
+.text-success {
+    color: #019712;
+}
+
+.bg-success {
+    background-color: #019712;
+}
+
+.expanded {
+    max-height: 1000px !important;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
+}
+
+/* SECTIONS */
+.section-sm {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.section-md {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.section-lg {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+
+/* BUTTON */
+.btn {
+    padding: 0.80rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem !important;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    pointer-events: auto;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    text-align: center !important;
+    justify-content: center;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+    transform: translateY(0);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    background: #DB4444;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #000;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+[data-menu-trigger].active>a {
+    color: #DB4444;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* FORM */
+
+.input-with-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.input-bg {
+    background-color: #F3F8F7;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 16px 16px;
+    font-size: 12px;
+    color: #000;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    outline: none;
+}
+
+.form-control::placeholder {
+    font-size: 12px;
+    color: #0000009d !important;
+}
+
+.form-control:focus {
+    border-color: #DB4444;
+}
