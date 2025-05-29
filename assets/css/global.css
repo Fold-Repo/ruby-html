@@ -235,3 +235,64 @@ body {
 .form-control:focus {
     border-color: #DB4444;
 }
+
+.sw-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.sw-dots.type-circle .swiper-pagination-bullet {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    opacity: 1;
+}
+
+.sw-dots.type-circle .swiper-pagination-bullet::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #181818;
+    opacity: 1;
+}
+
+.sw-dots.type-circle .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border: 1px solid #181818;
+}
+
+.sw-dots.type-circle .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    background-color: #181818;
+}
+
+.sw-dots.white-circle .swiper-pagination-bullet::after {
+    background-color: #FFF;
+    border-color: #FFF;
+}
+
+.sw-dots.white-circle .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border: 1px solid #FFF;
+}
+
+.sw-dots.white-circle .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    background-color: #FFF;
+}
+
+.sw-dots.white-circle-line .swiper-pagination-bullet::after {
+    border-color: #FFF;
+}
+
+.sw-dots.white-circle-line .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border: 1px solid #FFF;
+}
+
+.sw-dots.white-circle-line .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    background-color: #FFF;
+}

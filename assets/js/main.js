@@ -212,4 +212,118 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});;
+});
+
+
+
+// ================ JQUERY ================ //
+
+$(document).ready(function () {
+
+    // PRODUCTS COLOR SWITCH
+
+    $(".product-card").each(function () {
+        const $card = $(this);
+        const $img = $card.find(".product-image");
+        const $swatches = $card.find(".color-swatch");
+
+        $swatches.on("mouseenter", function () {
+            const $this = $(this);
+            const newSrc = $this.data("image");
+            const color = $this.data("color");
+
+            if (newSrc) $img.attr("src", newSrc);
+
+            $swatches.removeClass(function (index, className) {
+                return (className.match(/ring\S*/g) || []).join(" ");
+            });
+
+            $this.addClass(`ring ring-offset-2 ring-${color}`);
+        });
+    });
+
+    // DROPDOWN
+    $(".dropdown-toggle").on("click", function (e) {
+        e.stopPropagation();
+
+        var $dropdown = $(this).closest(".dropdown");
+
+        $(".dropdown-menu").not($dropdown.find(".dropdown-menu")).hide();
+
+        $dropdown.find(".dropdown-menu").toggle();
+    });
+
+    $(".dropdown-option").on("click", function (e) {
+        e.preventDefault();
+        var selectedText = $(this).text();
+        var $dropdown = $(this).closest(".dropdown");
+
+        $dropdown.find(".dropdown-label").text(selectedText);
+        $dropdown.find(".dropdown-menu").hide();
+    });
+
+    $(document).on("click", function (e) {
+        if (!$(e.target).closest('.dropdown').length) {
+            $(".dropdown-menu").hide();
+        }
+    });
+
+
+
+    // 
+
+});
+
+
+// CATEGORIES
+if ($(".tf-sw-categories").length > 0) {
+    var tfSwCategories = $(".tf-sw-categories");
+    var preview = tfSwCategories.data("preview");
+    var tablet = tfSwCategories.data("tablet");
+    var mobile = tfSwCategories.data("mobile");
+    var mobileSm = tfSwCategories.data("mobile-sm") !== undefined ? tfSwCategories.data("mobile-sm") : mobile;
+    var spacingLg = tfSwCategories.data("space-lg");
+    var spacingMd = tfSwCategories.data("space-md");
+    var spacing = tfSwCategories.data("space");
+    var perGroup = tfSwCategories.data("pagination") || 1;
+    var perGroupMd = tfSwCategories.data("pagination-md") || 1;
+    var perGroupLg = tfSwCategories.data("pagination-lg") || 1;
+    var loop = tfSwCategories.data("loop") !== undefined ? tfSwCategories.data("loop") : false;
+    var centered = tfSwCategories.data("centered") !== undefined ? tfSwCategories.data("centered") : false;
+    var swiper = new Swiper(".tf-sw-categories", {
+        slidesPerView: mobile,
+        spaceBetween: spacing,
+        speed: 1000,
+        pagination: {
+            el: ".sw-pagination-categories",
+            clickable: true,
+        },
+        slidesPerGroup: perGroup,
+        observer: true,
+        centeredSlides: centered,
+        observeParents: true,
+        navigation: {
+            clickable: true,
+            nextEl: ".nav-next-categories",
+            prevEl: ".nav-prev-categories",
+        },
+        loop: loop,
+        breakpoints: {
+            575: {
+                slidesPerView: mobileSm,
+                spaceBetween: spacing,
+                slidesPerGroup: perGroup,
+            },
+            768: {
+                slidesPerView: tablet,
+                spaceBetween: spacingMd,
+                slidesPerGroup: perGroupMd,
+            },
+            1200: {
+                slidesPerView: preview,
+                spaceBetween: spacingLg,
+                slidesPerGroup: perGroupLg,
+            },
+        },
+    });
+}

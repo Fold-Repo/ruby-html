@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
@@ -1231,11 +1231,11 @@
 
     <!-- ========== BREADCRUMB ============= -->
 
-    <div class="container m-auto mt-8">
+    <div class="">
 
         <div class="bg-[#F5F3EE] h-36 md:h-40 rounded flex flex-col items-center justify-center gap-y-2.5">
 
-            <h1 class="font-bold text-xl lg:text-2xl">Forgot your Password</h1>
+            <h1 class="font-bold text-xl lg:text-2xl">Woman Fashion</h1>
 
             <div class="flex items-center gap-1 text-gray-600 text-sm">
 
@@ -1243,7 +1243,7 @@
 
                 <i class="ri-arrow-right-s-line"></i>
 
-                <span>Forgot your Password</span>
+                <span>Shop Layout </span>
 
             </div>
 
@@ -1256,47 +1256,891 @@
 
     <!-- ===== MAIN CONTENT ===== -->
 
-    <div class="container flex flex-col lg:flex-row items-center gap-x-5 gap-y-12 section-md">
+    <div class="container section-lg">
 
-        <div class="w-full lg:w-1/2 max-w-xl m-auto ">
+        <div class="flex flex-wrap sm:flex-nowrap items-center gap-4  justify-center sm:justify-between pb-16">
 
-            <img src="../assets/img/auth_image.png" alt="Auth Image" class="w-[70%] md:w-[80%] m-auto">
+            <div class="dropdown relative inline-flex items-center gap-x-2">
 
-        </div>
+                <span class="hidden md:block font-medium text-gray-700 text-sm">Sort by:</span>
 
-        <div class="w-full lg:w-1/2 max-w-xl m-auto ">
+                <button type="button"
+                    class="dropdown-toggle cursor-pointer inline-flex items-center border border-primary rounded-full py-1 gap-x-1 px-3 text-[13px]">
+                    <span class="dropdown-label">Best Selling</span>
+                    <i class="ri-arrow-down-s-line text-lg"></i>
+                </button>
 
-            <div class="pb-10 text-center space-y-3">
-
-                <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl">Reset your password</h1>
-
-                <p class="text-sm 2xl:!text-base">
-                    We will send you an email to reset your password
-                </p>
-
+                <div
+                    class="dropdown-menu hidden absolute left-0 top-full rounded-lg min-w-48 p-2 bg-white z-10 shadow-lg">
+                    <ul class="py-2 font-medium text-[13px] text-gray-700">
+                        <li><a href="#" class="dropdown-option block px-4 py-2 rounded hover:bg-gray-100">Best
+                                Selling</a></li>
+                        <li><a href="#"
+                                class="dropdown-option block px-4 py-2 rounded hover:bg-gray-100">Alphabetically, A -
+                                Z</a></li>
+                        <li><a href="#"
+                                class="dropdown-option block px-4 py-2 rounded hover:bg-gray-100">Alphabetically, Z -
+                                A</a></li>
+                        <li><a href="#" class="dropdown-option block px-4 py-2 rounded hover:bg-gray-100">Price low to
+                                high</a></li>
+                        <li><a href="#" class="dropdown-option block px-4 py-2 rounded hover:bg-gray-100">Price high to
+                                low</a></li>
+                    </ul>
+                </div>
 
             </div>
 
-            <form action="" class="space-y-5">
+            <div class="items-center inline-flex gap-x-2">
 
-                <div class="input-with-icon !text-black/50">
-                    <span class="input-icon">
-                        <i class="ri-mail-fill"></i>
-                    </span>
+                <span class="font-medium text-sm text-gray-700 hidden md:block">Grid:</span>
 
-                    <input type="email" class="!pl-11 form-control focus:shadow-sm input-bg !border-0 focus:!border"
-                        placeholder="Email">
+                <div class="inline-flex items-center border border-primary rounded-full py-2 gap-x-2.5 px-3.5">
+
+                    <a href="./grid_1.html">
+                        <img src="/assets/icon/grid_1.svg" class="w-3.5" alt="Grid 1">
+                    </a>
+
+                    <a href="./grid_2.html">
+                        <img src="/assets/icon/grid_2.svg" class="w-4.5" alt="Grid 1">
+                    </a>
+
+                    <a href="./grid_3.html" class="hidden md:block">
+                        <img src="/assets/icon/grid_3_active.svg" class="w-7" alt="Grid 1">
+                    </a>
+
+                    <a href="./grid_4.html" class="hidden lg:block">
+                        <img src="/assets/icon/grid_4.svg" class="w-10" alt="Grid 1">
+                    </a>
 
                 </div>
 
-                <a href="../auth/reset-password.html" class="w-full m-auto flex justify-center !pt-5">
-                    <button type="button" class="btn btn-primary !rounded-full max-w-md w-full">Submit</button>
-                </a>
+            </div>
 
-            </form>
+            <button data-slot="offcanvas:toggle" data-target="offcanvas-filter" type="button"
+                class="cursor-pointer inline-flex items-center border border-primary rounded-full py-1 gap-x-1 px-3 text-[13px]">
+                <span>Filters</span>
+                <i class="ri-arrow-down-s-line text-lg"></i>
+            </button>
 
         </div>
 
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-5 gap-y-7">
+
+            <div class="relative duration-500 product-card">
+
+                <div class="flex flex-col">
+
+                    <div class="relative overflow-hidden shadow-sm group rounded-md duration-500 aspect-7/8">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="product-image-main object-cover w-full rounded-md product-image
+                        group-hover:scale-110 duration-500" src="/assets/img/shop/1.png" alt="">
+
+                        <!-- HOVER IMAGE -->
+                        <img src="/assets/img/shop/2.jpg"
+                            class="product-image-hover w-full object-cover rounded-md absolute
+                        top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
+
+                        <!-- PERCENTAGE OFF -->
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-2xl">
+                                -40%
+                            </span>
+                        </div>
+
+                        <div
+                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shopping-cart-2-line"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <a href="../shop-cart.html"
+                                class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
+                                Quickly add to cart
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="space-y-1.5 pt-3">
+
+                        <a href="/product-detail.html"
+                            class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
+                            Double-button trench coat
+                        </a>
+
+                        <!-- COLOR SWITCH -->
+                        <ul class="list-none flex items-center gap-x-2 color-swatches">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="color-swatch size-4 ring ring-red-600 ring-offset-2 rounded-full bg-red-600 inline-flex"
+                                    title="Red" data-image="/assets/img/shop/1.png" data-color="red-600"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="color-swatch size-4 rounded-full bg-blue-600 inline-flex" title="Blue"
+                                    data-image="/assets/img/shop/2.jpg" data-color="blue-600"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="color-swatch size-4 rounded-full bg-yellow-400 inline-flex" title="Yellow"
+                                    data-image="/assets/img/shop/3.jpg" data-color="yellow-400"></a>
+                            </li>
+                        </ul>
+
+                        <!-- PRICE -->
+                        <div class="flex items-center !justify-between gap-2">
+
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                <p class="text-primary">$16.00</p>
+
+                                <p class="text-gray-400 line-through">$16.00</p>
+
+                            </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
+                                <i class="ri-star-fill text-yellow-500"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="relative duration-500 product-card">
+
+                <div class="flex flex-col">
+
+                    <div class="relative overflow-hidden shadow-sm group rounded-md duration-500 aspect-7/8">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="product-image-main object-cover w-full rounded-md product-image
+                        group-hover:scale-110 duration-500" src="/assets/img/shop/1.png" alt="">
+
+                        <!-- HOVER IMAGE -->
+                        <img src="/assets/img/shop/2.jpg"
+                            class="product-image-hover w-full object-cover rounded-md absolute
+                        top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
+
+                        <!-- PERCENTAGE OFF -->
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-2xl">
+                                -40%
+                            </span>
+                        </div>
+
+                        <div
+                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shopping-cart-2-line"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <a href="../shop-cart.html"
+                                class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
+                                Quickly add to cart
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="space-y-1.5 pt-3">
+
+                        <a href="/product-detail.html"
+                            class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
+                            Double-button trench coat
+                        </a>
+
+                        <!-- SIZES -->
+                        <div class="flex items-center gap-2 uppercase text-[11px] font-medium">
+
+                            <a href="javascript:void(0)" class="size-6 bg-gray-300 inline-flex items-center justify-center 
+                            align-middle text-center rounded">
+                                xs
+                            </a>
+
+                            <a href="javascript:void(0)" class="size-6 bg-gray-300 inline-flex items-center justify-center 
+                            align-middle text-center rounded">
+                                s
+                            </a>
+
+                            <a href="javascript:void(0)" class="size-6 bg-gray-300 inline-flex items-center justify-center 
+                            align-middle text-center rounded">
+                                m
+                            </a>
+
+                        </div>
+
+                        <!-- PRICE -->
+                        <div class="flex items-center !justify-between gap-2">
+
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                <p class="text-primary">$16.00</p>
+
+                                <p class="text-gray-400 line-through">$16.00</p>
+
+                            </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
+                                <i class="ri-star-fill text-yellow-500"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="relative duration-500 product-card">
+
+                <div class="flex flex-col">
+
+                    <div class="relative overflow-hidden shadow-sm group rounded-md duration-500 aspect-7/8">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="product-image-main object-cover w-full rounded-md product-image
+                        group-hover:scale-110 duration-500" src="/assets/img/shop/1.png" alt="">
+
+                        <!-- HOVER IMAGE -->
+                        <img src="/assets/img/shop/2.jpg"
+                            class="product-image-hover w-full object-cover rounded-md absolute
+                        top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
+
+                        <!-- PERCENTAGE OFF -->
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-2xl">
+                                -40%
+                            </span>
+                        </div>
+
+                        <div
+                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shopping-cart-2-line"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <a href="../shop-cart.html"
+                                class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
+                                Quickly add to cart
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="space-y-1.5 pt-3">
+
+                        <a href="/product-detail.html"
+                            class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
+                            Double-button trench coat
+                        </a>
+
+                        <!-- COLOR SWITCH -->
+                        <ul class="list-none flex items-center gap-x-2 color-swatches">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="color-swatch size-4 ring ring-red-600 ring-offset-2 rounded-full bg-red-600 inline-flex"
+                                    title="Red" data-image="/assets/img/shop/1.png" data-color="red-600"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="color-swatch size-4 rounded-full bg-blue-600 inline-flex" title="Blue"
+                                    data-image="/assets/img/shop/2.jpg" data-color="blue-600"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="color-swatch size-4 rounded-full bg-yellow-400 inline-flex" title="Yellow"
+                                    data-image="/assets/img/shop/3.jpg" data-color="yellow-400"></a>
+                            </li>
+                        </ul>
+
+                        <!-- PRICE -->
+                        <div class="flex items-center !justify-between gap-2">
+
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                <p class="text-primary">$16.00</p>
+
+                                <p class="text-gray-400 line-through">$16.00</p>
+
+                            </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
+                                <i class="ri-star-fill text-yellow-500"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="relative duration-500 product-card">
+
+                <div class="flex flex-col">
+
+                    <div class="relative overflow-hidden shadow-sm group rounded-md duration-500 aspect-7/8">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="product-image-main object-cover w-full rounded-md product-image
+                        group-hover:scale-110 duration-500" src="/assets/img/shop/1.png" alt="">
+
+                        <!-- HOVER IMAGE -->
+                        <img src="/assets/img/shop/2.jpg"
+                            class="product-image-hover w-full object-cover rounded-md absolute
+                        top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
+
+                        <!-- PERCENTAGE OFF -->
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-2xl">
+                                -40%
+                            </span>
+                        </div>
+
+                        <div
+                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shopping-cart-2-line"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <a href="../shop-cart.html"
+                                class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
+                                Quickly add to cart
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="space-y-1.5 pt-3">
+
+                        <a href="/product-detail.html"
+                            class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
+                            Double-button trench coat
+                        </a>
+
+                        <!-- SIZES -->
+                        <div class="flex items-center gap-2 uppercase text-[11px] font-medium">
+
+                            <a href="javascript:void(0)" class="size-6 bg-gray-300 inline-flex items-center justify-center 
+                            align-middle text-center rounded">
+                                xs
+                            </a>
+
+                            <a href="javascript:void(0)" class="size-6 bg-gray-300 inline-flex items-center justify-center 
+                            align-middle text-center rounded">
+                                s
+                            </a>
+
+                            <a href="javascript:void(0)" class="size-6 bg-gray-300 inline-flex items-center justify-center 
+                            align-middle text-center rounded">
+                                m
+                            </a>
+
+                        </div>
+
+                        <!-- PRICE -->
+                        <div class="flex items-center !justify-between gap-2">
+
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                <p class="text-primary">$16.00</p>
+
+                                <p class="text-gray-400 line-through">$16.00</p>
+
+                            </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
+                                <i class="ri-star-fill text-yellow-500"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="relative duration-500 product-card">
+
+                <div class="flex flex-col">
+
+                    <div class="relative overflow-hidden shadow-sm group rounded-md duration-500 aspect-7/8">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="product-image-main object-cover w-full rounded-md product-image
+                        group-hover:scale-110 duration-500" src="/assets/img/shop/1.png" alt="">
+
+                        <!-- HOVER IMAGE -->
+                        <img src="/assets/img/shop/2.jpg"
+                            class="product-image-hover w-full object-cover rounded-md absolute
+                        top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
+
+                        <!-- PERCENTAGE OFF -->
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-2xl">
+                                -40%
+                            </span>
+                        </div>
+
+                        <div
+                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shopping-cart-2-line"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <a href="../shop-cart.html"
+                                class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
+                                Quickly add to cart
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="space-y-1.5 pt-3">
+
+                        <a href="/product-detail.html"
+                            class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
+                            Double-button trench coat
+                        </a>
+
+                        <!-- COLOR SWITCH -->
+                        <ul class="list-none flex items-center gap-x-2 color-swatches">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="color-swatch size-4 ring ring-red-600 ring-offset-2 rounded-full bg-red-600 inline-flex"
+                                    title="Red" data-image="/assets/img/shop/1.png" data-color="red-600"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="color-swatch size-4 rounded-full bg-blue-600 inline-flex" title="Blue"
+                                    data-image="/assets/img/shop/2.jpg" data-color="blue-600"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="color-swatch size-4 rounded-full bg-yellow-400 inline-flex" title="Yellow"
+                                    data-image="/assets/img/shop/3.jpg" data-color="yellow-400"></a>
+                            </li>
+                        </ul>
+
+                        <!-- PRICE -->
+                        <div class="flex items-center !justify-between gap-2">
+
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                <p class="text-primary">$16.00</p>
+
+                                <p class="text-gray-400 line-through">$16.00</p>
+
+                            </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
+                                <i class="ri-star-fill text-yellow-500"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="relative duration-500 product-card">
+
+                <div class="flex flex-col">
+
+                    <div class="relative overflow-hidden shadow-sm group rounded-md duration-500 aspect-7/8">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="product-image-main object-cover w-full rounded-md product-image
+                        group-hover:scale-110 duration-500" src="/assets/img/shop/1.png" alt="">
+
+                        <!-- HOVER IMAGE -->
+                        <img src="/assets/img/shop/2.jpg"
+                            class="product-image-hover w-full object-cover rounded-md absolute
+                        top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
+
+                        <!-- PERCENTAGE OFF -->
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-2xl">
+                                -40%
+                            </span>
+                        </div>
+
+                        <div
+                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shopping-cart-2-line"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <a href="../shop-cart.html"
+                                class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
+                                Quickly add to cart
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="space-y-1.5 pt-3">
+
+                        <a href="/product-detail.html"
+                            class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
+                            Double-button trench coat
+                        </a>
+
+                        <!-- SIZES -->
+                        <div class="flex items-center gap-2 uppercase text-[11px] font-medium">
+
+                            <a href="javascript:void(0)" class="size-6 bg-gray-300 inline-flex items-center justify-center 
+                            align-middle text-center rounded">
+                                xs
+                            </a>
+
+                            <a href="javascript:void(0)" class="size-6 bg-gray-300 inline-flex items-center justify-center 
+                            align-middle text-center rounded">
+                                s
+                            </a>
+
+                            <a href="javascript:void(0)" class="size-6 bg-gray-300 inline-flex items-center justify-center 
+                            align-middle text-center rounded">
+                                m
+                            </a>
+
+                        </div>
+
+                        <!-- PRICE -->
+                        <div class="flex items-center !justify-between gap-2">
+
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                <p class="text-primary">$16.00</p>
+
+                                <p class="text-gray-400 line-through">$16.00</p>
+
+                            </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
+                                <i class="ri-star-fill text-yellow-500"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="relative duration-500 product-card">
+
+                <div class="flex flex-col">
+
+                    <div class="relative overflow-hidden shadow-sm group rounded-md duration-500 aspect-7/8">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="product-image-main object-cover w-full rounded-md product-image
+                        group-hover:scale-110 duration-500" src="/assets/img/shop/1.png" alt="">
+
+                        <!-- HOVER IMAGE -->
+                        <img src="/assets/img/shop/2.jpg"
+                            class="product-image-hover w-full object-cover rounded-md absolute
+                        top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
+
+                        <!-- PERCENTAGE OFF -->
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-2xl">
+                                -40%
+                            </span>
+                        </div>
+
+                        <div
+                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shopping-cart-2-line"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <a href="../shop-cart.html"
+                                class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
+                                Quickly add to cart
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="space-y-1.5 pt-3">
+
+                        <a href="/product-detail.html"
+                            class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
+                            Double-button trench coat
+                        </a>
+
+                        <!-- COLOR SWITCH -->
+                        <ul class="list-none flex items-center gap-x-2 color-swatches">
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="color-swatch size-4 ring ring-red-600 ring-offset-2 rounded-full bg-red-600 inline-flex"
+                                    title="Red" data-image="/assets/img/shop/1.png" data-color="red-600"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="color-swatch size-4 rounded-full bg-blue-600 inline-flex" title="Blue"
+                                    data-image="/assets/img/shop/2.jpg" data-color="blue-600"></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                    class="color-swatch size-4 rounded-full bg-yellow-400 inline-flex" title="Yellow"
+                                    data-image="/assets/img/shop/3.jpg" data-color="yellow-400"></a>
+                            </li>
+                        </ul>
+
+                        <!-- PRICE -->
+                        <div class="flex items-center !justify-between gap-2">
+
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                <p class="text-primary">$16.00</p>
+
+                                <p class="text-gray-400 line-through">$16.00</p>
+
+                            </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
+                                <i class="ri-star-fill text-yellow-500"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="relative duration-500 product-card">
+
+                <div class="flex flex-col">
+
+                    <div class="relative overflow-hidden shadow-sm group rounded-md duration-500 aspect-7/8">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="product-image-main object-cover w-full rounded-md product-image
+                        group-hover:scale-110 duration-500" src="/assets/img/shop/1.png" alt="">
+
+                        <!-- HOVER IMAGE -->
+                        <img src="/assets/img/shop/2.jpg"
+                            class="product-image-hover w-full object-cover rounded-md absolute
+                        top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
+
+                        <!-- PERCENTAGE OFF -->
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-2xl">
+                                -40%
+                            </span>
+                        </div>
+
+                        <div
+                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shopping-cart-2-line"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <a href="../shop-cart.html"
+                                class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
+                                Quickly add to cart
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="space-y-1.5 pt-3">
+
+                        <a href="/product-detail.html"
+                            class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
+                            Double-button trench coat
+                        </a>
+
+                        <!-- SIZES -->
+                        <div class="flex items-center gap-2 uppercase text-[11px] font-medium">
+
+                            <a href="javascript:void(0)" class="size-6 bg-gray-300 inline-flex items-center justify-center 
+                            align-middle text-center rounded">
+                                xs
+                            </a>
+
+                            <a href="javascript:void(0)" class="size-6 bg-gray-300 inline-flex items-center justify-center 
+                            align-middle text-center rounded">
+                                s
+                            </a>
+
+                            <a href="javascript:void(0)" class="size-6 bg-gray-300 inline-flex items-center justify-center 
+                            align-middle text-center rounded">
+                                m
+                            </a>
+
+                        </div>
+
+                        <!-- PRICE -->
+                        <div class="flex items-center !justify-between gap-2">
+
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                <p class="text-primary">$16.00</p>
+
+                                <p class="text-gray-400 line-through">$16.00</p>
+
+                            </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
+                                <i class="ri-star-fill text-yellow-500"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ============= PAGINATION STARTS ======== -->
+
+        <nav class="flex items-center gap-x-2 justify-center mt-12">
+
+            <!-- Previous Button -->
+            <button type="button"
+                class="min-h-6 min-w-6 py-1.5 px-2 cursor-pointer inline-flex justify-center items-center gap-x-2 rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+                <i class="ri-arrow-left-s-line text-lg"></i>
+            </button>
+
+            <!-- Page Numbers -->
+            <div class="flex items-center gap-x-1 text-xs font-medium">
+
+                <button type="button"
+                    class="cursor-pointer min-h-9.5 min-w-9.5 flex justify-center items-center bg-gray-200 text-gray-800 py-1.5 px-2 rounded-lg focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none"
+                    aria-current="page">1</button>
+
+                <button type="button"
+                    class="cursor-pointer min-h-9.5 min-w-9.5 flex justify-center items-center text-gray-800 hover:bg-gray-100 py-1.5 px-2 rounded-lg focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">2</button>
+
+                <button type="button"
+                    class="cursor-pointer min-h-9.5 min-w-9.5 flex justify-center items-center text-gray-800 hover:bg-gray-100 py-1.5 px-2 rounded-lg focus:outline-none focus:bg-gray-300 disabled:opacity-50 disabled:pointer-events-none">3</button>
+
+                <span class="group-hover:hidden text-lg text-gray-700">
+                    <i class="ri-more-line"></i>
+                </span>
+
+                <button type="button"
+                    class="cursor-pointer min-h-9.5 min-w-9.5 flex justify-center items-center text-gray-800 hover:bg-gray-100 py-2 px-3 text-sm rounded-lg focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">8</button>
+
+            </div>
+
+            <!-- Next Button -->
+            <button type="button"
+                class="min-h-6 min-w-6 py-1.5 px-2 cursor-pointer inline-flex justify-center items-center gap-x-2 rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none">
+                <i class="ri-arrow-right-s-line text-lg"></i>
+            </button>
+
+        </nav>
+
+        <!-- ============= PAGINATION ENDS ==========-->
 
     </div>
 
@@ -1312,7 +2156,7 @@
             <div class="w-full  mb-5 lg:mb-0">
 
                 <a href="/">
-                    <img alt="Logo" loading="lazy" class="w-32" src="../assets/img/logo/white_logo.png"
+                    <img alt="Logo" loading="lazy" class="w-32" src="/assets/img/logo/white_logo.png"
                         style="color: transparent;">
                 </a>
 
@@ -1404,7 +2248,7 @@
 
                 <div class="flex items-center gap-3 text-white">
                     <span>Payment:</span>
-                    <img src="../assets/img/payment_cards.svg" alt="Payment Lists" width="250">
+                    <img src="/assets/img/payment_cards.svg" alt="Payment Lists" width="250">
                 </div>
 
                 <p class="text-white/70">
@@ -1489,10 +2333,272 @@
 
     <!-- ========== SEARCH MODAL ENDS =========== -->
 
+    <!-- ========== PRODUCT FILTER DRAWER STARTS =========== -->
+
+    <div id="offcanvas-filter" class="offcanvas hidden fixed inset-0 z-50" data-slot="offcanvas:root">
+
+        <div data-slot="offcanvas:backdrop" class="absolute inset-0 bg-black opacity-50 backdrop-blur-sm z-40">
+        </div>
+
+        <div data-slot="offcanvas:panel"
+            class="relative z-100 h-full max-w-sm w-full bg-white border-e border-gray-200 transform -translate-x-full transition-transform duration-300 ease-in-out bg-white !overflow-y-auto p-5">
+
+            <div class="flex items-center justify-between">
+
+                <h2 class="font-semibold text-base">Filter</h2>
+
+                <button type="button" data-slot="offcanvas:close"
+                    class="bg-gray-200 rounded-full size-7 text-sm flex items-center justify-center cursor-pointer">
+                    <i class="ri-close-large-line"></i>
+                </button>
+
+            </div>
+
+            <div class="space-y-7 pt-6">
+
+                <div class="flex flex-col gap-y-3">
+
+                    <h2 class="text-sm font-bold">Product Categories</h2>
+
+                    <ul class="space-y-4 pl-3 text-[13px] pt-2">
+
+                        <li class="hover:text-primary">Bags (20) </li>
+                        <li class="hover:text-primary">Booking (30) </li>
+                        <li class="hover:text-primary">Clothing (30)</li>
+                        <li class="hover:text-primary text-primary">Women (30)</li>
+                        <li class="hover:text-primary">Shoes (20) </li>
+                        <li class="hover:text-primary">Uncategorized (15)</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="flex flex-col gap-y-3">
+
+                    <h2 class="text-sm font-bold">Available Stock</h2>
+
+                    <ul class="space-y-4 pl-3 text-[13px] pt-2">
+
+                        <div class="flex items-center">
+                            <input id="instock" type="checkbox" value="" class="size-4 !text-primary">
+                            <label for='instock' class="ms-2">In Stock (50)</label>
+                        </div>
+
+                        <div class="flex items-center">
+                            <input id="out_of_stock" type="checkbox" value="" class="size-4 !text-primary">
+                            <label for="out_of_stock" class="ms-2">Out of Stock (20)</label>
+                        </div>
+
+                    </ul>
+
+                </div>
+
+                <div class="flex flex-col gap-y-3">
+
+                    <h2 class="text-sm font-bold">Product Price</h2>
+
+                    <div class="space-y-3 text-[13px] pt-2">
+
+                        <div class="relative">
+
+                            <input type="number" placeholder="Min Price"
+                                class="form-control border-primary !py-3 !rounded-full">
+
+                            <div class="absolute inset-y-0 end-3 flex items-center pointer-events-none ps-4">
+                                <i class="ri-money-dollar-circle-line text-lg"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="relative">
+
+                            <input type="number" placeholder="Max Price"
+                                class="form-control border-primary !py-3 !rounded-full">
+
+                            <div class="absolute inset-y-0 end-3 flex items-center pointer-events-none ps-4">
+                                <i class="ri-money-dollar-circle-line text-lg"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col gap-y-3">
+
+                    <h2 class="text-sm font-bold">Available Stock</h2>
+
+                    <div class="space-y-3 pl-3 pt-2">
+
+                        <div class="flex items-center flex-wrap gap-4 capitalize font-medium text-[11px]">
+
+                            <a href="javascript:void(0)"
+                                class="size-6 md:size-8 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                xs
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="size-6 md:size-8 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                s
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="size-6 md:size-8 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                M
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="size-6 md:size-8 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                L
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="size-6 md:size-8 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                2XS
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="size-6 md:size-8 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                3XL
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="h-6 md:h-8 px-4 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                Feee size
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col gap-y-3">
+
+                    <h2 class="text-sm font-bold">Color</h2>
+
+                    <div class="space-y-3 pl-3 pt-2">
+
+                        <div class="flex flex-wrap gap-4 text-xs">
+
+                            <a href="javascript:void(0)"
+                                class="w-max py-1.5 px-3 border border-primary flex items-center justify-center gap-x-2 rounded-md">
+
+                                <div class="size-4 rounded-full bg-pink-300"></div>
+
+                                <span>Pink</span>
+
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="w-max py-1.5 px-3 border border-primary flex items-center justify-center gap-x-2 rounded-md">
+
+                                <div class="size-4 rounded-full bg-red-600"></div>
+
+                                <span>Red</span>
+
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="w-max py-1.5 px-3 border border-primary flex items-center justify-center gap-x-2 rounded-md">
+
+                                <div class="size-4 rounded-full bg-[#F8EFDD]"></div>
+
+                                <span>Beige</span>
+
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="w-max py-1.5 px-3 border border-primary flex items-center justify-center gap-x-2 rounded-md">
+
+                                <div class="size-4 rounded-full bg-purple-600"></div>
+
+                                <span>Purple</span>
+
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="w-max py-1.5 px-3 border border-primary flex items-center justify-center gap-x-2 rounded-md">
+
+                                <div class="size-4 rounded-full bg-orange-400"></div>
+
+                                <span>Orange</span>
+
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="w-max py-1.5 px-3 border border-primary flex items-center justify-center gap-x-2 rounded-md">
+
+                                <div class="size-4 rounded-full bg-blue-400"></div>
+
+                                <span>Blue</span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="flex flex-col gap-y-3">
+                    <h2 class="text-sm font-bold">Available Brands</h2>
+
+                    <ul class="space-y-4 pl-3 text-[13px] pt-2">
+                        <li class="flex items-center">
+                            <input id="brand-nike" type="checkbox" value="Nike" class="size-4 !text-primary">
+                            <label for="brand-nike" class="ms-2">Nike (50)</label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="brand-adidas" type="checkbox" value="Adidas" class="size-4 !text-primary">
+                            <label for="brand-adidas" class="ms-2">Adidas (20)</label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="brand-gucci" type="checkbox" value="Gucci" class="size-4 !text-primary">
+                            <label for="brand-gucci" class="ms-2">Gucci (20)</label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="brand-hermes" type="checkbox" value="Hermes" class="size-4 !text-primary">
+                            <label for="brand-hermes" class="ms-2">Hermes (20)</label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="brand-zalando" type="checkbox" value="Zalando" class="size-4 !text-primary">
+                            <label for="brand-zalando" class="ms-2">Zalando (20)</label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="brand-lv" type="checkbox" value="Louis Vuitton" class="size-4 !text-primary">
+                            <label for="brand-lv" class="ms-2">Louis Vuitton (20)</label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========== PRODUCT FILTER DRAWER  ENDS =========== -->
+
     <!-- SCRIPTS -->
-    <script src="/assets/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js"></script>
+
 
 </body>
 
