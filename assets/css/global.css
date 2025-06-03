@@ -150,20 +150,18 @@ body {
 /* BUTTON */
 .btn {
     padding: 0.80rem 1rem;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.75rem !important;
+    font-size: 0.75rem ;
     font-weight: 700;
     border-radius: 0.5rem;
     border: 1px solid transparent;
     pointer-events: auto;
     opacity: 1;
     transition: all 0.2s ease-in-out;
-    text-align: center !important;
     justify-content: center;
     cursor: pointer;
-
     transition: all 0.3s ease-in-out;
     transform: translateY(0);
 }
@@ -203,6 +201,19 @@ body {
     width: 100%;
 }
 
+.input-icon-right {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    background: none;
+    border: none;
+    padding: 0;
+    z-index: 10;
+}
+
+
 .input-icon {
     position: absolute;
     left: 15px;
@@ -220,7 +231,7 @@ body {
     display: block;
     width: 100%;
     padding: 16px 16px;
-    font-size: 12px;
+    font-size: 14px;
     color: #000;
     border: 1px solid #d1d5db;
     border-radius: 12px;
@@ -228,7 +239,6 @@ body {
 }
 
 .form-control::placeholder {
-    font-size: 12px;
     color: #0000009d !important;
 }
 
