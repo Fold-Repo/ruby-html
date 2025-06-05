@@ -269,61 +269,122 @@ $(document).ready(function () {
     });
 
 
+    // CATEGORIES
+    if ($(".tf-sw-categories").length > 0) {
+        var tfSwCategories = $(".tf-sw-categories");
+        var preview = tfSwCategories.data("preview");
+        var tablet = tfSwCategories.data("tablet");
+        var mobile = tfSwCategories.data("mobile");
+        var mobileSm = tfSwCategories.data("mobile-sm") !== undefined ? tfSwCategories.data("mobile-sm") : mobile;
+        var spacingLg = tfSwCategories.data("space-lg");
+        var spacingMd = tfSwCategories.data("space-md");
+        var spacing = tfSwCategories.data("space");
+        var perGroup = tfSwCategories.data("pagination") || 1;
+        var perGroupMd = tfSwCategories.data("pagination-md") || 1;
+        var perGroupLg = tfSwCategories.data("pagination-lg") || 1;
+        var loop = tfSwCategories.data("loop") !== undefined ? tfSwCategories.data("loop") : false;
+        var centered = tfSwCategories.data("centered") !== undefined ? tfSwCategories.data("centered") : false;
+        var swiper = new Swiper(".tf-sw-categories", {
+            slidesPerView: mobile,
+            spaceBetween: spacing,
+            speed: 1000,
+            pagination: {
+                el: ".sw-pagination-categories",
+                clickable: true,
+            },
+            slidesPerGroup: perGroup,
+            observer: true,
+            centeredSlides: centered,
+            observeParents: true,
+            navigation: {
+                clickable: true,
+                nextEl: ".nav-next-categories",
+                prevEl: ".nav-prev-categories",
+            },
+            loop: loop,
+            breakpoints: {
+                575: {
+                    slidesPerView: mobileSm,
+                    spaceBetween: spacing,
+                    slidesPerGroup: perGroup,
+                },
+                768: {
+                    slidesPerView: tablet,
+                    spaceBetween: spacingMd,
+                    slidesPerGroup: perGroupMd,
+                },
+                1200: {
+                    slidesPerView: preview,
+                    spaceBetween: spacingLg,
+                    slidesPerGroup: perGroupLg,
+                },
+            },
+        });
+    }
 
-    // 
+    // ACCORDION
+    $('.accordion-toggle').on('click', function () {
+        const $accordion = $(this).closest('.accordion');
+        const $content = $(this).next('.accordion-content');
+        const $icon = $(this).find('i');
+
+        $accordion.find('.accordion-content').not($content).slideUp();
+        $accordion.find('.accordion-toggle i').not($icon).removeClass('rotate-180');
+
+        $content.slideToggle();
+        $icon.toggleClass('rotate-180');
+    });
+
+    // TAB
+    $('.tab-wrapper').each(function () {
+        const $wrapper = $(this);
+
+        $wrapper.find('.tab-btn').on('click', function () {
+            const tabId = $(this).data('tab');
+
+            // Reset all buttons to inactive style
+            $wrapper.find('.tab-btn')
+                .removeClass('border-primary text-primary')
+                .addClass('border-transparent text-gray-600');
+
+            // Add active styles to the clicked button
+            $(this)
+                .removeClass('border-transparent text-gray-600')
+                .addClass('border-primary text-primary');
+
+            // Toggle tab content visibility
+            $wrapper.find('.tab-content').addClass('hidden');
+            $wrapper.find(`.tab-content[data-tab="${tabId}"]`).removeClass('hidden');
+        });
+    });
+
+    // COMING SOON TIMING
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 20);
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+        const dayStr = days.toString().padStart(2, "0");
+        const hourStr = hours.toString().padStart(2, "0");
+        const minStr = minutes.toString().padStart(2, "0");
+
+        $("#days-1").text(dayStr[0]);
+        $("#days-2").text(dayStr[1]);
+
+        $("#hours-1").text(hourStr[0]);
+        $("#hours-2").text(hourStr[1]);
+
+        $("#minutes-1").text(minStr[0]);
+        $("#minutes-2").text(minStr[1]);
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000 * 30);
 
 });
-
-
-// CATEGORIES
-if ($(".tf-sw-categories").length > 0) {
-    var tfSwCategories = $(".tf-sw-categories");
-    var preview = tfSwCategories.data("preview");
-    var tablet = tfSwCategories.data("tablet");
-    var mobile = tfSwCategories.data("mobile");
-    var mobileSm = tfSwCategories.data("mobile-sm") !== undefined ? tfSwCategories.data("mobile-sm") : mobile;
-    var spacingLg = tfSwCategories.data("space-lg");
-    var spacingMd = tfSwCategories.data("space-md");
-    var spacing = tfSwCategories.data("space");
-    var perGroup = tfSwCategories.data("pagination") || 1;
-    var perGroupMd = tfSwCategories.data("pagination-md") || 1;
-    var perGroupLg = tfSwCategories.data("pagination-lg") || 1;
-    var loop = tfSwCategories.data("loop") !== undefined ? tfSwCategories.data("loop") : false;
-    var centered = tfSwCategories.data("centered") !== undefined ? tfSwCategories.data("centered") : false;
-    var swiper = new Swiper(".tf-sw-categories", {
-        slidesPerView: mobile,
-        spaceBetween: spacing,
-        speed: 1000,
-        pagination: {
-            el: ".sw-pagination-categories",
-            clickable: true,
-        },
-        slidesPerGroup: perGroup,
-        observer: true,
-        centeredSlides: centered,
-        observeParents: true,
-        navigation: {
-            clickable: true,
-            nextEl: ".nav-next-categories",
-            prevEl: ".nav-prev-categories",
-        },
-        loop: loop,
-        breakpoints: {
-            575: {
-                slidesPerView: mobileSm,
-                spaceBetween: spacing,
-                slidesPerGroup: perGroup,
-            },
-            768: {
-                slidesPerView: tablet,
-                spaceBetween: spacingMd,
-                slidesPerGroup: perGroupMd,
-            },
-            1200: {
-                slidesPerView: preview,
-                spaceBetween: spacingLg,
-                slidesPerGroup: perGroupLg,
-            },
-        },
-    });
-}
