@@ -105,6 +105,10 @@ body {
     color: var(--color-primary) !important;
 }
 
+.group-hover\:text-primary {
+    color: var(--color-primary);
+}
+
 .hover\:bg-primary:hover {
     background-color: var(--color-primary) !important;
 }
