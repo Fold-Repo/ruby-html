@@ -221,25 +221,97 @@ window.addEventListener('DOMContentLoaded', () => {
 $(document).ready(function () {
 
     // PRODUCTS COLOR SWITCH
-
     $(".product-card").each(function () {
         const $card = $(this);
-        const $img = $card.find(".product-image");
+        const $mainImage = $card.find(".product-image");
+        const $thumbs = $card.find(".thumb-image");
         const $swatches = $card.find(".color-swatch");
 
-        $swatches.on("mouseenter", function () {
-            const $this = $(this);
-            const newSrc = $this.data("image");
-            const color = $this.data("color");
+        const $firstSwatch = $swatches.first();
+        updateSwatchStyle($firstSwatch);
 
-            if (newSrc) $img.attr("src", newSrc);
+        const defaultSrc = $thumbs.first().data("src") || $thumbs.first().attr("src");
+        $mainImage.attr("src", defaultSrc);
+        $thumbs.removeClass("border border-primary");
+        $thumbs.first().addClass("border border-primary");
 
-            $swatches.removeClass(function (index, className) {
+        $thumbs.on("click", function () {
+            const $clicked = $(this);
+            const newSrc = $clicked.data("src") || $clicked.attr("src");
+
+            $mainImage.attr("src", newSrc);
+            $thumbs.removeClass("border border-primary");
+            $clicked.addClass("border border-primary");
+
+            const matchSwatch = $swatches.filter(function () {
+                return $(this).data("image") === newSrc;
+            });
+            if (matchSwatch.length) {
+                updateSwatchStyle(matchSwatch);
+            }
+        });
+
+        const trigger = $card.data("trigger") || "hover";
+        const swatchEvent = trigger === "click" ? "click" : "mouseenter";
+
+        $swatches.on(swatchEvent, function () {
+            const $swatch = $(this);
+            const newSrc = $swatch.data("image");
+
+            if (newSrc) {
+                $mainImage.attr("src", newSrc);
+
+                const $matchingThumb = $thumbs.filter(function () {
+                    return $(this).data("src") === newSrc || $(this).attr("src") === newSrc;
+                });
+                $thumbs.removeClass("border border-primary");
+                $matchingThumb.addClass("border border-primary");
+
+                updateSwatchStyle($swatch);
+
+                const $targetImage = $card.find(`img[data-image="${newSrc}"]`);
+                if ($targetImage.length) {
+                    $("html, body").animate({
+                        scrollTop: $targetImage.offset().top - 100
+                    }, 400);
+                }
+
+                const color = $swatch.data("color");
+                if (color) {
+                    const $targetGrid = $(`.grid[data-color="${color}"]`);
+                    if ($targetGrid.length) {
+                        $("html, body").animate({
+                            scrollTop: $targetGrid.offset().top - 100
+                        }, 400);
+                    }
+                }
+
+            }
+        });
+
+        function updateSwatchStyle($selected) {
+
+            $swatches.removeClass(function (_, className) {
                 return (className.match(/ring\S*/g) || []).join(" ");
             });
 
-            $this.addClass(`ring ring-offset-2 ring-${color}`);
-        });
+            const color = $selected.data("color") || "primary";
+            $selected.addClass(`ring ring-offset-2 ring-${color}`);
+
+            $swatches.each(function () {
+                const activeClasses = $(this).data("active-classes");
+                if (activeClasses) {
+                    $(this).removeClass(activeClasses);
+                }
+            });
+
+            const selectedActiveClasses = $selected.data("active-classes");
+            if (selectedActiveClasses) {
+                $selected.addClass(selectedActiveClasses);
+            }
+        }
+
+
     });
 
     // DROPDOWN
@@ -255,11 +327,19 @@ $(document).ready(function () {
 
     $(".dropdown-option").on("click", function (e) {
         e.preventDefault();
-        var selectedText = $(this).text();
-        var $dropdown = $(this).closest(".dropdown");
 
-        $dropdown.find(".dropdown-label").text(selectedText);
+        var $this = $(this);
+        var selectedName = $this.find("span").text();
+        var selectedColor = $this.find("div").css("background-color");
+
+        var $dropdown = $this.closest(".dropdown");
+
+        $dropdown.find(".dropdown-label").text(selectedName);
+
+        $dropdown.find(".dropdown-toggle .rounded-full").css("background-color", selectedColor);
+
         $dropdown.find(".dropdown-menu").hide();
+
     });
 
     $(document).on("click", function (e) {
@@ -268,6 +348,36 @@ $(document).ready(function () {
         }
     });
 
+    // DROPDOWN ENDS
+
+    // OFFER BOX
+    $('.offer-box').on('click', function () {
+        $('.offer-box input[type="checkbox"]').prop('checked', false);
+        $('.offer-box').removeClass('border border-primary');
+        $(this).find('input[type="checkbox"]').prop('checked', true);
+        $(this).addClass('border border-primary');
+    });
+
+    function setupToggle(slotName) {
+      const container = $(`[data-slot="${slotName}"]`);
+      container.on("click", "button", function () {
+        // Remove active class from siblings
+        container.find("button").removeClass("bg-primary text-white");
+        // Add active class to clicked
+        $(this).addClass("bg-primary text-white");
+
+        // Update the displayed value (optional)
+        container
+          .closest(".flex-col")
+          .find(".active-value")
+          .text($(this).data("value"));
+      });
+    }
+
+    // Initialize for each group
+    setupToggle("deliver");
+    setupToggle("size");
+  
 
     // CATEGORIES
     if ($(".tf-sw-categories").length > 0) {
@@ -386,5 +496,58 @@ $(document).ready(function () {
 
     updateCountdown();
     setInterval(updateCountdown, 1000 * 30);
+
+    // CATEGORIES
+    if ($(".tf-sw-categories_a").length > 0) {
+        var tfSwCategories = $(".tf-sw-categories_a");
+        var preview = tfSwCategories.data("preview");
+        var tablet = tfSwCategories.data("tablet");
+        var mobile = tfSwCategories.data("mobile");
+        var mobileSm = tfSwCategories.data("mobile-sm") !== undefined ? tfSwCategories.data("mobile-sm") : mobile;
+        var spacingLg = tfSwCategories.data("space-lg");
+        var spacingMd = tfSwCategories.data("space-md");
+        var spacing = tfSwCategories.data("space");
+        var perGroup = tfSwCategories.data("pagination") || 1;
+        var perGroupMd = tfSwCategories.data("pagination-md") || 1;
+        var perGroupLg = tfSwCategories.data("pagination-lg") || 1;
+        var loop = tfSwCategories.data("loop") !== undefined ? tfSwCategories.data("loop") : false;
+        var centered = tfSwCategories.data("centered") !== undefined ? tfSwCategories.data("centered") : false;
+        var swiper = new Swiper(".tf-sw-categories_a", {
+            slidesPerView: mobile,
+            spaceBetween: spacing,
+            speed: 1000,
+            pagination: {
+                el: ".sw-pagination-categories",
+                clickable: true,
+            },
+            slidesPerGroup: perGroup,
+            observer: true,
+            centeredSlides: centered,
+            observeParents: true,
+            navigation: {
+                clickable: true,
+                nextEl: ".nav-next-categories",
+                prevEl: ".nav-prev-categories",
+            },
+            loop: loop,
+            breakpoints: {
+                575: {
+                    slidesPerView: mobileSm,
+                    spaceBetween: spacing,
+                    slidesPerGroup: perGroup,
+                },
+                768: {
+                    slidesPerView: tablet,
+                    spaceBetween: spacingMd,
+                    slidesPerGroup: perGroupMd,
+                },
+                1200: {
+                    slidesPerView: preview,
+                    spaceBetween: spacingLg,
+                    slidesPerGroup: perGroupLg,
+                },
+            },
+        });
+    }
 
 });
