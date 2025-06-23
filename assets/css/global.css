@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/digital-numbers');
+@import url('https://fonts.cdnfonts.com/css/oleo-script-swash-caps');
+
 
 :root {
 
     --font-family: 'Nunito Sans', sans-serif;
     --font-digital: 'Digital Numbers', sans-serif;
+    --font-oleo: 'Oleo Script Swash Caps', sans-serif;
 
     /*  FONT SIZES */
     --text-xs: 0.75rem;
@@ -20,9 +23,11 @@
     /* COLORS */
     --color-primary: #DB4444;
     --color-danger: #CB1A14;
+    --color-red: #FF0000;
     --color-success: #28A745;
     --color-bg-white-smoke: #F4F4F4;
     --color-bg-lavender: #FFF5F7;
+    --color-light-pink: #F3EBEB80;
     --color-input-bg: #F3F8F7;
     --color-dark: #181818;
     --color-placeholder: #0000009d;
@@ -35,9 +40,13 @@
     --form-radius: 12px;
 }
 
+.font-oleo {
+    font-family: var(--font-oleo) !important;
+}
+
 body {
     font-family: var(--font-family);
-    font-weight: 400 !important;
+    font-weight: 300 !important;
 }
 
 .h-screen {
@@ -121,12 +130,28 @@ body {
     background-color: var(--color-danger);
 }
 
+.text-red {
+    color: var(--color-red);
+}
+
+.bg-red {
+    background-color: var(--color-red);
+}
+
 .text-success {
     color: var(--color-success);
 }
 
 .bg-success {
     background-color: var(--color-success) !important;
+}
+
+.text-light-pink {
+    color: var(--color-light-pink);
+}
+
+.bg-light-pink {
+    background-color: var(--color-light-pink) !important;
 }
 
 .after\:bg-success {
@@ -329,29 +354,50 @@ body {
     background-color: var(--color-dark);
 }
 
-.sw-dots.white-circle .swiper-pagination-bullet::after {
-    background-color: #FFF;
-    border-color: #FFF;
+/* DOT PRIMARY */
+.sw-dots.type-circle.primary .swiper-pagination-bullet::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary);
+    opacity: 1;
 }
 
-.sw-dots.white-circle .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    border: 1px solid #FFF;
+.sw-dots.type-circle.primary .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border: 1px solid var(--color-primary);
 }
 
-.sw-dots.white-circle .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
-    background-color: #FFF;
+.sw-dots.type-circle.primary .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    background-color: var(--color-primary);
 }
 
-.sw-dots.white-circle-line .swiper-pagination-bullet::after {
-    border-color: #FFF;
+/* DOT PRIMARY */
+.sw-dots.type-circle.white .swiper-pagination-bullet::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--color-bg-white-smoke);
+    opacity: 1;
 }
 
-.sw-dots.white-circle-line .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    border: 1px solid #FFF;
+.sw-dots.type-circle.white .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border: 1px solid var(--color-bg-white-smoke);
 }
 
-.sw-dots.white-circle-line .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
-    background-color: #FFF;
+.sw-dots.type-circle.white .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    background-color: var(--color-bg-white-smoke);
 }
 
 /* TAB */
@@ -389,4 +435,52 @@ body {
     box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.5);
     width: 3rem;
     text-align: center;
+}
+
+
+/* SLIDER EFFECT */
+.slider-effect-fade .swiper-slide .fade-item {
+    transform: translateY(100px);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.slider-effect-fade .swiper-slide .fade-item.fade-box {
+    transition-delay: 0.4s;
+}
+
+.slider-effect-fade .swiper-slide .fade-item.fade-item-1 {
+    transition-delay: 0.5s;
+}
+
+.slider-effect-fade .swiper-slide .fade-item.fade-item-2 {
+    transition-delay: 0.6s;
+}
+
+.slider-effect-fade .swiper-slide .fade-item.fade-item-3 {
+    transition-delay: 0.7s;
+}
+
+.slider-effect-fade .swiper-slide .fade-item.fade-item-4 {
+    transition-delay: 0.8s;
+}
+
+.slider-effect-fade .swiper-slide.swiper-slide-active .fade-item {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ELECT PAGE */
+.hover\:shadow_brand:hover {
+    box-shadow: 0px 0px 50px 0px #00000014;
+}
+
+.shadow_elect{
+    box-shadow: 1px 1px 10px 1px #00000010;
 }
