@@ -48,8 +48,7 @@
     </div>
 
     <!-- ================ NAVBAR =============== -->
-
-    <header class="relative py-4 xl:py-0 bg-white sticky top-0 z-50">
+    <header class="relative py-4 xl:py-0 bg-white shadow-xs sticky top-0 z-50">
 
         <div class="container">
 
@@ -1331,63 +1330,70 @@
         </div>
 
     </header>
-
     <!-- ======== HEADER ENDS ========== -->
 
     <!-- ======= HERO BANNER ======== -->
-    <section class="swiper bg-gray-100 !pt-12 2xl:!pt-20 banner_swipper">
+    <section class="slider-effect-fade overflow-hidden relative">
 
-        <div class="swiper-wrapper">
+        <div dir="ltr" class="swiper tf-sw-slideshow" data-preview="1" data-tablet="1" data-mobile="1"
+            data-centered="false" data-space="0" data-space-mb="0" data-loop="true" data-auto-play="true"
+            data-speed="1000">
 
-            <div class="swiper-slide">
-                <div class="container mx-auto px-4 grid md:grid-cols-2 items-center gap-10">
+            <div class="swiper-wrapper">
 
-                    <div class="space-y-6">
+                <div class="swiper-slide relative">
 
-                        <h2 class="text-4xl/12 md:!text-5xl/14 2xl:!text-6xl/18 font-bold text-gray-900">
-                            Discover and find your own Fashion!
-                        </h2>
+                    <img class="w-full h-full object-cover object-bottom !h-[70vh] lg:!h-[115vh] 2xl:!h-[110vh]"
+                        src="/assets/img/landing/banner/furniture.jpg" alt="furniture-slideshow">
 
-                        <p class="text-gray-600">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </p>
+                    <div class="absolute inset-0 top-16 md:top-20 flex justify-center">
 
-                        <a href="/shop_features/shop_collection">
-                            <button class="btn bg-black text-white !rounded-full !px-12">Explore Collection</button>
-                        </a>
+                        <div class="container text-white text-center !max-w-4xl space-y-5">
+
+                            <h1 class="fade-item fade-item-1 text-3xl sm:!text-5xl 2xl:!text-6xl/18 font-semibold">
+                                Creative Home Simpify your Furniture
+                            </h1>
+
+                            <p
+                                class="fade-item fade-item-2 max-w-2xl mx-auto text-[12px] sm:!text-sm md:!text-base leading-7">
+                                Lorem ipsum dolor sit amet consectetur. Tristique mauris aliquet
+                                neque purus quam. Scelerisque urna a semper nunc velit.
+                            </p>
+
+                            <button class="fade-item fade-item-3 btn bg-black text-white !px-16 m-auto">Shop
+                                Now</button>
+
+                        </div>
 
                     </div>
-
-                    <!-- == IMAGE === -->
-                    <img src="/assets/img/landing/banner/women_fashion.png" alt="Fashion Woman"
-                        class="max-h-[600px] w-auto object-contain" />
 
                 </div>
-            </div>
 
-            <div class="swiper-slide ">
+                <div class="swiper-slide relative">
 
-                <div class="container mx-auto px-4 grid md:grid-cols-2 items-center gap-10">
+                    <img class="w-full h-full object-cover object-bottom !h-[70vh] lg:!h-[115vh] 2xl:!h-[110vh]"
+                        src="/assets/img/landing/banner/furniture.jpg" alt="furniture-slideshow">
 
-                    <div class="space-y-6">
+                    <div class="absolute inset-0 top-16 md:top-20 flex justify-center">
 
-                        <h2 class="text-4xl/12 md:!text-5xl/14 2xl:!text-6xl/18 font-bold text-gray-900">
-                            Discover and find your own Fashion!
-                        </h2>
+                        <div class="container text-white text-center !max-w-4xl space-y-5">
 
-                        <p class="text-gray-600">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </p>
+                            <h1 class="fade-item fade-item-1 text-3xl sm:!text-5xl 2xl:!text-6xl/18 font-semibold">
+                                Creative Home Simpify your Furniture
+                            </h1>
 
-                        <a href="/shop_features/shop_collection">
-                            <button class="btn bg-black text-white !rounded-full !px-12">Explore Collection</button>
-                        </a>
+                            <p
+                                class="fade-item fade-item-2 max-w-2xl mx-auto text-[12px] sm:!text-sm md:!text-base leading-7">
+                                Lorem ipsum dolor sit amet consectetur. Tristique mauris aliquet
+                                neque purus quam. Scelerisque urna a semper nunc velit.
+                            </p>
+
+                            <button class="fade-item fade-item-3 btn bg-black text-white !px-16 m-auto">Shop
+                                Now</button>
+
+                        </div>
 
                     </div>
-
-                    <!-- == IMAGE === -->
-                    <img src="/assets/img/landing/banner/women_fashion.png" alt="Fashion Woman"
-                        class="max-h-[600px] w-auto object-contain" />
 
                 </div>
 
@@ -1395,38 +1401,517 @@
 
         </div>
 
-        <div class="banner_pagination sw-dots type-circle my-12 justify-center"></div>
+        <div
+            class="flex justify-center z-10 absolute bottom-32 sm:bottom-52 lg:bottom-92 left-1/2 transform -translate-x-1/2 ">
+            <div class="sw-dots sw-pagination-slider type-circle white white-circle-line">
+            </div>
+        </div>
 
     </section>
 
     <!-- ===== MAIN CONTENT ===== -->
 
-    <div class="container section-lg space-y-12">
+    <div class="section-lg space-y-20">
 
-        <!-- ======== FEATURED PRODUCT ========== -->
-        <div class="space-y-5">
+        <!-- ======== Explore Our Collections ========== -->
+        <div class="container space-y-10">
 
-            <div class="flex items-center gap-x-2 mb-1">
+            <h2 class="text-lg font-bold">Explore Our Collections</h2>
 
-                <div class="bg-primary w-3 h-8 rounded"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
 
-                <h2 class="text-primary font-semibold text-sm lg:text-base">Featured</h2>
+                <!-- ==== Bedroom Furnitures ==== -->
+                <div class="lg:col-span-4 bg-light-pink p-2 rounded-xl flex flex-col justify-between gap-y-5 h-full">
+
+                    <div class="p-5 space-y-4">
+                        <h2 class="text-gray-700 text-sm md:!text-base font-semibold">
+                            Bed Room <br />
+                            <span class="px-5">Furniture</span>
+                        </h2>
+                        <p class="text-gray-500 text-sm">Best-selling Furniture items product collection</p>
+                    </div>
+
+                    <img src="/assets/img/landing/furniture/1.png" class="w-full rounded-lg aspect-[7/4] object-cover"
+                        alt="Furniture" />
+
+                </div>
+
+                <!-- ==== Office Furnitures ==== -->
+                <div class="lg:col-span-8 flex flex-col space-y-5">
+
+                    <!-- ==== Furnitures Top Row ==== -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                        <!-- Office Chair -->
+                        <div
+                            class="lg:col-span-2 bg-light-pink rounded-xl w-full flex flex-col lg:flex-row items-start justify-between gap-4 overflow-hidden">
+
+                            <div class="px-5 pt-5">
+                                <h2 class="text-gray-700 text-sm md:!text-base font-semibold">
+                                    Office Chair <br />
+                                    <span class="px-5">Furniture</span>
+                                </h2>
+                            </div>
+
+                            <img src="/assets/img/landing/furniture/2.png"
+                                class="self-end lg:self-auto max-h-[200px] sm:max-h-[250px] scale-x-[-1]" alt="Chair" />
+
+                        </div>
+
+                        <!-- Office Table -->
+                        <div class="bg-light-pink p-2 rounded-xl flex flex-col justify-between gap-y-5">
+
+                            <div class="p-5 space-y-4">
+                                <h2 class="text-gray-700 text-sm md:!text-base font-semibold">
+                                    Office Table <br />
+                                    <span class="px-5">Furniture</span>
+                                </h2>
+                            </div>
+
+                            <img src="/assets/img/landing/furniture/4.png"
+                                class="w-full rounded-lg aspect-[7/4] object-top object-cover" alt="Furniture" />
+
+                        </div>
+
+                    </div>
+
+                    <!-- Furnitures Bottom Row -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                        <!-- Lamp & Table -->
+                        <div class="bg-light-pink p-2 rounded-xl flex flex-col justify-between gap-y-5">
+                            <div class="p-5">
+                                <h2 class="text-gray-700 text-sm md:!text-base font-semibold">
+                                    Lamp & Table <br />
+                                    <span class="px-5">Furniture</span>
+                                </h2>
+                            </div>
+                            <img src="/assets/img/landing/furniture/3.jpg"
+                                class="w-full rounded-lg aspect-[7/4] object-cover" alt="Furniture" />
+                        </div>
+
+                        <!-- Office Table (Wide) -->
+                        <div
+                            class="sm:col-span-1 lg:col-span-2 bg-light-pink p-2 rounded-xl flex flex-col lg:flex-row justify-between">
+                            <img src="/assets/img/landing/furniture/5.jpg"
+                                class="w-full lg:max-w-[65%] rounded-lg object-cover" alt="Furniture" />
+                            <div class="p-5 space-y-4">
+                                <h2 class="text-gray-700 text-sm md:!text-base font-semibold">
+                                    Office Table <br />
+                                    <span class="px-5">Furniture</span>
+                                </h2>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="flex items-center gap-3 justify-between">
+        </div>'
 
-                <h2 class="text-lg font-bold">Best Selling</h2>
+        <!-- ======== Best - Selling Furnitures ========== -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
 
-                <div class="flex items-center gap-x-5">
+            <div
+                class="lg:col-span-4 2xl:col-span-3 flex flex-col justify-center bg-black lg:rounded-r-xl py-16 md:py-20 lg:py-5 px-10">
+
+                <div class="contaner flex flex-col lg:items-end lg:text-right text-white space-y-6">
+
+                    <h2 class="font-semibold text-xl">Best - Selling Furnitures</h2>
+
+                    <p class="text-[13px] lg:max-w-xs">
+                        Lorem ipsum dolor sit amet consectetur. Tristique mauris aliquet neque purus quam.
+                    </p>
+
+                    <button class="btn btn-primary !px-10 !rounded-full max-w-max">More Products</button>
+
+                </div>
+
+            </div>
+
+            <div class="container lg:col-span-8 2xl:col-span-8 lg:pt-12">
+
+                <div dir="ltr" class="swiper tf-sw-categories" data-preview="4" data-tablet="3" data-mobile-sm="2"
+                    data-mobile="2" data-space-lg="20" data-space-md="20" data-space="15" data-pagination="2"
+                    data-pagination-md="2" data-pagination-lg="1">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide flex flex-col relative duration-500 product-card">
+
+                            <div
+                                class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                                <!-- MAIN IMAGE -->
+                                <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                    src="/assets/img/landing/furniture/6.jpg" alt="">
+
+                                <div class="absolute start-3 top-3">
+                                    <span
+                                        class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                                </div>
+
+                                <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                    <div
+                                        class="py-2 px-4 inline-block font-medium align-middle duration-500 text-sm text-center bg-white text-primary w-full rounded-xl">
+                                        <i class="ri-shopping-cart-2-line text-base"></i>
+                                        Add to cart
+                                    </div>
+                                </div>
+
+                                <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                                    <a href="javascript:void(0)"
+                                        class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                        <i class="ri-heart-3-line"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                                <h5 class="text-xs md:!text-sm font-medium line-clamp-1">Basic Slim fit T-shirt</h5>
+
+                                <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
+
+                                    <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                        <p class="text-primary">$16.00</p>
+
+                                        <p class="text-gray-400 line-through">$16.00</p>
+
+                                    </div>
+
+                                    <div class="inline-flex items-center gap-x-1">
+                                        <span class="text-xs font-medium"> 5.0 </span>
+                                        <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                                    </div>
+
+                                </div>
+
+                                </d>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide flex flex-col relative duration-500 product-card">
+
+                            <div
+                                class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                                <!-- MAIN IMAGE -->
+                                <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                    src="/assets/img/landing/furniture/7.jpg" alt="">
+
+                                <div class="absolute start-3 top-3">
+                                    <span
+                                        class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                                </div>
+
+                                <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                    <div
+                                        class="py-2 px-4 inline-block font-medium align-middle duration-500 text-sm text-center bg-white text-primary w-full rounded-xl">
+                                        <i class="ri-shopping-cart-2-line text-base"></i>
+                                        Add to cart
+                                    </div>
+                                </div>
+
+                                <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                                    <a href="javascript:void(0)"
+                                        class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                        <i class="ri-heart-3-line"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                                <h5 class="text-xs md:!text-sm font-medium line-clamp-1">Basic Slim fit T-shirt</h5>
+
+                                <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
+
+                                    <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                        <p class="text-primary">$16.00</p>
+
+                                        <p class="text-gray-400 line-through">$16.00</p>
+
+                                    </div>
+
+                                    <div class="inline-flex items-center gap-x-1">
+                                        <span class="text-xs font-medium"> 5.0 </span>
+                                        <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                                    </div>
+
+                                </div>
+
+                                </d>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide flex flex-col relative duration-500 product-card">
+
+                            <div
+                                class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                                <!-- MAIN IMAGE -->
+                                <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                    src="/assets/img/landing/furniture/8.jpg" alt="">
+
+                                <div class="absolute start-3 top-3">
+                                    <span
+                                        class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                                </div>
+
+                                <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                    <div
+                                        class="py-2 px-4 inline-block font-medium align-middle duration-500 text-sm text-center bg-white text-primary w-full rounded-xl">
+                                        <i class="ri-shopping-cart-2-line text-base"></i>
+                                        Add to cart
+                                    </div>
+                                </div>
+
+                                <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                                    <a href="javascript:void(0)"
+                                        class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                        <i class="ri-heart-3-line"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                                <h5 class="text-xs md:!text-sm font-medium line-clamp-1">Basic Slim fit T-shirt</h5>
+
+                                <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
+
+                                    <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                        <p class="text-primary">$16.00</p>
+
+                                        <p class="text-gray-400 line-through">$16.00</p>
+
+                                    </div>
+
+                                    <div class="inline-flex items-center gap-x-1">
+                                        <span class="text-xs font-medium"> 5.0 </span>
+                                        <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                                    </div>
+
+                                </div>
+
+                                </d>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide flex flex-col relative duration-500 product-card">
+
+                            <div
+                                class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                                <!-- MAIN IMAGE -->
+                                <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                    src="/assets/img/landing/furniture/6.jpg" alt="">
+
+                                <div class="absolute start-3 top-3">
+                                    <span
+                                        class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                                </div>
+
+                                <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                    <div
+                                        class="py-2 px-4 inline-block font-medium align-middle duration-500 text-sm text-center bg-white text-primary w-full rounded-xl">
+                                        <i class="ri-shopping-cart-2-line text-base"></i>
+                                        Add to cart
+                                    </div>
+                                </div>
+
+                                <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                                    <a href="javascript:void(0)"
+                                        class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                        <i class="ri-heart-3-line"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                                <h5 class="text-xs md:!text-sm font-medium line-clamp-1">Basic Slim fit T-shirt</h5>
+
+                                <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
+
+                                    <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                        <p class="text-primary">$16.00</p>
+
+                                        <p class="text-gray-400 line-through">$16.00</p>
+
+                                    </div>
+
+                                    <div class="inline-flex items-center gap-x-1">
+                                        <span class="text-xs font-medium"> 5.0 </span>
+                                        <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                                    </div>
+
+                                </div>
+
+                                </d>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide flex flex-col relative duration-500 product-card">
+
+                            <div
+                                class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                                <!-- MAIN IMAGE -->
+                                <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                    src="/assets/img/landing/furniture/7.jpg" alt="">
+
+                                <div class="absolute start-3 top-3">
+                                    <span
+                                        class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                                </div>
+
+                                <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                    <div
+                                        class="py-2 px-4 inline-block font-medium align-middle duration-500 text-sm text-center bg-white text-primary w-full rounded-xl">
+                                        <i class="ri-shopping-cart-2-line text-base"></i>
+                                        Add to cart
+                                    </div>
+                                </div>
+
+                                <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                                    <a href="javascript:void(0)"
+                                        class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                        <i class="ri-heart-3-line"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                                <h5 class="text-xs md:!text-sm font-medium line-clamp-1">Basic Slim fit T-shirt</h5>
+
+                                <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
+
+                                    <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                        <p class="text-primary">$16.00</p>
+
+                                        <p class="text-gray-400 line-through">$16.00</p>
+
+                                    </div>
+
+                                    <div class="inline-flex items-center gap-x-1">
+                                        <span class="text-xs font-medium"> 5.0 </span>
+                                        <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                                    </div>
+
+                                </div>
+
+                                </d>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide flex flex-col relative duration-500 product-card">
+
+                            <div
+                                class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                                <!-- MAIN IMAGE -->
+                                <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                    src="/assets/img/landing/furniture/8.jpg" alt="">
+
+                                <div class="absolute start-3 top-3">
+                                    <span
+                                        class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                                </div>
+
+                                <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                    <div
+                                        class="py-2 px-4 inline-block font-medium align-middle duration-500 text-sm text-center bg-white text-primary w-full rounded-xl">
+                                        <i class="ri-shopping-cart-2-line text-base"></i>
+                                        Add to cart
+                                    </div>
+                                </div>
+
+                                <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                                    <a href="javascript:void(0)"
+                                        class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                        <i class="ri-heart-3-line"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                                <h5 class="text-xs md:!text-sm font-medium line-clamp-1">Basic Slim fit T-shirt</h5>
+
+                                <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
+
+                                    <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                        <p class="text-primary">$16.00</p>
+
+                                        <p class="text-gray-400 line-through">$16.00</p>
+
+                                    </div>
+
+                                    <div class="inline-flex items-center gap-x-1">
+                                        <span class="text-xs font-medium"> 5.0 </span>
+                                        <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                                    </div>
+
+                                </div>
+
+                                </d>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="flex items-center gap-5 justify-end mt-10">
 
                     <button
-                        class="inline-flex items-center justify-center size-9 bg-gray-200 rounded-full z-10 cursor-pointer text-lg nav-prev-categories">
+                        class="inline-flex items-center justify-center size-8 bg-gray-100 text-black rounded-full z-10 cursor-pointer text-base nav-prev-categories">
                         <i class="ri-arrow-left-line"></i>
                     </button>
 
                     <button
-                        class="inline-flex items-center justify-center size-9 bg-gray-200 rounded-full z-10 cursor-pointer text-lg nav-next-categories">
+                        class="inline-flex items-center justify-center size-8 bg-gray-100 text-black rounded-full z-10 cursor-pointer text-base nav-next-categories">
                         <i class="ri-arrow-right-line"></i>
                     </button>
 
@@ -1434,465 +1919,494 @@
 
             </div>
 
-            <!-- ==== PRODUCTS CAROUSELS ==== -->
-            <div dir="ltr" class="swiper tf-sw-categories" data-preview="4" data-tablet="3" data-mobile-sm="2"
-                data-mobile="2" data-space-lg="20" data-space-md="20" data-space="15" data-pagination="2"
-                data-pagination-md="2" data-pagination-lg="1">
+        </div>
 
-                <div class="swiper-wrapper">
+        <!-- ======== Explore Our Products ======== -->
+        <div class="container space-y-12">
 
-                    <div class="swiper-slide">
+            <div class="flex items-center gap-3 justify-between flex-wrap">
 
-                        <div class="relative duration-500 product-card">
+                <h2 class="text-lg font-bold">Explore Our Products</h2>
 
-                            <div class="flex flex-col">
+                <div class="inline-flex items-center gap-5">
 
-                                <div
-                                    class="relative overflow-hidden shadow-sm group rounded-t-md duration-500 aspect-7/8 bg-gray-200">
+                    <button class="cursor-pointer text-sm font-semibold text-primary underline underline-offset-2">
+                        New Arrivals
+                    </button>
 
-                                    <!-- MAIN IMAGE -->
-                                    <img class="product-image-main object-cover w-full rounded-t-md product-image
-                                    group-hover:scale-110 duration-500" src="/assets/img/shop/16.png" alt="">
+                    <button class="cursor-pointer text-sm font-semibold text-black">
+                        Best seller
+                    </button>
 
-                                    <!-- HOVER IMAGE -->
-                                    <img src="/assets/img/shop/17.jpg"
-                                        class="product-image-hover w-full object-cover rounded-t-md absolute
-                                    top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
+                    <button class="cursor-pointer text-sm font-semibold text-black">
+                        On Sale
+                    </button>
 
+                </div>
 
-                                    <div
-                                        class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+            </div>
 
-                                        <a href="javascript:void(0)"
-                                            class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                            <i class="ri-heart-3-line"></i>
-                                        </a>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
 
-                                        <a href="javascript:void(0)"
-                                            class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                            <i class="ri-shopping-cart-2-line"></i>
-                                        </a>
+                <div class="flex flex-col relative duration-500 product-card">
 
-                                    </div>
+                    <div
+                        class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
 
-                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
-                                        <a href="../shop-cart.html"
-                                            class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
-                                            Quickly add to cart
-                                        </a>
-                                    </div>
+                        <!-- MAIN IMAGE -->
+                        <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                            src="/assets/img/landing/furniture/9.png" alt="">
 
-                                </div>
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                        </div>
 
-                                <div class="space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
-
-                                    <a href="/product-detail.html"
-                                        class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
-                                        Black Crop Tailored Jacket
-                                    </a>
-
-                                    <!-- PRICE -->
-                                    <div class="flex items-center !justify-between gap-2">
-
-                                        <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
-
-                                            <p class="text-primary">$62.99</p>
-
-                                            <p class="text-gray-400 line-through">$160</p>
-
-                                        </div>
-
-                                        <div class="inline-flex items-center gap-x-1">
-                                            <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
-                                            <i class="ri-star-fill text-yellow-500"></i>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <div
+                                class="py-2 px-4 inline-block font-medium align-middle duration-500 !text-sm text-center bg-black/90 text-white w-full rounded-xl">
+                                <i class="ri-shopping-cart-2-line text-base"></i>
+                                Add to cart
                             </div>
+                        </div>
+
+                        <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
 
                         </div>
 
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
 
-                        <div class="relative duration-500 product-card">
+                        <h5 class="text-xs md:!text-sm font-medium line-clamp-1">Lifestyle Green Chair</h5>
 
-                            <div class="flex flex-col">
+                        <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
 
-                                <div class="relative overflow-hidden shadow-sm group rounded-t-md duration-500 aspect-7/8 bg-gray-200">
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
 
-                                    <!-- MAIN IMAGE -->
-                                    <img class="product-image-main object-cover w-full rounded-t-md product-image
-                                    group-hover:scale-110 duration-500" src="/assets/img/shop/16.png" alt="">
-
-                                    <!-- HOVER IMAGE -->
-                                    <img src="/assets/img/shop/17.jpg"
-                                        class="product-image-hover w-full object-cover rounded-t-md absolute
-                                    top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
-
-
-                                    <div
-                                        class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
-
-                                        <a href="javascript:void(0)"
-                                            class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                            <i class="ri-heart-3-line"></i>
-                                        </a>
-
-                                        <a href="javascript:void(0)"
-                                            class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                            <i class="ri-shopping-cart-2-line"></i>
-                                        </a>
-
-                                    </div>
-
-                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
-                                        <a href="../shop-cart.html"
-                                            class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
-                                            Quickly add to cart
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
-
-                                    <a href="/product-detail.html"
-                                        class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
-                                        Black Crop Tailored Jacket
-                                    </a>
-
-                                    <!-- PRICE -->
-                                    <div class="flex items-center !justify-between gap-2">
-
-                                        <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
-
-                                            <p class="text-primary">$62.99</p>
-
-                                            <p class="text-gray-400 line-through">$160</p>
-
-                                        </div>
-
-                                        <div class="inline-flex items-center gap-x-1">
-                                            <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
-                                            <i class="ri-star-fill text-yellow-500"></i>
-                                        </div>
-
-                                    </div>
-
-                                </div>
+                                <p class="text-gray-400 line-through">$200.00</p>
+                                <p class="text-primary">$105.00</p>
 
                             </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs font-medium"> 5.0 </span>
+                                <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                            </div>
+
+                        </div>
+
+                        </d>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col relative duration-500 product-card">
+
+                    <div
+                        class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                            src="/assets/img/landing/furniture/10.png" alt="">
+
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <div
+                                class="py-2 px-4 inline-block font-medium align-middle duration-500 !text-sm text-center bg-black/90 text-white w-full rounded-xl">
+                                <i class="ri-shopping-cart-2-line text-base"></i>
+                                Add to cart
+                            </div>
+                        </div>
+
+                        <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
 
                         </div>
 
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
 
-                        <div class="relative duration-500 product-card">
+                        <h5 class="text-xs md:!text-sm font-medium line-clamp-1">Modern Cupboard</h5>
 
-                            <div class="flex flex-col">
+                        <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
 
-                                <div
-                                    class="relative overflow-hidden shadow-sm group rounded-t-md duration-500 aspect-7/8 bg-gray-200">
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
 
-                                    <!-- MAIN IMAGE -->
-                                    <img class="product-image-main object-cover w-full rounded-t-md product-image
-                                    group-hover:scale-110 duration-500" src="/assets/img/shop/16.png" alt="">
-
-                                    <!-- HOVER IMAGE -->
-                                    <img src="/assets/img/shop/17.jpg"
-                                        class="product-image-hover w-full object-cover rounded-t-md absolute
-                                    top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
-
-
-                                    <div
-                                        class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
-
-                                        <a href="javascript:void(0)"
-                                            class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                            <i class="ri-heart-3-line"></i>
-                                        </a>
-
-                                        <a href="javascript:void(0)"
-                                            class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                            <i class="ri-shopping-cart-2-line"></i>
-                                        </a>
-
-                                    </div>
-
-                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
-                                        <a href="../shop-cart.html"
-                                            class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
-                                            Quickly add to cart
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
-
-                                    <a href="/product-detail.html"
-                                        class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
-                                        Black Crop Tailored Jacket
-                                    </a>
-
-                                    <!-- PRICE -->
-                                    <div class="flex items-center !justify-between gap-2">
-
-                                        <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
-
-                                            <p class="text-primary">$62.99</p>
-
-                                            <p class="text-gray-400 line-through">$160</p>
-
-                                        </div>
-
-                                        <div class="inline-flex items-center gap-x-1">
-                                            <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
-                                            <i class="ri-star-fill text-yellow-500"></i>
-                                        </div>
-
-                                    </div>
-
-                                </div>
+                                <p class="text-gray-400 line-through">$200.00</p>
+                                <p class="text-primary">$105.00</p>
 
                             </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs font-medium"> 5.0 </span>
+                                <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                            </div>
+
+                        </div>
+
+                        </d>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col relative duration-500 product-card">
+
+                    <div
+                        class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                            src="/assets/img/landing/furniture/11.png" alt="">
+
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <div
+                                class="py-2 px-4 inline-block font-medium align-middle duration-500 !text-sm text-center bg-black/90 text-white w-full rounded-xl">
+                                <i class="ri-shopping-cart-2-line text-base"></i>
+                                Add to cart
+                            </div>
+                        </div>
+
+                        <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
 
                         </div>
 
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
 
-                        <div class="relative duration-500 product-card">
+                        <h5 class="text-xs md:!text-sm font-medium line-clamp-1">Fabric Chair</h5>
 
-                            <div class="flex flex-col">
+                        <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
 
-                                <div
-                                    class="relative overflow-hidden shadow-sm group rounded-t-md duration-500 aspect-7/8 bg-gray-200">
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
 
-                                    <!-- MAIN IMAGE -->
-                                    <img class="product-image-main object-cover w-full rounded-t-md product-image
-                                    group-hover:scale-110 duration-500" src="/assets/img/shop/16.png" alt="">
-
-                                    <!-- HOVER IMAGE -->
-                                    <img src="/assets/img/shop/17.jpg"
-                                        class="product-image-hover w-full object-cover rounded-t-md absolute
-                                    top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
-
-
-                                    <div
-                                        class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
-
-                                        <a href="javascript:void(0)"
-                                            class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                            <i class="ri-heart-3-line"></i>
-                                        </a>
-
-                                        <a href="javascript:void(0)"
-                                            class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                            <i class="ri-shopping-cart-2-line"></i>
-                                        </a>
-
-                                    </div>
-
-                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
-                                        <a href="../shop-cart.html"
-                                            class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
-                                            Quickly add to cart
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
-
-                                    <a href="/product-detail.html"
-                                        class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
-                                        Black Crop Tailored Jacket
-                                    </a>
-
-                                    <!-- PRICE -->
-                                    <div class="flex items-center !justify-between gap-2">
-
-                                        <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
-
-                                            <p class="text-primary">$62.99</p>
-
-                                            <p class="text-gray-400 line-through">$160</p>
-
-                                        </div>
-
-                                        <div class="inline-flex items-center gap-x-1">
-                                            <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
-                                            <i class="ri-star-fill text-yellow-500"></i>
-                                        </div>
-
-                                    </div>
-
-                                </div>
+                                <p class="text-gray-400 line-through">$200.00</p>
+                                <p class="text-primary">$105.00</p>
 
                             </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs font-medium"> 5.0 </span>
+                                <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                            </div>
+
+                        </div>
+
+                        </d>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col relative duration-500 product-card">
+
+                    <div
+                        class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                            src="/assets/img/landing/furniture/12.png" alt="">
+
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <div
+                                class="py-2 px-4 inline-block font-medium align-middle duration-500 !text-sm text-center bg-black/90 text-white w-full rounded-xl">
+                                <i class="ri-shopping-cart-2-line text-base"></i>
+                                Add to cart
+                            </div>
+                        </div>
+
+                        <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
 
                         </div>
 
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
 
-                        <div class="relative duration-500 product-card">
+                        <h5 class="text-xs md:!text-sm font-medium line-clamp-1">White Armchair</h5>
 
-                            <div class="flex flex-col">
+                        <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
 
-                                <div
-                                    class="relative overflow-hidden shadow-sm group rounded-t-md duration-500 aspect-7/8 bg-gray-200">
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
 
-                                    <!-- MAIN IMAGE -->
-                                    <img class="product-image-main object-cover w-full rounded-t-md product-image
-                                    group-hover:scale-110 duration-500" src="/assets/img/shop/16.png" alt="">
-
-                                    <!-- HOVER IMAGE -->
-                                    <img src="/assets/img/shop/17.jpg"
-                                        class="product-image-hover w-full object-cover rounded-t-md absolute
-                                    top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
-
-
-                                    <div
-                                        class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
-
-                                        <a href="javascript:void(0)"
-                                            class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                            <i class="ri-heart-3-line"></i>
-                                        </a>
-
-                                        <a href="javascript:void(0)"
-                                            class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                            <i class="ri-shopping-cart-2-line"></i>
-                                        </a>
-
-                                    </div>
-
-                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
-                                        <a href="../shop-cart.html"
-                                            class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
-                                            Quickly add to cart
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
-
-                                    <a href="/product-detail.html"
-                                        class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
-                                        Black Crop Tailored Jacket
-                                    </a>
-
-                                    <!-- PRICE -->
-                                    <div class="flex items-center !justify-between gap-2">
-
-                                        <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
-
-                                            <p class="text-primary">$62.99</p>
-
-                                            <p class="text-gray-400 line-through">$160</p>
-
-                                        </div>
-
-                                        <div class="inline-flex items-center gap-x-1">
-                                            <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
-                                            <i class="ri-star-fill text-yellow-500"></i>
-                                        </div>
-
-                                    </div>
-
-                                </div>
+                                <p class="text-gray-400 line-through">$200.00</p>
+                                <p class="text-primary">$105.00</p>
 
                             </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs font-medium"> 5.0 </span>
+                                <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                            </div>
+
+                        </div>
+
+                        </d>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col relative duration-500 product-card">
+
+                    <div
+                        class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                            src="/assets/img/landing/furniture/13.png" alt="">
+
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <div
+                                class="py-2 px-4 inline-block font-medium align-middle duration-500 !text-sm text-center bg-black/90 text-white w-full rounded-xl">
+                                <i class="ri-shopping-cart-2-line text-base"></i>
+                                Add to cart
+                            </div>
+                        </div>
+
+                        <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
 
                         </div>
 
                     </div>
 
-                    <div class="swiper-slide">
+                    <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
 
-                        <div class="relative duration-500 product-card">
+                        <h5 class="text-xs md:!text-sm font-medium line-clamp-1">Lifestyle Green Chair</h5>
 
-                            <div class="flex flex-col">
+                        <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
 
-                                <div
-                                    class="relative overflow-hidden shadow-sm group rounded-t-md duration-500 aspect-7/8 bg-gray-200">
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
 
-                                    <!-- MAIN IMAGE -->
-                                    <img class="product-image-main object-cover w-full rounded-t-md product-image
-                                    group-hover:scale-110 duration-500" src="/assets/img/shop/16.png" alt="">
-
-                                    <!-- HOVER IMAGE -->
-                                    <img src="/assets/img/shop/17.jpg"
-                                        class="product-image-hover w-full object-cover rounded-t-md absolute
-                                    top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
-
-
-                                    <div
-                                        class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
-
-                                        <a href="javascript:void(0)"
-                                            class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                            <i class="ri-heart-3-line"></i>
-                                        </a>
-
-                                        <a href="javascript:void(0)"
-                                            class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                            <i class="ri-shopping-cart-2-line"></i>
-                                        </a>
-
-                                    </div>
-
-                                    <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
-                                        <a href="../shop-cart.html"
-                                            class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
-                                            Quickly add to cart
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
-
-                                    <a href="/product-detail.html"
-                                        class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
-                                        Black Crop Tailored Jacket
-                                    </a>
-
-                                    <!-- PRICE -->
-                                    <div class="flex items-center !justify-between gap-2">
-
-                                        <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
-
-                                            <p class="text-primary">$62.99</p>
-
-                                            <p class="text-gray-400 line-through">$160</p>
-
-                                        </div>
-
-                                        <div class="inline-flex items-center gap-x-1">
-                                            <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
-                                            <i class="ri-star-fill text-yellow-500"></i>
-                                        </div>
-
-                                    </div>
-
-                                </div>
+                                <p class="text-gray-400 line-through">$200.00</p>
+                                <p class="text-primary">$105.00</p>
 
                             </div>
 
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs font-medium"> 5.0 </span>
+                                <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                            </div>
+
                         </div>
+
+                        </d>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col relative duration-500 product-card">
+
+                    <div
+                        class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                            src="/assets/img/landing/furniture/14.png" alt="">
+
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <div
+                                class="py-2 px-4 inline-block font-medium align-middle duration-500 !text-sm text-center bg-black/90 text-white w-full rounded-xl">
+                                <i class="ri-shopping-cart-2-line text-base"></i>
+                                Add to cart
+                            </div>
+                        </div>
+
+                        <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                        <h5 class="text-xs md:!text-sm font-medium line-clamp-1">Lifestyle Green Chair</h5>
+
+                        <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
+
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                <p class="text-gray-400 line-through">$200.00</p>
+                                <p class="text-primary">$105.00</p>
+
+                            </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs font-medium"> 5.0 </span>
+                                <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                            </div>
+
+                        </div>
+
+                        </d>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col relative duration-500 product-card">
+
+                    <div
+                        class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                            src="/assets/img/landing/furniture/15.png" alt="">
+
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <div
+                                class="py-2 px-4 inline-block font-medium align-middle duration-500 !text-sm text-center bg-black/90 text-white w-full rounded-xl">
+                                <i class="ri-shopping-cart-2-line text-base"></i>
+                                Add to cart
+                            </div>
+                        </div>
+
+                        <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                        <h5 class="text-xs md:!text-sm font-medium line-clamp-1">Lifestyle Green Chair</h5>
+
+                        <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
+
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                <p class="text-gray-400 line-through">$200.00</p>
+                                <p class="text-primary">$105.00</p>
+
+                            </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs font-medium"> 5.0 </span>
+                                <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                            </div>
+
+                        </div>
+
+                        </d>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col relative duration-500 product-card">
+
+                    <div
+                        class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                        <!-- MAIN IMAGE -->
+                        <img class="object-cover h-full w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                            src="/assets/img/landing/furniture/16.png" alt="">
+
+                        <div class="absolute start-3 top-3">
+                            <span class="bg-primary text-white text-[10px] font-medium px-3 py-1 rounded-md">-50%</span>
+                        </div>
+
+                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                            <div
+                                class="py-2 px-4 inline-block font-medium align-middle duration-500 !text-sm text-center bg-black/90 text-white w-full rounded-xl">
+                                <i class="ri-shopping-cart-2-line text-base"></i>
+                                Add to cart
+                            </div>
+                        </div>
+
+                        <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                            <a href="javascript:void(0)"
+                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="!rounded-b-lg space-y-3 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                        <h5 class="text-xs md:!text-sm font-medium line-clamp-1">Lifestyle Green Chair</h5>
+
+                        <div class="flex items-center gap-y-1 gap-x-3 justify-between flex-wrap">
+
+                            <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
+
+                                <p class="text-gray-400 line-through">$200.00</p>
+                                <p class="text-primary">$105.00</p>
+
+                            </div>
+
+                            <div class="inline-flex items-center gap-x-1">
+                                <span class="text-xs font-medium"> 5.0 </span>
+                                <i class="ri-star-fill text-yellow-500 text-sm"></i>
+                            </div>
+
+                        </div>
+
+                        </d>
 
                     </div>
 
@@ -1902,538 +2416,272 @@
 
         </div>
 
-        <!-- ======== FCategory ========== -->
-        <div class="space-y-5">
+        <!-- ======== What make us different ======== -->
+        <div class="relative grid md:grid-cols-2 gap-x-5 gap-y-12 overflow-hidden">
 
-            <div class="flex items-center gap-x-2 mb-1">
+            <div class="container !max-w-xl m-auto flex flex-col justify-between gap-5 h-full">
 
-                <div class="bg-primary w-3 h-8 rounded"></div>
+                <div class="space-y-5 max-w-lg">
+                    <h2 class="text-lg lg:!text-xl font-bold">What make us different</h2>
+                    <p class="text-sm/7">
+                        We believe that quality furniture should be stylish durable,
+                        and affordable, with a focus on craftsmanship, modern design
+                        customer satisfaction, we bring you the best selection to
+                        transform your space effortlessly.
+                    </p>
+                </div>
 
-                <h2 class="text-primary font-semibold text-sm lg:text-base">Category</h2>
+                <div class="flex items-center gap-4">
+
+                    <div class="h-full max-w-40 space-y-20 flex flex-col justify-between bg-black p-5 rounded-xl text-white">
+
+                        <h5 class="text-sm">Happy Customer</h5>
+
+                        <h2 class="font-bold text-xl">$100k</h2>
+                        
+                    </div>
+
+                    <div class="h-full max-w-40 space-y-20 flex flex-col justify-between bg-gray-200 p-5 rounded-xl text-gray-800">
+
+                        <h5 class="text-sm">Our Quality Product</h5>
+
+                        <h2 class="font-bold text-xl">$50k</h2>
+                        
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="flex items-center gap-3 justify-between">
+            <div class="relative">
 
-                <h2 class="text-lg font-bold">Today’s Top Picks</h2>
+                <div class="container">
+                    <img src="/assets/img/landing/furniture/17.jpg"  
+                    class="m-auto rounded-xl !z-50 w-[80%] md:w-[70%] rounded-xl object-cover max-h-[400px] md:max-h-[500px] 2xl:max-h-[600px] my-8"
+                    alt="Furniture">
+                </div>
+
+                <div class="absolute -z-5 !top-0 right-0 bg-black w-[70%] rounded-l-xl h-full"></div>
 
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-7">
+        </div>
 
-                <div class="relative duration-500 product-card">
+        <!-- ======== Client’s Success Stories ========== -->
+        <div class="container !space-y-12 relative">
 
-                    <div class="flex flex-col">
+            <h2 class="!text-xl font-bold text-left">
+                Trusted by Thousands of <br> Happy Customers 
+            </h2>
 
-                        <div class="relative overflow-hidden shadow-sm group rounded-t-md duration-500 aspect-7/8 bg-gray-200">
+            <div class="">
 
-                            <!-- MAIN IMAGE -->
-                            <img class="product-image-main object-cover object-top w-full rounded-t-md product-image
-                                    group-hover:scale-110 duration-500" src="/assets/img/shop/18.png" alt="">
+                <div dir="ltr" class="swiper tf-sw-testimonial" data-preview="2" data-tablet="1" data-mobile-sm="1"
+                    data-mobile="1" data-space-lg="20" data-space-md="20" data-space="15" data-pagination="2"
+                    data-pagination-md="2" data-pagination-lg="1" auto-play='true'>
 
+                    <div class="swiper-wrapper">
 
-                            <div class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <div class="swiper-slide">
+                            <div class="bg-white shadow p-3 rounded-lg border border-gray-100 flex flex-col sm:flex-row gap-4">
 
-                                <a href="javascript:void(0)"
-                                    class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                    <i class="ri-heart-3-line"></i>
-                                </a>
+                                <img src="/assets/img/testimonial/2.jpg" class="w-full sm:w-52 rounded-lg aspect-7/4 sm:aspect-7/8 sm:object-top object-cover" alt="Client story">
 
-                                <a href="javascript:void(0)"
-                                    class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                    <i class="ri-shopping-cart-2-line"></i>
-                                </a>
+                                <div class="relative pt-3 space-y-5">
 
-                            </div>
+                                    <div class="space-y-1">
+                                        <h6 class="text-xs pb-2">May 8, 2020</h6>
+                                        <h5 class="text-lg font-semibold">Michael Turner</h5>
+                                        <h6 class="text-xs font-medium">Customer</h6>
+                                    </div>
 
-                            <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
-                                <a href="../shop-cart.html"
-                                    class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
-                                    Quickly add to cart
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
-
-                            <a href="/product-detail.html"
-                                class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
-                                Woman Sunglasses
-                            </a>
-
-                            <!-- PRICE -->
-                            <div class="flex items-center !justify-between gap-2">
-
-                                <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
-
-                                    <p class="text-primary">$62.99</p>
-
-                                    <p class="text-gray-400 line-through">$160</p>
+                                    <p class="text-[13px]">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris
+                                    </p>
 
                                 </div>
 
-                                <div class="inline-flex items-center gap-x-1">
-                                    <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
-                                    <i class="ri-star-fill text-yellow-500"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white shadow p-3 rounded-lg border border-gray-100 flex flex-col sm:flex-row gap-4">
+
+                                <img src="/assets/img/testimonial/3.jpg" class="w-full sm:w-52 rounded-lg aspect-7/4 sm:aspect-7/8 sm:object-top object-cover" alt="Client story">
+
+                                <div class="relative pt-3 space-y-5">
+
+                                    <div class="space-y-1">
+                                        <h6 class="text-xs pb-2">May 8, 2020</h6>
+                                        <h5 class="text-lg font-semibold">Michael Turner</h5>
+                                        <h6 class="text-xs font-medium">Customer</h6>
+                                    </div>
+
+                                    <p class="text-[13px]">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris
+                                    </p>
+
                                 </div>
 
                             </div>
-
                         </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white shadow p-3 rounded-lg border border-gray-100 flex flex-col sm:flex-row gap-4">
+
+                                <img src="/assets/img/testimonial/2.jpg" class="w-full sm:w-52 rounded-lg aspect-7/4 sm:aspect-7/8 sm:object-top object-cover" alt="Client story">
+
+                                <div class="relative pt-3 space-y-5">
+
+                                    <div class="space-y-1">
+                                        <h6 class="text-xs pb-2">May 8, 2020</h6>
+                                        <h5 class="text-lg font-semibold">Michael Turner</h5>
+                                        <h6 class="text-xs font-medium">Customer</h6>
+                                    </div>
+
+                                    <p class="text-[13px]">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="bg-white shadow p-3 rounded-lg border border-gray-100 flex flex-col sm:flex-row gap-4">
+
+                                <img src="/assets/img/testimonial/3.jpg" class="w-full sm:w-52 rounded-lg aspect-7/4 sm:aspect-7/8 sm:object-top object-cover" alt="Client story">
+
+                                <div class="relative pt-3 space-y-5">
+
+                                    <div class="space-y-1">
+                                        <h6 class="text-xs pb-2">May 8, 2020</h6>
+                                        <h5 class="text-lg font-semibold">Michael Turner</h5>
+                                        <h6 class="text-xs font-medium">Customer</h6>
+                                    </div>
+
+                                    <p class="text-[13px]">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center justify-center m-auto gap-5 pt-8">
+
+                        <button
+                            class="inline-flex items-center justify-center size-9 bg-gray-100 rounded-full z-10 cursor-pointer text-lg nav-prev-testimonial">
+                            <i class="ri-arrow-left-line"></i>
+                        </button>
+
+                        <button
+                            class="inline-flex items-center justify-center size-9 bg-gray-100 rounded-full z-10 cursor-pointer text-lg nav-next-testimonial">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
 
                     </div>
 
                 </div>
 
-                <div class="relative duration-500 product-card">
-
-                    <div class="flex flex-col">
-
-                        <div class="relative overflow-hidden shadow-sm group rounded-t-md duration-500 aspect-7/8 bg-gray-200">
-
-                            <!-- MAIN IMAGE -->
-                            <img class="product-image-main object-cover w-full rounded-t-md product-image
-                                    group-hover:scale-110 duration-500" src="/assets/img/shop/17.jpg" alt="">
-
-                            <!-- HOVER IMAGE -->
-                            <img src="/assets/img/shop/3.jpg"
-                                class="product-image-hover w-full object-cover rounded-t-md absolute
-                                    top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
-
-
-                            <div
-                                class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
-
-                                <a href="javascript:void(0)"
-                                    class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                    <i class="ri-heart-3-line"></i>
-                                </a>
-
-                                <a href="javascript:void(0)"
-                                    class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                    <i class="ri-shopping-cart-2-line"></i>
-                                </a>
-
-                            </div>
-
-                            <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
-                                <a href="../shop-cart.html"
-                                    class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
-                                    Quickly add to cart
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
-
-                            <a href="/product-detail.html"
-                                class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
-                                Black Crop Tailored Jacket
-                            </a>
-
-                            <ul class="list-none flex items-center gap-x-2 color-swatches">
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="color-swatch size-3 ring ring-[#3E6595] ring-offset-2 rounded-full bg-[#3E6595] inline-flex"
-                                        title="Red" data-image="/assets/img/shop/17.jpg" data-color="[#3E6595]"></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="color-swatch size-3 rounded-full bg-[#CBD5EC] inline-flex"
-                                        title="Blue" data-image="/assets/img/shop/3.jpg" data-color="[#CBD5EC]"></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="color-swatch size-3 rounded-full bg-[#635047] inline-flex"
-                                        title="Yellow" data-image="/assets/img/shop/16.png" data-color="[#635047]"></a>
-                                </li>
-                            </ul>
-
-                            <!-- PRICE -->
-                            <div class="flex items-center !justify-between gap-2">
-
-                                <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
-
-                                    <p class="text-primary">$62.99</p>
-
-                                    <p class="text-gray-400 line-through">$160</p>
-
-                                </div>
-
-                                <div class="inline-flex items-center gap-x-1">
-                                    <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
-                                    <i class="ri-star-fill text-yellow-500"></i>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                <div class="absolute -bottom-5 left-0">
+                    <img src="/assets/img/testimonial/test_svg.svg" class="-scale-y-100 max-w-[100px]" alt="SVG">
                 </div>
 
-                <div class="relative duration-500 product-card">
-
-                    <div class="flex flex-col">
-
-                        <div class="relative overflow-hidden shadow-sm group rounded-t-md duration-500 aspect-7/8 bg-gray-200">
-
-                            <!-- MAIN IMAGE -->
-                            <img class="product-image-main object-cover w-full rounded-t-md product-image
-                                    group-hover:scale-110 duration-500" src="/assets/img/shop/17.jpg" alt="">
-
-                            <!-- HOVER IMAGE -->
-                            <img src="/assets/img/shop/3.jpg"
-                                class="product-image-hover w-full object-cover rounded-t-md absolute
-                                    top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
-
-
-                            <div
-                                class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
-
-                                <a href="javascript:void(0)"
-                                    class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                    <i class="ri-heart-3-line"></i>
-                                </a>
-
-                                <a href="javascript:void(0)"
-                                    class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                    <i class="ri-shopping-cart-2-line"></i>
-                                </a>
-
-                            </div>
-
-                            <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
-                                <a href="../shop-cart.html"
-                                    class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
-                                    Quickly add to cart
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
-
-                            <a href="/product-detail.html"
-                                class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
-                                Black Crop Tailored Jacket
-                            </a>
-
-                            <ul class="list-none flex items-center gap-x-2 color-swatches">
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="color-swatch size-3 ring ring-[#3E6595] ring-offset-2 rounded-full bg-[#3E6595] inline-flex"
-                                        title="Red" data-image="/assets/img/shop/17.jpg" data-color="[#3E6595]"></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="color-swatch size-3 rounded-full bg-[#CBD5EC] inline-flex"
-                                        title="Blue" data-image="/assets/img/shop/3.jpg" data-color="[#CBD5EC]"></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="color-swatch size-3 rounded-full bg-[#635047] inline-flex"
-                                        title="Yellow" data-image="/assets/img/shop/16.png" data-color="[#635047]"></a>
-                                </li>
-                            </ul>
-
-                            <!-- PRICE -->
-                            <div class="flex items-center !justify-between gap-2">
-
-                                <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
-
-                                    <p class="text-primary">$62.99</p>
-
-                                    <p class="text-gray-400 line-through">$160</p>
-
-                                </div>
-
-                                <div class="inline-flex items-center gap-x-1">
-                                    <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
-                                    <i class="ri-star-fill text-yellow-500"></i>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="relative duration-500 product-card">
-
-                    <div class="flex flex-col">
-
-                        <div class="relative overflow-hidden shadow-sm group rounded-t-md duration-500 aspect-7/8 bg-gray-200">
-
-                            <!-- MAIN IMAGE -->
-                            <img class="product-image-main object-cover w-full rounded-t-md product-image
-                                    group-hover:scale-110 duration-500" src="/assets/img/shop/17.jpg" alt="">
-
-                            <!-- HOVER IMAGE -->
-                            <img src="/assets/img/shop/3.jpg"
-                                class="product-image-hover w-full object-cover rounded-t-md absolute
-                                    top-0 left-0 opacity-0 transition-all duration-500 ease-in-out group-hover:opacity-100 scale-105" alt="" />
-
-
-                            <div
-                                class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
-
-                                <a href="javascript:void(0)"
-                                    class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                    <i class="ri-heart-3-line"></i>
-                                </a>
-
-                                <a href="javascript:void(0)"
-                                    class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
-                                    <i class="ri-shopping-cart-2-line"></i>
-                                </a>
-
-                            </div>
-
-                            <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
-                                <a href="../shop-cart.html"
-                                    class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
-                                    Quickly add to cart
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
-
-                            <a href="/product-detail.html"
-                                class="hover:text-primary text-sm sm:!text-base font-medium block !line-clamp-1">
-                                Black Crop Tailored Jacket
-                            </a>
-
-                            <ul class="list-none flex items-center gap-x-2 color-swatches">
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="color-swatch size-3 ring ring-[#3E6595] ring-offset-2 rounded-full bg-[#3E6595] inline-flex"
-                                        title="Red" data-image="/assets/img/shop/17.jpg" data-color="[#3E6595]"></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="color-swatch size-3 rounded-full bg-[#CBD5EC] inline-flex"
-                                        title="Blue" data-image="/assets/img/shop/3.jpg" data-color="[#CBD5EC]"></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"
-                                        class="color-swatch size-3 rounded-full bg-[#635047] inline-flex"
-                                        title="Yellow" data-image="/assets/img/shop/16.png" data-color="[#635047]"></a>
-                                </li>
-                            </ul>
-
-                            <!-- PRICE -->
-                            <div class="flex items-center !justify-between gap-2">
-
-                                <div class="items-center flex gap-x-3 text-xs md:!text-sm font-medium">
-
-                                    <p class="text-primary">$62.99</p>
-
-                                    <p class="text-gray-400 line-through">$160</p>
-
-                                </div>
-
-                                <div class="inline-flex items-center gap-x-1">
-                                    <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
-                                    <i class="ri-star-fill text-yellow-500"></i>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                <div class="absolute top-5 right-0">
+                    <img src="/assets/img/testimonial/test_svg.svg" class="max-w-[100px]" alt="SVG">
                 </div>
 
             </div>
 
         </div>
 
-        <div class="grid gird-cols-3 lg:grid-cols-5 gap-3 lg:gap-5 pb-10">
+        <!-- ======== Weekend Discount ========== -->
+        <div class="container">
 
-                <div class="relative lg:col-span-2">
+            <div class="flex flex-wrap md:flex-nowrap gap-y-10 items-center justify-between max-w-6xl m-auto bg-[#272626] px-10 py-6 rounded-xl">
 
-                    <img src="/assets/img/shop/19.jpg" alt="Image" class="w-full h-full aspect-7/9 rounded-xl object-cover object-top">
+                <div class="max-w-md text-white space-y-5">
 
-                    <div class="absolute inset-0 flex flex-col items-center justify-center gap-5 bg-black/50 rounded-xl">
-                        <h2 class="text-white text-lg font-semibold">Capsule Collection</h2>
-                        <a href="/shop_features/shop_collection">
-                            <button class="btn !px-8 !py-3 !border-white !rounded-full text-white">Shop now</button>
-                        </a>
-                    </div>
+                    <h5 class="text-lg lg:!text-xl font-medium">Weekend <span class="text-primary">Discount</span> </h5>
 
-                </div>
+                    <h4 class="text-2xl/9 md:!text-3xl/11 font-bold">Handcrafted Furniture and Home Décor</h4>
 
-
-                <div class="flex flex-col gap-3 lg:gap-5">
-                    <img src="/assets/img/shop/21.png" alt="Image" class="bg-gray-300 aspect-7/4 h-full w-full rounded-xl object-cover object-top">
-                    <img src="/assets/img/shop/14.jpg" alt="Image" class="aspect-7/4 h-full w-full rounded-xl object-cover object-top">
-                </div>
-
-                <div class="relative lg:col-span-2">
-
-                    <img src="/assets/img/shop/19.jpg" alt="Image" class="w-full h-full aspect-7/9 rounded-xl object-cover object-top">
-
-                    <div class="absolute inset-0 flex flex-col items-center justify-center gap-5 bg-black/50 rounded-xl">
-                        <h2 class="text-white text-lg font-semibold">Capsule Collection</h2>
-                        <a href="/shop_features/shop_collection">
-                            <button class="btn !px-8 !py-3 !border-white !rounded-full text-white">Shop now</button>
-                        </a>
-                    </div>
-
-                </div>
-
-        </div>
-
-        <!-- ======== Clothe Design For You ========== -->
-        <div class="space-y-5">
-
-            <div class="flex items-center gap-x-2 mb-1">
-
-                <div class="bg-primary w-3 h-8 rounded"></div>
-
-                <h2 class="text-primary font-semibold text-sm lg:text-base">Community Sales</h2>
-
-            </div>
-
-            <div class="flex items-center gap-3 justify-between">
-
-                <h2 class="text-lg font-bold">Clothe Design For You</h2>
-
-            </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-
-                <div class="relative">
-
-                    <img src="/assets/img/shop/23.png" alt="Image" class="bg-gray-300 w-full h-full aspect-7/9 rounded-xl object-cover object-top">
-
-                    <div class="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/50 rounded-xl text-center p-4">
-                        <div class="max-w-xs m-auto text-white space-y-4">
-                            <h2 class="text-white text-lg font-semibold">Accessories</h2>
-                            <p class="text-sm">Complete your ensemble with designer accessories such as handbags, scarves, belts, and hats.</p>
-                            <a href="/shop_layout/grid_4.html">
-                                <button class="m-auto btn !px-8 !py-3 !border-white !rounded-full text-white">Shop now</button>
-                            </a>
-                        </div>
-                    </div>
+                    <button class="btn btn-primary !px-12 !rounded-full">Shop now</button>
 
                 </div>
 
                 <div class="relative">
-
-                    <img src="/assets/img/shop/22.jpg" alt="Image" class="bg-gray-300 w-full h-full aspect-7/9 rounded-xl object-cover object-top">
-
-                    <div class="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/50 rounded-xl text-center p-4">
-                        <div class="max-w-xs m-auto text-white space-y-4">
-                            <h2 class="text-white text-lg font-semibold">Dresses</h2>
-                            <p class="text-sm">Explore a stunning range of designer dresses, including evening gowns and chic day dresses.</p>
-                            <a href="/shop_layout/grid_4.html">
-                                <button class="m-auto btn !px-8 !py-3 !border-white !rounded-full text-white">Shop now</button>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="relative">
-
-                    <img src="/assets/img/shop/20.png" alt="Image" class="bg-gray-300 w-full h-full aspect-7/9 rounded-xl object-cover object-top">
-
-                    <div class="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/50 rounded-xl text-center p-4">
-                        <div class="max-w-xs m-auto text-white space-y-4">
-                            <h2 class="text-white text-lg font-semibold">Outerwear</h2>
-                            <p class="text-sm">Browse luxurious designer coats, jackets, and blazers to stay stylishly warm during colder seasons.</p>
-                            <a href="/shop_layout/grid_4.html">
-                                <button class="m-auto btn !px-8 !py-3 !border-white !rounded-full text-white">Shop now</button>
-                            </a>
-                        </div>
-                    </div>
-
+                    <img src="/assets/img/landing/furniture/18.png" alt="Chair" class="lg:max-h-[300px] -scale-x-100" />
+                    <img src="/assets/img/landing/furniture/19.png" alt="Overlay" class="w-[80%] absolute top-4 left-1/2 -translate-x-1/2" />
                 </div>
 
             </div>
 
         </div>
 
-        <div class="space-y-5">
+        <!-- ===== SERVICES ====== -->
+        <div class="container flex items-center flex-wrap lg:flex-nowrap gap-8 justify-center lg:justify-between">
 
-            <div class="flex items-center gap-x-2 mb-1">
+            <!-- === SERVICE ITEM === -->
+            <div class="flex flex-col justify-center text-center gap-y-0.5">
 
-                <div class="bg-primary w-3 h-8 rounded"></div>
-
-                <h2 class="text-primary font-semibold text-sm lg:text-base">Testimonials</h2>
-
-            </div>
-
-            <div class="flex items-center gap-3 justify-between">
-
-                <h2 class="text-lg font-bold">Our Customer</h2>
-
-            </div>
-
-        </div>
-
-
-        <div dir="ltr" class="swiper tf-sw-testimonial" data-preview="3" data-tablet="2" data-mobile-sm="1"
-                data-mobile="1" data-space-lg="20" data-space-md="20" data-space="15" data-pagination="2"
-                data-pagination-md="2" data-pagination-lg="1" auto-play='true'>
-
-                <div class="swiper-wrapper">
-
-                    <div style="box-shadow: 0px 7px 30px 0px #0000000D;" class="swiper-slide bg-white border border-gray-100 p-5 md:p-6 rounded-lg space-y-3 text-gray-800">
-
-                        <h1 class="text-3xl">
-                            <i class="ri-double-quotes-l"></i>
-                        </h1>
-
-                        <h2 class="text-lg font-bold">Emily Wilson</h2>
-
-                        <p class="text-gray-600 text-sm/7 font-medium">
-                            The customer experience was exceptional from start to finish. The website is user-friendly, the checkout process was smooth, and the clothes I ordered fit perfectly. I'm beyond satisfied!
-                        </p>
-
+                <div class="bg-gray-300 rounded-full size-13 flex items-center justify-center text-white m-auto mb-4">
+                    <div class="flex flex-col justify-center bg-black rounded-full size-10 text-lg">
+                        <i class="ri-truck-line"></i>
                     </div>
-
-                    <div style="box-shadow: 0px 7px 30px 0px #0000000D;" class="swiper-slide bg-primary border border-gray-100 p-5 md:p-6 rounded-lg space-y-3 text-white">
-
-                        <h1 class="text-3xl">
-                            <i class="ri-double-quotes-l"></i>
-                        </h1>
-
-                        <h2 class="text-lg font-bold">Emily Wilson</h2>
-
-                        <p class="text-sm/7 font-medium">
-                            The customer experience was exceptional from start to finish. The website is user-friendly, the checkout process was smooth, and the clothes I ordered fit perfectly. I'm beyond satisfied!
-                        </p>
-
-                    </div>
-
-                    <div style="box-shadow: 0px 7px 30px 0px #0000000D;" class="swiper-slide bg-white border border-gray-100 p-5 md:p-6 rounded-lg space-y-3 text-gray-800">
-
-                        <h1 class="text-3xl">
-                            <i class="ri-double-quotes-l"></i>
-                        </h1>
-
-                        <h2 class="text-lg font-bold">Emily Wilson</h2>
-
-                        <p class="text-gray-600 text-sm/7 font-medium">
-                            The customer experience was exceptional from start to finish. The website is user-friendly, the checkout process was smooth, and the clothes I ordered fit perfectly. I'm beyond satisfied!
-                        </p>
-
-                    </div>
-
                 </div>
 
-                <div class="sw-pagination-testimonial sw-dots type-circle flex justify-center mt-10"></div>
+                <h2 class="text-sm font-extrabold">FREE AND FAST DELIVERY</h2>
+                <p class="text-sm text-gray-500">Free delivery for all orders over $140</p>
+
+            </div>
+
+            <!-- === SERVICE ITEM === -->
+            <div class="flex flex-col justify-center text-center gap-y-0.5">
+
+                <div class="bg-gray-300 rounded-full size-13 flex items-center justify-center text-white m-auto mb-4">
+                    <div class="flex flex-col justify-center bg-black rounded-full size-10 text-lg">
+                        <i class="ri-customer-service-line"></i>
+                    </div>
+                </div>
+
+                <h2 class="text-sm font-extrabold">24/7 CUSTOMER SERVICE</h2>
+                <p class="text-sm text-gray-500">Friendly 24/7 customer support</p>
+
+            </div>
+
+            <!-- === SERVICE ITEM === -->
+            <div class="flex flex-col justify-center text-center gap-y-0.5">
+
+                <div class="bg-gray-300 rounded-full size-13 flex items-center justify-center text-white m-auto mb-4">
+                    <div class="flex flex-col justify-center bg-black rounded-full size-10 text-lg">
+                        <i class="ri-shield-check-line"></i>
+                    </div>
+                </div>
+
+                <h2 class="text-sm font-extrabold">MONEY BACK GUARANTEE</h2>
+                <p class="text-sm text-gray-500">We reurn money within 30 days</p>
+
+            </div>
+
+            <!-- === SERVICE ITEM === -->
+            <div class="flex flex-col justify-center text-center gap-y-0.5">
+
+                <div class="bg-gray-300 rounded-full size-13 flex items-center justify-center text-white m-auto mb-4">
+                    <div class="flex flex-col justify-center bg-black rounded-full size-10 text-lg">
+                        <i class="ri-shield-check-line"></i>
+                    </div>
+                </div>
+
+                <h2 class="text-sm font-extrabold">MEMEBER DISCOUNTS</h2>
+                <p class="text-sm text-gray-500">Special Prices for our loyal customers</p>
+
+            </div>
 
         </div>
 
@@ -2442,7 +2690,6 @@
     <!-- ===== MAIN CONTENT ENDS ========== -->
 
     <!-- =========== FOOTER START ============-->
-
     <div class="bg-black py-10">
 
         <div class="mb-15 container m-auto relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-y-8 sm:gap-y-12 
@@ -2556,7 +2803,6 @@
         </div>
 
     </div>
-
     <!-- =========== FOOTER ENDS ============ -->
 
 

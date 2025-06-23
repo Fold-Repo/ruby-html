@@ -348,7 +348,6 @@ $(document).ready(function () {
         }
     });
 
-    // DROPDOWN ENDS
 
     // OFFER BOX
     $('.offer-box').on('click', function () {
@@ -359,25 +358,25 @@ $(document).ready(function () {
     });
 
     function setupToggle(slotName) {
-      const container = $(`[data-slot="${slotName}"]`);
-      container.on("click", "button", function () {
-        // Remove active class from siblings
-        container.find("button").removeClass("bg-primary text-white");
-        // Add active class to clicked
-        $(this).addClass("bg-primary text-white");
+        const container = $(`[data-slot="${slotName}"]`);
+        container.on("click", "button", function () {
+            // Remove active class from siblings
+            container.find("button").removeClass("bg-primary text-white");
+            // Add active class to clicked
+            $(this).addClass("bg-primary text-white");
 
-        // Update the displayed value (optional)
-        container
-          .closest(".flex-col")
-          .find(".active-value")
-          .text($(this).data("value"));
-      });
+            // Update the displayed value (optional)
+            container
+                .closest(".flex-col")
+                .find(".active-value")
+                .text($(this).data("value"));
+        });
     }
 
     // Initialize for each group
     setupToggle("deliver");
     setupToggle("size");
-  
+
 
     // CATEGORIES
     if ($(".tf-sw-categories").length > 0) {
@@ -468,6 +467,12 @@ $(document).ready(function () {
         });
     });
 
+    // ELECTRONICS PAGE DROPDOWN
+    $('#toggleCategories').click(function () {
+        $('#categoryList').slideToggle(300);
+        $('#dropdownIcon').toggleClass('rotate-180');
+    });
+
     // COMING SOON TIMING
     const targetDate = new Date();
     targetDate.setDate(targetDate.getDate() + 20);
@@ -512,12 +517,14 @@ $(document).ready(function () {
         var perGroupLg = tfSwCategories.data("pagination-lg") || 1;
         var loop = tfSwCategories.data("loop") !== undefined ? tfSwCategories.data("loop") : false;
         var centered = tfSwCategories.data("centered") !== undefined ? tfSwCategories.data("centered") : false;
+        var play = tfSwCategories.data("auto-play");
         var swiper = new Swiper(".tf-sw-categories_a", {
             slidesPerView: mobile,
             spaceBetween: spacing,
             speed: 1000,
+            autoplay: play,
             pagination: {
-                el: ".sw-pagination-categories",
+                el: ".sw-pagination-categories_a",
                 clickable: true,
             },
             slidesPerGroup: perGroup,
@@ -550,4 +557,115 @@ $(document).ready(function () {
         });
     }
 
+    // TESTIMONAIL
+    if ($(".tf-sw-testimonial").length > 0) {
+        var preview = $(".tf-sw-testimonial").data("preview");
+        var tablet = $(".tf-sw-testimonial").data("tablet");
+        var mobile = $(".tf-sw-testimonial").data("mobile");
+        var spacingLg = $(".tf-sw-testimonial").data("space-lg");
+        var spacingMd = $(".tf-sw-testimonial").data("space-md");
+        var spacing = $(".tf-sw-testimonial").data("space");
+        var perGroup = $(".tf-sw-testimonial").data("pagination");
+        var perGroupMd = $(".tf-sw-testimonial").data("pagination-md");
+        var perGroupLg = $(".tf-sw-testimonial").data("pagination-lg");
+        var swiper = new Swiper(".tf-sw-testimonial", {
+            slidesPerView: mobile,
+            spaceBetween: spacing,
+            speed: 800,
+            autoplay: true,
+            pagination: {
+                el: ".sw-pagination-testimonial",
+                clickable: true,
+            },
+            observeParents: true,
+            navigation: {
+                clickable: true,
+                nextEl: ".nav-next-testimonial",
+                prevEl: ".nav-prev-testimonial",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: tablet,
+                    spaceBetween: spacingMd,
+                    slidesPerGroup: perGroupMd,
+                },
+                1200: {
+                    slidesPerView: preview,
+                    spaceBetween: spacingLg,
+                    slidesPerGroup: perGroupLg,
+                },
+            },
+        });
+    }
+
+    if ($(".tf-sw-slideshow").length > 0) {
+        var tfSwSlideshow = $(".tf-sw-slideshow");
+        var preview = tfSwSlideshow.data("preview");
+        var tablet = tfSwSlideshow.data("tablet");
+        var mobile = tfSwSlideshow.data("mobile");
+        var spacing = tfSwSlideshow.data("space");
+        var spacingMb = tfSwSlideshow.data("space-mb");
+        var loop = tfSwSlideshow.data("loop");
+        var play = tfSwSlideshow.data("auto-play");
+        var centered = tfSwSlideshow.data("centered");
+        var effect = tfSwSlideshow.data("effect");
+        var speed = tfSwSlideshow.data("speed") !== undefined ? tfSwSlideshow.data("speed") : 1000;
+        var swiperSlider = {
+            autoplay: play,
+            slidesPerView: mobile,
+            loop: loop,
+            spaceBetween: spacingMb,
+            speed: speed,
+            observer: true,
+            observeParents: true,
+            pagination: {
+                el: ".sw-pagination-slider",
+                clickable: true,
+            },
+            navigation: {
+                clickable: true,
+                nextEl: ".navigation-next-slider",
+                prevEl: ".navigation-prev-slider",
+            },
+            centeredSlides: false,
+            breakpoints: {
+                768: {
+                    slidesPerView: tablet,
+                    spaceBetween: spacing,
+                    centeredSlides: false,
+
+                },
+                1200: {
+                    slidesPerView: preview,
+                    spaceBetween: spacing,
+                    centeredSlides: centered,
+                },
+            },
+        };
+        if (effect === 'fade') {
+            swiperSlider.effect = 'fade';
+            swiperSlider.fadeEffect = {
+                crossFade: true,
+            };
+        }
+
+        var swiper = new Swiper(".tf-sw-slideshow", swiperSlider);
+    }
+
 });
+
+
+// HERO BANNER SLIDER
+const swiper = new Swiper(".banner_swipper", {
+    speed: 2000,
+    autoplay: true,
+    pagination: {
+        el: ".banner_pagination",
+        clickable: true,
+    },
+    navigation: {
+        clickable: true,
+        nextEl: ".nav-next-categories",
+        prevEl: ".nav-prev-categories",
+    },
+})
