@@ -134,6 +134,10 @@ body {
     color: var(--color-red);
 }
 
+.border-red {
+    border-color: var(--color-red);
+}
+
 .bg-red {
     background-color: var(--color-red);
 }
@@ -318,6 +322,10 @@ body {
 }
 
 /* SWIPER DOTS */
+.sw-pagination-testimonial .swiper-pagination-bullet-active{
+    background-color: var(--color-red) !important;
+}
+
 .sw-dots {
     display: flex;
     gap: 8px;
