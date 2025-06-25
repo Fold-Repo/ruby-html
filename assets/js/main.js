@@ -652,6 +652,34 @@ $(document).ready(function () {
         var swiper = new Swiper(".tf-sw-slideshow", swiperSlider);
     }
 
+    // HOMEPAGE FLASH SALES
+    const targetDate_1 = new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000);
+
+        function flashUpdateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate_1 - now;
+
+        if (distance < 0) {
+            $('#days, #hours, #minutes, #seconds').text('00');
+            clearInterval(timer);
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        $('#days').text(String(days).padStart(2, '0'));
+        $('#hours').text(String(hours).padStart(2, '0'));
+        $('#minutes').text(String(minutes).padStart(2, '0'));
+        $('#seconds').text(String(seconds).padStart(2, '0'));
+        }
+
+        flashUpdateCountdown();
+
+        const timer = setInterval(flashUpdateCountdown, 1000);
+
 });
 
 

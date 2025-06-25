@@ -1365,7 +1365,7 @@
 
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
 
-            <div class="relative group duration-500 overflow-hidden cursor-pointer rounded-tl-2xl rounded-br-2xl">
+            <a href="/shop_features/categories_top_1" class="relative group duration-500 overflow-hidden cursor-pointer rounded-tl-2xl rounded-br-2xl">
 
                 <img src="/assets/img/landing/2.png"
                     class="object-cover aspect-4/5 group-hover:scale-105 transition-transform duration-500"
@@ -1381,9 +1381,9 @@
 
                 </div>
 
-            </div>
+            </a>
 
-            <div class="relative group duration-500 overflow-hidden cursor-pointer rounded-tl-2xl rounded-br-2xl">
+            <a href="/shop_features/categories_top_1" class="relative group duration-500 overflow-hidden cursor-pointer rounded-tl-2xl rounded-br-2xl">
 
                 <img src="/assets/img/landing/3.png"
                     class="object-cover aspect-4/5 group-hover:scale-105 transition-transform duration-500"
@@ -1399,9 +1399,9 @@
 
                 </div>
 
-            </div>
+            </a>
 
-            <div class="relative group duration-500 overflow-hidden cursor-pointer rounded-tl-2xl rounded-br-2xl">
+            <a href="/shop_features/categories_top_1" class="relative group duration-500 overflow-hidden cursor-pointer rounded-tl-2xl rounded-br-2xl">
 
                 <img src="/assets/img/landing/1.png"
                     class="object-cover aspect-4/5 group-hover:scale-105 transition-transform duration-500"
@@ -1417,9 +1417,9 @@
 
                 </div>
 
-            </div>
+            </a>
 
-            <div class="relative group duration-500 overflow-hidden cursor-pointer rounded-tl-2xl rounded-br-2xl">
+            <a href="/shop_features/categories_top_1" class="relative group duration-500 overflow-hidden cursor-pointer rounded-tl-2xl rounded-br-2xl">
 
                 <img src="/assets/img/landing/2.png"
                     class="object-cover aspect-4/5 group-hover:scale-105 transition-transform duration-500"
@@ -1435,7 +1435,7 @@
 
                 </div>
 
-            </div>
+            </a>
 
         </div>
 
@@ -1569,7 +1569,7 @@
         </div>
 
         <!-- ======== Deal Of the day ========== -->
-        <div class="space-y-5">
+        <div class="tab-wrapper space-y-5">
 
             <div class="flex items-center gap-3 justify-between">
 
@@ -1587,11 +1587,11 @@
 
                 <div class="inline-flex items-center gap-5">
 
-                    <button class="cursor-pointer text-sm font-semibold text-primary underline underline-offset-2">
+                    <button data-tab="featured" class="tab-btn cursor-pointer text-sm font-semibold text-primary">
                         Featured
                     </button>
 
-                    <button class="cursor-pointer text-sm font-semibold text-black">
+                    <button data-tab="popular" class="tab-btn cursor-pointer text-sm font-semibold text-black">
                         Popular
                     </button>
 
@@ -1599,10 +1599,9 @@
 
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-12 items-end gap-5">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-end gap-5 tab-content-container">
 
-                <div
-                    class="lg:col-span-3 relative duration-500 overflow-hidden cursor-pointer rounded-tl-2xl rounded-br-2xl">
+                <div class="lg:col-span-3 relative duration-500 overflow-hidden cursor-pointer rounded-tl-2xl rounded-br-2xl">
 
                     <img src="/assets/img/landing/11.png"
                         class="object-cover aspect-4/5 w-full group-hover:scale-105 transition-transform duration-500"
@@ -1610,9 +1609,9 @@
 
                     <div class="absolute bottom-3 start-3 end-3 duration-500 !z-10">
 
-                        <div class="p-3 text-center w-full rounded-tl-xl rounded-br-xl bg-red text-white">
+                        <a href="/shop_layout/grid_4.html" class="block p-3 text-center w-full rounded-tl-xl rounded-br-xl bg-red text-white">
                             <span class="text-sm font-semibold">Shop Now</span>
-                        </div>
+                        </a>
 
                     </div>
 
@@ -1623,7 +1622,7 @@
 
                 </div>
 
-                <div class="lg:col-span-9">
+                <div class="tab-content lg:col-span-9" data-tab="featured">
 
                     <div dir="ltr" class="swiper tf-sw-categories_a" data-preview="4" data-tablet="3" data-mobile-sm="2"
                         data-mobile="2" data-space-lg="20" data-space-md="20" data-space="15" data-pagination="2"
@@ -1634,31 +1633,28 @@
                             <div class="swiper-slide">
                                 <div class="flex flex-col relative duration-500 product-card">
 
-                                    <div
-                                        class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+                                    <div class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
 
                                         <!-- MAIN IMAGE -->
-                                        <img class="object-cover w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                        <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
                                             src="/assets/img/landing/9.png" alt="">
 
 
-                                        <div
-                                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                        <div class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
 
-                                            <a href="javascript:void(0)"
+                                            <a href="/wishlist.html"
                                                 class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
                                                 <i class="ri-heart-3-line"></i>
                                             </a>
 
-                                            <a href="javascript:void(0)"
+                                            <a href="/shop-cart.html"
                                                 class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
                                                 <i class="ri-shopping-cart-2-line"></i>
                                             </a>
 
                                         </div>
 
-                                        <div
-                                            class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                        <div class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
                                             <a href="../shop-cart.html"
                                                 class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
                                                 Quickly add to cart
@@ -1704,19 +1700,19 @@
                                         class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
 
                                         <!-- MAIN IMAGE -->
-                                        <img class="object-cover w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                        <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
                                             src="/assets/img/landing/10.png" alt="">
 
 
                                         <div
                                             class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
 
-                                            <a href="javascript:void(0)"
+                                            <a href="/wishlist.html"
                                                 class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
                                                 <i class="ri-heart-3-line"></i>
                                             </a>
 
-                                            <a href="javascript:void(0)"
+                                            <a href="/shop-cart.html"
                                                 class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
                                                 <i class="ri-shopping-cart-2-line"></i>
                                             </a>
@@ -1770,19 +1766,19 @@
                                         class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
 
                                         <!-- MAIN IMAGE -->
-                                        <img class="object-cover w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                        <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
                                             src="/assets/img/landing/11.png" alt="">
 
 
                                         <div
                                             class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
 
-                                            <a href="javascript:void(0)"
+                                            <a href="/wishlist.html"
                                                 class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
                                                 <i class="ri-heart-3-line"></i>
                                             </a>
 
-                                            <a href="javascript:void(0)"
+                                            <a href="/shop-cart.html"
                                                 class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
                                                 <i class="ri-shopping-cart-2-line"></i>
                                             </a>
@@ -1836,19 +1832,19 @@
                                         class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
 
                                         <!-- MAIN IMAGE -->
-                                        <img class="object-cover w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                        <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
                                             src="/assets/img/landing/12.png" alt="">
 
 
                                         <div
                                             class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
 
-                                            <a href="javascript:void(0)"
+                                            <a href="/wishlist.html"
                                                 class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
                                                 <i class="ri-heart-3-line"></i>
                                             </a>
 
-                                            <a href="javascript:void(0)"
+                                            <a href="/shop-cart.html"
                                                 class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
                                                 <i class="ri-shopping-cart-2-line"></i>
                                             </a>
@@ -1902,19 +1898,365 @@
                                         class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
 
                                         <!-- MAIN IMAGE -->
-                                        <img class="object-cover w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                        <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
                                             src="/assets/img/landing/12.png" alt="">
 
 
                                         <div
                                             class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
 
-                                            <a href="javascript:void(0)"
+                                            <a href="/wishlist.html"
                                                 class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
                                                 <i class="ri-heart-3-line"></i>
                                             </a>
 
-                                            <a href="javascript:void(0)"
+                                            <a href="/shop-cart.html"
+                                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                                <i class="ri-shopping-cart-2-line"></i>
+                                            </a>
+
+                                        </div>
+
+                                        <div
+                                            class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                            <a href="../shop-cart.html"
+                                                class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
+                                                Quickly add to cart
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="!rounded-b-lg space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                                        <div
+                                            class="text-xs md:!text-sm font-medium flex items-center gap-2  justify-between">
+
+                                            <p>Jeans</p>
+
+                                            <h6 class=" text-primary">$62.99</h6>
+
+                                        </div>
+
+                                        <div class="flex items-center gap-3 justify-between">
+
+                                            <a href="/product-detail.html"
+                                                class="hover:text-primary text-sm font-medium block !line-clamp-1">
+                                                Full Sliver Black
+                                            </a>
+
+                                            <div class="inline-flex items-center gap-x-1">
+                                                <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
+                                                <i class="ri-star-fill text-yellow-500"></i>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="sw-pagination-categories_a sw-dots type-circle flex lg:!hidden justify-center mt-8">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="tab-content hidden lg:col-span-9" data-tab="popular">
+
+                    <div dir="ltr" class="swiper tf-sw-categories_a" data-preview="4" data-tablet="3" data-mobile-sm="2"
+                        data-mobile="2" data-space-lg="20" data-space-md="20" data-space="15" data-pagination="2"
+                        data-pagination-md="2" data-pagination-lg="1">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col relative duration-500 product-card">
+
+                                    <div class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                                        <!-- MAIN IMAGE -->
+                                        <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                            src="/assets/img/landing/1.png" alt="">
+
+
+                                        <div
+                                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+
+                                            <a href="/wishlist.html"
+                                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                                <i class="ri-heart-3-line"></i>
+                                            </a>
+
+                                            <a href="/shop-cart.html"
+                                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                                <i class="ri-shopping-cart-2-line"></i>
+                                            </a>
+
+                                        </div>
+
+                                        <div
+                                            class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                            <a href="../shop-cart.html"
+                                                class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
+                                                Quickly add to cart
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="!rounded-b-lg space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                                        <div
+                                            class="text-xs md:!text-sm font-medium flex items-center gap-2  justify-between">
+
+                                            <p>Jeans</p>
+
+                                            <h6 class=" text-primary">$62.99</h6>
+
+                                        </div>
+
+                                        <div class="flex items-center gap-3 justify-between">
+
+                                            <a href="/product-detail.html"
+                                                class="hover:text-primary text-sm font-medium block !line-clamp-1">
+                                                Full Sliver Black
+                                            </a>
+
+                                            <div class="inline-flex items-center gap-x-1">
+                                                <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
+                                                <i class="ri-star-fill text-yellow-500"></i>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col relative duration-500 product-card">
+
+                                    <div
+                                        class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                                        <!-- MAIN IMAGE -->
+                                        <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                            src="/assets/img/landing/2.png" alt="">
+
+
+                                        <div
+                                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+
+                                            <a href="/wishlist.html"
+                                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                                <i class="ri-heart-3-line"></i>
+                                            </a>
+
+                                            <a href="/shop-cart.html"
+                                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                                <i class="ri-shopping-cart-2-line"></i>
+                                            </a>
+
+                                        </div>
+
+                                        <div
+                                            class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                            <a href="../shop-cart.html"
+                                                class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
+                                                Quickly add to cart
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="!rounded-b-lg space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                                        <div
+                                            class="text-xs md:!text-sm font-medium flex items-center gap-2  justify-between">
+
+                                            <p>Jeans</p>
+
+                                            <h6 class=" text-primary">$62.99</h6>
+
+                                        </div>
+
+                                        <div class="flex items-center gap-3 justify-between">
+
+                                            <a href="/product-detail.html"
+                                                class="hover:text-primary text-sm font-medium block !line-clamp-1">
+                                                Full Sliver Black
+                                            </a>
+
+                                            <div class="inline-flex items-center gap-x-1">
+                                                <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
+                                                <i class="ri-star-fill text-yellow-500"></i>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col relative duration-500 product-card">
+
+                                    <div
+                                        class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                                        <!-- MAIN IMAGE -->
+                                        <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                            src="/assets/img/landing/3.png" alt="">
+
+
+                                        <div
+                                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+
+                                            <a href="/wishlist.html"
+                                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                                <i class="ri-heart-3-line"></i>
+                                            </a>
+
+                                            <a href="/shop-cart.html"
+                                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                                <i class="ri-shopping-cart-2-line"></i>
+                                            </a>
+
+                                        </div>
+
+                                        <div
+                                            class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                            <a href="../shop-cart.html"
+                                                class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
+                                                Quickly add to cart
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="!rounded-b-lg space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                                        <div
+                                            class="text-xs md:!text-sm font-medium flex items-center gap-2  justify-between">
+
+                                            <p>Jeans</p>
+
+                                            <h6 class=" text-primary">$62.99</h6>
+
+                                        </div>
+
+                                        <div class="flex items-center gap-3 justify-between">
+
+                                            <a href="/product-detail.html"
+                                                class="hover:text-primary text-sm font-medium block !line-clamp-1">
+                                                Full Sliver Black
+                                            </a>
+
+                                            <div class="inline-flex items-center gap-x-1">
+                                                <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
+                                                <i class="ri-star-fill text-yellow-500"></i>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col relative duration-500 product-card">
+
+                                    <div
+                                        class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                                        <!-- MAIN IMAGE -->
+                                        <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                            src="/assets/img/landing/4.png" alt="">
+
+
+                                        <div
+                                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+
+                                            <a href="/wishlist.html"
+                                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                                <i class="ri-heart-3-line"></i>
+                                            </a>
+
+                                            <a href="/shop-cart.html"
+                                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                                <i class="ri-shopping-cart-2-line"></i>
+                                            </a>
+
+                                        </div>
+
+                                        <div
+                                            class="absolute -bottom-20 group-hover:bottom-3 start-3 end-3 duration-500">
+                                            <a href="../shop-cart.html"
+                                                class="py-3 px-5 inline-block font-medium align-middle duration-500 text-xs lg:text-sm text-center bg-black text-white w-full rounded-md">
+                                                Quickly add to cart
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="!rounded-b-lg space-y-1.5 p-3 lg:p-4 bg-[#FAF8F8]">
+
+                                        <div
+                                            class="text-xs md:!text-sm font-medium flex items-center gap-2  justify-between">
+
+                                            <p>Jeans</p>
+
+                                            <h6 class=" text-primary">$62.99</h6>
+
+                                        </div>
+
+                                        <div class="flex items-center gap-3 justify-between">
+
+                                            <a href="/product-detail.html"
+                                                class="hover:text-primary text-sm font-medium block !line-clamp-1">
+                                                Full Sliver Black
+                                            </a>
+
+                                            <div class="inline-flex items-center gap-x-1">
+                                                <span class="text-xs md:!text-sm font-medium"> 4.6 </span>
+                                                <i class="ri-star-fill text-yellow-500"></i>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="flex flex-col relative duration-500 product-card">
+
+                                    <div
+                                        class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+
+                                        <!-- MAIN IMAGE -->
+                                        <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                                            src="/assets/img/landing/12.png" alt="">
+
+
+                                        <div
+                                            class="absolute right-3 top-3 flex flex-col gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+
+                                            <a href="/wishlist.html"
+                                                class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                                <i class="ri-heart-3-line"></i>
+                                            </a>
+
+                                            <a href="/shop-cart.html"
                                                 class="bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
                                                 <i class="ri-shopping-cart-2-line"></i>
                                             </a>
@@ -2015,11 +2357,10 @@
 
                     <div class="swiper-slide flex flex-col relative duration-500 product-card">
 
-                        <div
-                            class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
+                        <div class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
 
                             <!-- MAIN IMAGE -->
-                            <img class="object-cover w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                            <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
                                 src="/assets/img/landing/9.png" alt="">
 
 
@@ -2081,7 +2422,7 @@
                             class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
 
                             <!-- MAIN IMAGE -->
-                            <img class="object-cover w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                            <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
                                 src="/assets/img/landing/10.png" alt="">
 
 
@@ -2143,7 +2484,7 @@
                             class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
 
                             <!-- MAIN IMAGE -->
-                            <img class="object-cover w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                            <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
                                 src="/assets/img/landing/11.png" alt="">
 
 
@@ -2205,7 +2546,7 @@
                             class="!rounded-t-lg relative overflow-hidden shadow-sm group duration-500 aspect-7/8 bg-gray-200">
 
                             <!-- MAIN IMAGE -->
-                            <img class="object-cover w-full rounded-t-md product-image group-hover:scale-110 duration-500"
+                            <img class="object-cover w-full h-full rounded-t-md product-image group-hover:scale-110 duration-500"
                                 src="/assets/img/landing/12.png" alt="">
 
 
