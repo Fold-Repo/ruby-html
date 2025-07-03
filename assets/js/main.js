@@ -329,18 +329,25 @@ $(document).ready(function () {
         e.preventDefault();
 
         var $this = $(this);
-        var selectedName = $this.find("span").text();
-        var selectedColor = $this.find("div").css("background-color");
-
         var $dropdown = $this.closest(".dropdown");
+
+        var selectedName = $this.find("span").text().trim();
+
+        if (!selectedName) {
+            selectedName = $this.text().trim();
+        }
+
+        var $colorDiv = $this.find("div");
+        if ($colorDiv.length > 0) {
+            var selectedColor = $colorDiv.css("background-color");
+            $dropdown.find(".dropdown-toggle .rounded-full").css("background-color", selectedColor);
+        }
 
         $dropdown.find(".dropdown-label").text(selectedName);
 
-        $dropdown.find(".dropdown-toggle .rounded-full").css("background-color", selectedColor);
-
         $dropdown.find(".dropdown-menu").hide();
-
     });
+
 
     $(document).on("click", function (e) {
         if (!$(e.target).closest('.dropdown').length) {
@@ -655,7 +662,7 @@ $(document).ready(function () {
     // HOMEPAGE FLASH SALES
     const targetDate_1 = new Date(new Date().getTime() + 30 * 24 * 60 * 60 * 1000);
 
-        function flashUpdateCountdown() {
+    function flashUpdateCountdown() {
         const now = new Date().getTime();
         const distance = targetDate_1 - now;
 
@@ -674,11 +681,11 @@ $(document).ready(function () {
         $('#hours').text(String(hours).padStart(2, '0'));
         $('#minutes').text(String(minutes).padStart(2, '0'));
         $('#seconds').text(String(seconds).padStart(2, '0'));
-        }
+    }
 
-        flashUpdateCountdown();
+    flashUpdateCountdown();
 
-        const timer = setInterval(flashUpdateCountdown, 1000);
+    const timer = setInterval(flashUpdateCountdown, 1000);
 
 });
 
