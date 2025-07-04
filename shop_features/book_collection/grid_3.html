@@ -1,0 +1,3088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/assets/css/global.css">
+
+    <title>Ruby</title>
+
+</head>
+
+<body>
+
+    <!-- ======== HEADER SECTION ========== -->
+
+    <!-- ============ TOP NAV ============ -->
+
+    <div class="bg-black py-3 border-b border-white/10">
+
+        <div class="container">
+
+            <div class="flex flex-row items-center justify-between gap-4 xl:gap-0">
+
+                <ul class="flex items-center gap-x-4 md:gap-x-3">
+                    <li>
+                        <a href="#" class="text-xs text-white">Hello@support.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:315-666-6688" class="text-xs text-white">+477 097-3948-098</a>
+                    </li>
+                </ul>
+
+                <select class="bg-transparent text-white text-xs border-0 outline-0">
+                    <option>English</option>
+                    <option>Vietnam</option>
+                </select>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================ NAVBAR =============== -->
+
+    <header class="relative py-4 xl:py-0 bg-white sticky top-0 z-50">
+
+        <div class="container">
+
+            <div class="flex items-center justify-between">
+
+                <!-- MOBILE BAR ICON -->
+                <div class="w-1/4 md:w-1/3 xl:hidden">
+                    <button class="cursor-pointer" type="button" data-slot="offcanvas:toggle" data-target="offcanvas-example">
+                        <i class="ri-menu-2-fill"></i>
+                    </button>
+                </div>
+
+                <!-- LOGO -->
+                <a href="/" class="logo-header">
+                    <img src="/assets/img/logo/black_logo.png" alt="logo" class="logo w-24 md:w-32">
+                </a>
+
+                <!-- LINKS -->
+                <div class="hidden xl:block">
+
+                    <nav>
+
+                        <ul class="flex items-center justify-center text-sm gap-6">
+
+                            <li class="py-6 group" data-menu-trigger="home">
+                                <a href="#" class="font-semibold flex items-center gap-1 transition-all relative">
+                                    Home
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </a>
+                            </li>
+
+                            <li class="py-6 group" data-menu-trigger="product">
+
+                                <a href="#"
+                                    class="font-semibold flex items-center gap-1 transition-all relative text-gray-800 group-hover:text-[#DB4444]">
+                                    Product
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </a>
+
+
+                            </li>
+
+                            <li class="relative group py-6">
+                                <a href="#"
+                                    class="font-semibold flex items-center gap-1 transition-all relative text-gray-800 group-hover:text-[#DB4444]">
+                                    Pages
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </a>
+
+                                <div
+                                    class="absolute left-0 top-18 rounded-lg w-44 bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 shadow-lg text-start">
+
+                                    <ul class="py-2 font-medium text-[13px] text-gray-700">
+                                        <li>
+                                            <a href="/pages/about.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                About Us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/store-list-1.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Store List 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/store-list-2.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Store List 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/contact-1.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Contact Us 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/404.html" class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                404
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/faqs.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                FAQs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/terms.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Terms Of Use
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/coming-soon.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Coming Soon
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/customer-feedbacks.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Customer Feedbacks
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/payment-confirmation.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Payment Confirmation
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/payment-failure.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Payment Failure
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/account"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                My Account
+                                            </a>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+                            </li>
+
+                            <li class="py-6 group" data-menu-trigger="shop">
+
+                                <a href="#"
+                                    class="font-semibold flex items-center gap-1 transition-all relative text-gray-800 group-hover:text-[#DB4444]">
+                                    Shop
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </a>
+
+                            </li>
+
+                            <li class="relative group py-6">
+                                <a href="#"
+                                    class="font-semibold flex items-center gap-1 transition-all relative text-gray-800 group-hover:text-[#DB4444]">
+                                    Blog
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </a>
+
+                                <div
+                                    class="absolute left-0 top-18 rounded-lg w-44 bg-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 shadow-lg text-start">
+
+                                    <ul class="py-2 font-medium text-[13px] text-gray-700">
+                                        <li>
+                                            <a href="/blog/blog-default.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Blog Default
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/blog/blog-list.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Blog List
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/blog/blog-list-2.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Blog List 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/blog/blog-grid.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Blog Grid
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/blog/blog-detail-1.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Blog Detail 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/blog/blog-detail-2.html"
+                                                class="block px-4 py-2 rounded hover:bg-gray-100">
+                                                Blog Detail 2
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+
+                            <li class="">
+                                <a href="#" class="font-semibold flex items-center gap-1 transition-all relative">
+                                    Purchase Theme
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+                <!-- RIGHT ICONS -->
+                <ul class="flex justify-end items-center space-x-4 text-lg">
+
+                    <li>
+                        <button type="button" data-modal-toggle="static-modal"
+                            class="text-gray-800 hover:text-primary cursor-pointer">
+                            <i class="ri-search-line"></i>
+                        </button>
+                    </li>
+
+                    <!-- Account -->
+                    <li class="relative group hidden md:block">
+                        <div class="relative">
+                            <button type="button" class="text-gray-800 hover:text-primary relative z-10 cursor-pointer">
+                                <i class="ri-user-3-line"></i>
+                            </button>
+                            <div
+                                class="absolute inset-x-0 bottom-0 h-3 bg-transparent pointer-events-none cursor-pointer">
+                            </div>
+                        </div>
+
+                        <!-- Dropdown -->
+                        <div
+                            class="absolute -right-12 top-12 rounded-lg w-[290px] bg-white p-4 opacity-0 invisible transition-all duration-200 z-50 group-hover:opacity-100 group-hover:visible shadow-lg">
+
+                            <div class="border-b border-gray-300 pb-4 mb-4 space-y-4">
+                                <button class="btn bg-black text-white w-full hover:bg-primary">Login</button>
+                                <p class="text-gray-600 text-sm">
+                                    Don't have an account?
+                                    <a class="font-bold text-black" href="/auth/register.html">Register</a>
+                                </p>
+                            </div>
+
+                            <p class="text-sm font-medium text-black">Support</p>
+
+                        </div>
+                    </li>
+
+                    <!-- Wishlist -->
+                    <li class="hidden md:block">
+                        <a href="/wishlist.html" class="text-gray-800 hover:text-primary">
+                            <i class="ri-heart-line"></i>
+                        </a>
+                    </li>
+
+                    <!-- Cart -->
+                    <li class="relative">
+                        <a href="#shoppingCart" class="text-gray-800 relative">
+                            <i class="ri-shopping-bag-line hover:text-primary"></i>
+                            <span
+                                class="absolute -top-2 -right-2 bg-red-600 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
+                                1
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- ===== MEGA MENU -->
+
+        <!-- ===== PRODUCT MEGA MENU -->
+        <div data-menu-content="product"
+            class="mega-menu-content absolute left-0 right-0 top-full bg-white opacity-0 invisible transition-all duration-200 z-50 px-4 py-8 max-h-[65vh] pointer-events-none overflow-y-auto scroll-p-12 hidden xl:block shadow">
+
+
+            <div class="container grid grid-cols-4 gap-3">
+
+                <div class="flex flex-col">
+                    <h1 class="text-sm font-semibold mb-4">PRODUCTS LAYOUT</h1>
+                    <ul class="space-y-2.5 font-medium text-[13px] text-gray-700">
+                        <li><a href="/products/layouts/default"
+                                class="hover:text-primary transition-colors duration-300">Product Default</a></li>
+                        <li><a href="/products/layouts/grid-1"
+                                class="hover:text-primary transition-colors duration-300">Product Grid 1</a></li>
+                        <li><a href="/products/layouts/grid-2"
+                                class="hover:text-primary transition-colors duration-300">Product Grid 2</a></li>
+                        <li><a href="/products/layouts/stacked"
+                                class="hover:text-primary transition-colors duration-300">Product Stacked</a></li>
+                        <li><a href="/products/layouts/right-thumbnails"
+                                class="hover:text-primary transition-colors duration-300">Product Right Thumbnails</a>
+                        </li>
+                        <li><a href="/products/layouts/bottom-thumbnails"
+                                class="hover:text-primary transition-colors duration-300">Product Bottom Thumbnails</a>
+                        </li>
+                        <li><a href="/products/layouts/description-accordion"
+                                class="hover:text-primary transition-colors duration-300">Product Description
+                                Accordion</a></li>
+                        <li><a href="/products/layouts/description-list"
+                                class="hover:text-primary transition-colors duration-300">Product Description List</a>
+                        </li>
+                        <li><a href="/products/layouts/description-tab"
+                                class="hover:text-primary transition-colors duration-300">Product Description Menu
+                                Tab</a></li>
+                        <li><a href="/products/layouts/description-fullwidth"
+                                class="hover:text-primary transition-colors duration-300">Product Description
+                                Fullwidth</a></li>
+                        <li><a href="/products/layouts/fixed-price"
+                                class="hover:text-primary transition-colors duration-300">Product Fixed Price</a></li>
+                        <li><a href="/products/layouts/fixed-scrolls"
+                                class="hover:text-primary transition-colors duration-300">Product Fixed Scrolls</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col">
+                    <h1 class="text-sm font-semibold mb-4">PRODUCTS FEATURES</h1>
+                    <ul class="space-y-2.5 font-medium text-[13px] text-gray-700">
+                        <li><a href="/products/features/frequently-bought"
+                                class="hover:text-primary transition-colors duration-300">Frequently Bought Together</a>
+                        </li>
+                        <li><a href="/products/features/upsell"
+                                class="hover:text-primary transition-colors duration-300">Up Sell</a></li>
+                        <li><a href="/products/features/pre-orders"
+                                class="hover:text-primary transition-colors duration-300">Pre-Orders</a></li>
+                        <li><a href="/products/features/grouped"
+                                class="hover:text-primary transition-colors duration-300">Grouped</a></li>
+                        <li><a href="/products/features/customer-note"
+                                class="hover:text-primary transition-colors duration-300">Customer Note</a></li>
+                        <li><a href="/products/features/out-of-stock"
+                                class="hover:text-primary transition-colors duration-300">Out Of Stock</a></li>
+                        <li><a href="/products/features/pickup-available"
+                                class="hover:text-primary transition-colors duration-300">Pick Up Available</a></li>
+                        <li><a href="/products/features/variable"
+                                class="hover:text-primary transition-colors duration-300">Variable</a></li>
+                        <li><a href="/products/features/deals"
+                                class="hover:text-primary transition-colors duration-300">Deals</a></li>
+                        <li><a href="/products/features/with-discount"
+                                class="hover:text-primary transition-colors duration-300">With Discount</a></li>
+                        <li><a href="/products/features/subscribe-save"
+                                class="hover:text-primary transition-colors duration-300">Subscribe Save</a></li>
+                        <li><a href="/products/features/deals-grid"
+                                class="hover:text-primary transition-colors duration-300">Deals grid</a></li>
+                        <li><a href="/products/features/buy-x-get-y"
+                                class="hover:text-primary transition-colors duration-300">Buy X Get Y</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col">
+                    <h1 class="text-sm font-semibold mb-4">COLOR SWATCHES</h1>
+                    <ul class="space-y-2.5 font-medium text-[13px] text-gray-700">
+                        <li><a href="/products/swatches/color"
+                                class="hover:text-primary transition-colors duration-300">Product Swatch Color</a></li>
+                        <li><a href="/products/swatches/rounded"
+                                class="hover:text-primary transition-colors duration-300">Product Swatch Rounded</a>
+                        </li>
+                        <li><a href="/products/swatches/rounded-colors"
+                                class="hover:text-primary transition-colors duration-300">Product Swatch Rounded
+                                Colors</a></li>
+                        <li><a href="/products/swatches/image"
+                                class="hover:text-primary transition-colors duration-300">Product Swatch Image</a></li>
+                        <li><a href="/products/swatches/rounded-image"
+                                class="hover:text-primary transition-colors duration-300">Product Swatch Rounded
+                                Image</a></li>
+                        <li><a href="/products/swatches/dropdown"
+                                class="hover:text-primary transition-colors duration-300">Product Swatch Dropdown</a>
+                        </li>
+                        <li><a href="/products/swatches/dropdown-color"
+                                class="hover:text-primary transition-colors duration-300">Product Swatch Dropdown
+                                Color</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="flex flex-col">
+
+                    <h1 class="text-sm font-semibold mb-4">NEW ARRIVAL</h1>
+
+                    <a href="/shop_features//shop_collection/" class="relative rounded-lg overflow-hidden">
+
+                        <img src="/assets/img/mega_menu/3.jpg" alt="Product" class="object-cover aspect-square" />
+
+                        <div class="absolute inset-0 bg-black opacity-30"></div>
+
+                        <div class="absolute inset-0 flex items-center justify-center p-10">
+
+                            <button class="btn z-10 text-white border !border-white w-full !rounded-full">
+                                Shop now
+                            </button>
+
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ====== SHOP MEGA MENU ====== -->
+        <div data-menu-content="shop"
+            class="mega-menu-content absolute left-0 right-0 top-full bg-white opacity-0 invisible transition-all duration-200 z-50 px-4 py-8 max-h-[65vh] pointer-events-none overflow-y-auto scroll-p-12 hidden xl:block shadow">
+
+            <div class="container grid grid-cols-6 gap-3">
+
+                <!-- SHOP LAYOUT Column -->
+                <div class="flex flex-col">
+
+                    <h1 class="text-sm font-semibold mb-4">SHOP LAYOUT</h1>
+
+                    <ul class="space-y-2.5 font-medium text-[13px] text-gray-700">
+                        <li>
+                            <a href="/shop_layout/grid_4.html"
+                                class="hover:text-primary transition-colors duration-300">
+                                Default Grid
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/shop_layout/grid_1.html"
+                                class="hover:text-primary transition-colors duration-300">
+                                Default List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/shop_layout/grid_1.html"
+                                class="hover:text-primary transition-colors duration-300">
+                                Full Width List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/shop_layout/grid_4.html"
+                                class="hover:text-primary transition-colors duration-300">
+                                Full Width Grid
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/shop_layout/left_sidebar"
+                                class="hover:text-primary transition-colors duration-300">
+                                Left Sidebar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/shop_layout/right_sidebar"
+                                class="hover:text-primary transition-colors duration-300">
+                                Right Sidebar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/shop_layout/filter_dropdown"
+                                class="hover:text-primary transition-colors duration-300">
+                                Filter Dropdown
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/shop_layout/grid_4.html"
+                                class="hover:text-primary transition-colors duration-300">
+                                Filter Canvas
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- SHOP FEATURES Column -->
+                <div class="flex flex-col">
+                    <h1 class="text-sm font-semibold mb-4">SHOP FEATURES</h1>
+                    <ul class="space-y-2.5 font-medium text-[13px] text-gray-700">
+                        <li><a href="/shop_features/categories_top_1"
+                                class="hover:text-primary transition-colors duration-300">Categories Top 1</a></li>
+                        <li><a href="/shop_features/categories_top_2"
+                                class="hover:text-primary transition-colors duration-300">Categories Top 2</a></li>
+                        <li><a href="/shop_features/shop_collection"
+                                class="hover:text-primary transition-colors duration-300">Shop Collection</a></li>
+                        <li><a href="/shop_features/book_collection"
+                                class="hover:text-primary transition-colors duration-300">Book Collection</a></li>
+                        <li><a href="/shop_features/breadcrumb_img"
+                                class="hover:text-primary transition-colors duration-300">Breadcrumb IMG</a></li>
+                        <li><a href="/shop_features/breadcrumb_left"
+                                class="hover:text-primary transition-colors duration-300">Breadcrumb Left</a></li>
+                        <li><a href="/shop_features/breadcrumb_bg"
+                                class="hover:text-primary transition-colors duration-300">Breadcrumb BG</a></li>
+                        <li><a href="/shop_features/load_button"
+                                class="hover:text-primary transition-colors duration-300">Load Button</a></li>
+                        <li><a href="/shop_features/pagination"
+                                class="hover:text-primary transition-colors duration-300">Pagination</a></li>
+                        <li><a href="/shop_features/infinite"
+                                class="hover:text-primary transition-colors duration-300">Infinite Scrolling</a></li>
+                    </ul>
+                </div>
+
+                <!-- PRODUCTS HOVER Column -->
+                <div class="flex flex-col">
+                    <h1 class="text-sm font-semibold mb-4">PRODUCTS HOVER</h1>
+                    <ul class="space-y-2.5 font-medium text-[13px] text-gray-700">
+                        <li><a href="/product_hover/style_1"
+                                class="hover:text-primary transition-colors duration-300">Product Style 1</a></li>
+                        <li><a href="/product_hover/style_2"
+                                class="hover:text-primary transition-colors duration-300">Product Style 2</a></li>
+                        <li><a href="/product_hover/style_3"
+                                class="hover:text-primary transition-colors duration-300">Product Style 3</a></li>
+                        <li><a href="/product_hover/style_4"
+                                class="hover:text-primary transition-colors duration-300">Product Style 4</a></li>
+                        <li><a href="/product_hover/style_5"
+                                class="hover:text-primary transition-colors duration-300">Product Style 5</a></li>
+                        <li><a href="/product_hover/style_6"
+                                class="hover:text-primary transition-colors duration-300">Product Style 6</a></li>
+                        <li><a href="/product_hover/style_7"
+                                class="hover:text-primary transition-colors duration-300">Product Style 7</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- MY PAGES Column -->
+                <div class="flex flex-col">
+                    <h1 class="text-sm font-semibold mb-4">MY PAGES</h1>
+                    <ul class="space-y-2.5 font-medium text-[13px] text-gray-700">
+                        <li><a href="/wishlist.html" class="hover:text-primary transition-colors duration-300">Wish
+                                List</a></li>
+                        <li><a href="/search_result.html"
+                                class="hover:text-primary transition-colors duration-300">Search Result</a></li>
+                        <li><a href="/shop-cart.html" class="hover:text-primary transition-colors duration-300">Shopping
+                                Cart</a></li>
+                        <li><a href="/auth/login.html"
+                                class="hover:text-primary transition-colors duration-300">Login/Register</a></li>
+                        <li><a href="/auth/forgot-password.html"
+                                class="hover:text-primary transition-colors duration-300">Forget Password</a></li>
+                        <li><a href="/order_tracking.html"
+                                class="hover:text-primary transition-colors duration-300">Order Tracking</a></li>
+                        <li><a href="/pages/account/" class="hover:text-primary transition-colors duration-300">My
+                                Account</a></li>
+                    </ul>
+                </div>
+
+                <!-- TOP CATEGORIES -->
+                <div class="flex flex-col col-span-2">
+
+                    <h1 class="text-sm font-semibold mb-4">TOP CATEGORIES</h1>
+
+                    <div class="grid grid-cols-2 gap-3">
+
+                        <a href="#" class="relative">
+
+                            <img src="/assets/img/mega_menu/1.jpg" alt="Product"
+                                class="aspect-square w-full rounded-lg bg-gray-200 object-cover aspect-square w-full">
+
+                            <div class="pt-3">
+
+                                <h3 class="text-base font-semibold">Classic Spring</h3>
+
+                                <div class="flex items-center gap-x-2 text-sm pt-1.5">
+
+                                    <p class="font-medium text-primary">$360</p>
+
+                                    <div class="flex items-center gap-1 text-yellow-600">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill text-gray-500"></i>
+                                    </div>
+
+                                    <p class="font-medium text-gray-600">(95)</p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- ICONS -->
+                            <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                                <div class="bg-white rounded-full flex items-center justify-center w-6 aspect-square">
+                                    <i class="ri-heart-3-line"></i>
+                                </div>
+
+                                <div class="bg-white rounded-full flex items-center justify-center w-6 aspect-square">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                        <a href="#" class="relative">
+
+                            <img src="/assets/img/mega_menu/1.jpg" alt="Product"
+                                class="aspect-square w-full rounded-lg bg-gray-200 object-cover aspect-square w-full">
+
+                            <div class="pt-3">
+
+                                <h3 class="text-base font-semibold">Classic Spring</h3>
+
+                                <div class="flex items-center gap-x-2 text-sm pt-1.5">
+
+                                    <p class="font-medium text-primary">$360</p>
+
+                                    <div class="flex items-center gap-1 text-yellow-600">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill text-gray-500"></i>
+                                    </div>
+
+                                    <p class="font-medium text-gray-600">(95)</p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- ICONS -->
+                            <div class="absolute right-3 top-3 flex flex-col gap-y-2">
+
+                                <div class="bg-white rounded-full flex items-center justify-center w-6 aspect-square">
+                                    <i class="ri-heart-3-line"></i>
+                                </div>
+
+                                <div class="bg-white rounded-full flex items-center justify-center w-6 aspect-square">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ====== HOME MENU MENU ======= -->
+        <div data-menu-content="home"
+            class="mega-menu-content absolute left-0 right-0 top-full bg-white opacity-0 invisible transition-all duration-200 z-50 px-4 py-8 max-h-[80vh] pointer-events-none overflow-y-scroll pb-12 hidden xl:block shadow">
+
+            <div class="container grid grid-cols-5 2xl:grid-cols-6 gap-6">
+
+                <a href="/home/women-fashion.html" class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                    <img src="/assets/img/home/1.png" alt="Pages" class="w-full object-cover object-top aspect-7/9">
+                    <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                        <h2 class="text-sm font-semibold">Women Fashion</h2>
+                        <span
+                            class="inline-flex items-center py-1.5 px-4 rounded-lg text-xs font-medium bg-primary text-white">Hot</span>
+                    </div>
+                </a>
+
+                <a href="/home/trending-fashion.html" class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                    <img src="/assets/img/home/2.png" alt="Pages" class="w-full object-cover object-top aspect-7/9">
+                    <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                        <h2 class="text-sm font-semibold">Trending Fashion</h2>
+                        <span
+                            class="inline-flex items-center py-1.5 px-4 rounded-lg text-xs font-medium bg-[#9747FF] text-white">Hot</span>
+                    </div>
+                </a>
+
+                <a href="/home/men-fashion.html" class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                    <img src="/assets/img/home/3.png" alt="Pages" class="w-full object-cover object-top aspect-7/9">
+                    <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                        <h2 class="text-sm font-semibold">Men Fashion</h2>
+                        <span
+                            class="inline-flex items-center py-1.5 px-4 rounded-lg text-xs font-medium bg-[#06B181] text-white">Hot</span>
+                    </div>
+                </a>
+
+                <a href="/home/electronic.html" class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                    <img src="/assets/img/home/4.png" alt="Pages" class="w-full object-cover object-top aspect-7/9">
+                    <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                        <h2 class="text-sm font-semibold">Electronic</h2>
+                    </div>
+                </a>
+
+                <a href="/home/book-store.html" class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                    <img src="/assets/img/home/5.png" alt="Pages" class="w-full object-cover object-top aspect-7/9">
+                    <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                        <h2 class="text-sm font-semibold">Book Store</h2>
+                    </div>
+                </a>
+
+                <a href="/home/sport-accessory.html" class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                    <img src="/assets/img/home/6.png" alt="Pages" class="w-full object-cover object-top aspect-7/9">
+                    <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                        <h2 class="text-sm font-semibold">Sport Accessory</h2>
+                    </div>
+                </a>
+
+                <a href="/home/furniture.html" class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                    <img src="/assets/img/home/7.png" alt="Pages" class="w-full object-cover object-top aspect-7/9">
+                    <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                        <h2 class="text-sm font-semibold">Furniture</h2>
+                    </div>
+                </a>
+
+                <a href="/home/beauty-skin-care.html" class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                    <img src="/assets/img/home/8.png" alt="Pages" class="w-full object-cover object-top aspect-7/9">
+                    <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                        <h2 class="text-sm font-semibold">Beauty Skin Care</h2>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- ======== MOBILE SIDEBAR ========== -->
+        <div id="offcanvas-example" class="offcanvas hidden fixed inset-0 z-50" data-slot="offcanvas:root">
+
+            <div data-slot="offcanvas:backdrop" class="absolute inset-0 bg-black opacity-50 backdrop-blur-sm z-40">
+            </div>
+
+            <div data-slot="offcanvas:panel"
+                class="relative z-100 h-full max-w-xs w-full bg-white border-e border-gray-200 transform -translate-x-full transition-transform duration-300 ease-in-out bg-white !overflow-y-auto">
+
+                <div class="flex justify-between items-center py-3 px-4 border-b border-gray-200">
+
+                    <a href="/" class="logo-header">
+                        <img src="/assets/img/logo/black_logo.png" alt="logo" class="logo w-28">
+                    </a>
+
+                    <button type="button" data-slot="offcanvas:close"
+                        class="bg-gray-200 rounded-full size-7 text-sm flex items-center justify-center cursor-pointer">
+                        <i class="ri-close-large-line"></i>
+                    </button>
+
+                </div>
+
+                <div class="p-5">
+
+                    <div class="divide-y divide-gray-200">
+
+                        <div data-slot="sidebar:item" class="py-2">
+
+                            <div class="flex items-center justify-between text-sm font-medium cursor-pointer pb-3"
+                                data-slot="sidebar:trigger">
+                                <p>Home</p>
+                                <i class="ri-add-line transition-all duration-300"></i>
+                            </div>
+
+                            <div data-slot="sidebar:content"
+                                class="overflow-hidden transition-all duration-300 ease-in-out max-h-0 ">
+
+                                <div class="grid grid-cols-2 gap-3">
+
+                                    <a href="/home/women-fashion.html"
+                                        class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                                        <img src="/assets/img/home/1.png" alt="Pages"
+                                            class="w-full object-cover object-top aspect-7/8">
+                                        <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                                            <h2 class="text-sm font-semibold">Women Fashion</h2>
+                                        </div>
+                                    </a>
+
+                                    <a href="/home/trending-fashion.html"
+                                        class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                                        <img src="/assets/img/home/2.png" alt="Pages"
+                                            class="w-full object-cover object-top aspect-7/8">
+                                        <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                                            <h2 class="text-sm font-semibold">Trending Fashion</h2>
+                                        </div>
+                                    </a>
+
+                                    <a href="/home/men-fashion.html"
+                                        class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                                        <img src="/assets/img/home/3.png" alt="Pages"
+                                            class="w-full object-cover object-top aspect-7/8">
+                                        <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                                            <h2 class="text-sm font-semibold">Men Fashion</h2>
+                                        </div>
+                                    </a>
+
+                                    <a href="/home/electronic.html"
+                                        class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                                        <img src="/assets/img/home/4.png" alt="Pages"
+                                            class="w-full object-cover object-top aspect-7/8">
+                                        <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                                            <h2 class="text-sm font-semibold">Electronic</h2>
+                                        </div>
+                                    </a>
+
+                                    <a href="/home/book-store.html"
+                                        class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                                        <img src="/assets/img/home/5.png" alt="Pages"
+                                            class="w-full object-cover object-top aspect-7/8">
+                                        <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                                            <h2 class="text-sm font-semibold">Book Store</h2>
+                                        </div>
+                                    </a>
+
+                                    <a href="/home/sport-accessory.html"
+                                        class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                                        <img src="/assets/img/home/6.png" alt="Pages"
+                                            class="w-full object-cover object-top aspect-7/8">
+                                        <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                                            <h2 class="text-sm font-semibold">Sport Accessory</h2>
+                                        </div>
+                                    </a>
+
+                                    <a href="/home/furniture.html"
+                                        class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                                        <img src="/assets/img/home/7.png" alt="Pages"
+                                            class="w-full object-cover object-top aspect-7/8">
+                                        <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                                            <h2 class="text-sm font-semibold">Furniture</h2>
+                                        </div>
+                                    </a>
+
+                                    <a href="/home/beauty-skin-care.html"
+                                        class="rounded-lg duration-300 transition-all bg-[#F8F5F5]">
+                                        <img src="/assets/img/home/8.png" alt="Pages"
+                                            class="w-full object-cover object-top aspect-7/8">
+                                        <div class="flex items-center justify-between gap-1 p-3 pt-4">
+                                            <h2 class="text-sm font-semibold">Beauty Skin Care</h2>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div data-slot="sidebar:item" class="pt-5">
+
+                            <div class="flex items-center justify-between text-sm font-medium cursor-pointer pb-3"
+                                data-slot="sidebar:trigger">
+                                <p>Products</p>
+                                <i class="ri-add-line transition-all"></i>
+                            </div>
+
+                            <div data-slot="sidebar:content" class="overflow-hidden transition-all max-h-0 pt-1.5">
+
+                                <ul class="text-xs text-gray-700 pl-2">
+
+                                    <li data-slot="sidebar:item" class="py-1">
+                                        <div class="flex justify-between items-center cursor-pointer font-medium"
+                                            data-slot="sidebar:trigger">
+                                            <span>PRODUCTS LAYOUT</span>
+                                            <i class="ri-add-line transition-all"></i>
+                                        </div>
+
+                                        <div data-slot="sidebar:content"
+                                            class="overflow-hidden transition-all max-h-0 pt-3">
+                                            <ul class="space-y-3 text-[13px] text-gray-500 pl-3 pb-2">
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Default</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Grid 1</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Grid 2</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Stacked</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Right Thumbnails</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Bottom Thumbnails</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Description Accordion</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Description List</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Description Menu Tab</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Description Fullwidth</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Fixed Price</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Fixed Scrolls</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+
+                                    <li data-slot="sidebar:item" class="py-1">
+                                        <div class="flex justify-between items-center cursor-pointer font-medium"
+                                            data-slot="sidebar:trigger">
+                                            <span>PRODUCTS FEATURES </span>
+                                            <i class="ri-add-line transition-all"></i>
+                                        </div>
+
+                                        <div data-slot="sidebar:content"
+                                            class="overflow-hidden transition-all max-h-0 pt-3">
+
+                                            <ul class="space-y-3 text-[13px] text-gray-600 pl-3 pb-2">
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Frequently
+                                                        Bought Together</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Up
+                                                        Sell</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Pre-Orders</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Grouped</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Customer
+                                                        Note</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Out Of
+                                                        Stock</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Pick
+                                                        Up Available</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Variable</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Deals</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">With
+                                                        Discount</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Subscribe
+                                                        Save</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Deals
+                                                        grid</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Buy X
+                                                        Get Y</a></li>
+
+                                            </ul>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li data-slot="sidebar:item" class="py-1">
+                                        <div class="flex justify-between items-center cursor-pointer font-medium"
+                                            data-slot="sidebar:trigger">
+                                            <span>COLOR SWATCHES </span>
+                                            <i class="ri-add-line transition-all"></i>
+                                        </div>
+
+                                        <div data-slot="sidebar:content"
+                                            class="overflow-hidden transition-all max-h-0 pt-3">
+
+                                            <ul class="space-y-3 text-[13px] text-gray-600 pl-3 pb-2">
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Swatch Color</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Swatch Rounded</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Swatch Rounded Colors</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Swatch Image</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Swatch Rounded Image</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Swatch Dropdown</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Swatch Dropdown Color</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div data-slot="sidebar:item" class="pt-5">
+
+                            <div class="flex items-center justify-between text-sm font-medium cursor-pointer pb-3"
+                                data-slot="sidebar:trigger">
+                                <p>Pages</p>
+                                <i class="ri-add-line transition-all"></i>
+                            </div>
+
+                            <div data-slot="sidebar:content" class="overflow-hidden transition-all max-h-0 pt-1.5">
+
+                                <ul class="space-y-3 text-[13px] text-gray-500 pl-3 pb-2">
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">About
+                                            Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">Store List
+                                            1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">Store List
+                                            2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">Contact Us
+                                            1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">404</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">FAQs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">Terms Of
+                                            Use</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">Coming
+                                            Soon</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">Customer
+                                            Feedbacks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">Payment
+                                            Confirmation</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">Payment
+                                            Failure</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">My
+                                            Account</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div data-slot="sidebar:item" class="pt-5">
+
+                            <div class="flex items-center justify-between text-sm font-medium cursor-pointer pb-3"
+                                data-slot="sidebar:trigger">
+                                <p>Shop</p>
+                                <i class="ri-add-line transition-all"></i>
+                            </div>
+
+                            <div data-slot="sidebar:content" class="overflow-hidden transition-all max-h-0 pt-1.5">
+
+                                <ul class="text-xs text-gray-700 pl-2">
+
+                                    <li data-slot="sidebar:item" class="py-1">
+                                        <div class="flex justify-between items-center cursor-pointer font-medium"
+                                            data-slot="sidebar:trigger">
+                                            <span>SHOP LAYOUT </span>
+                                            <i class="ri-add-line transition-all"></i>
+                                        </div>
+
+                                        <div data-slot="sidebar:content"
+                                            class="overflow-hidden transition-all max-h-0 pt-3">
+                                            <ul class="space-y-3 text-[13px] text-gray-600 pl-3 pb-2">
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Default
+                                                        Grid</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Default
+                                                        List</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Full
+                                                        Width List</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Full
+                                                        Width Grid</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Left
+                                                        Sidebar</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Right
+                                                        Sidebar</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Filter
+                                                        Dropdown</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Filter
+                                                        Canvas</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li data-slot="sidebar:item" class="py-1">
+                                        <div class="flex justify-between items-center cursor-pointer font-medium"
+                                            data-slot="sidebar:trigger">
+                                            <span>SHOP FEATURES</span>
+                                            <i class="ri-add-line transition-all"></i>
+                                        </div>
+
+                                        <div data-slot="sidebar:content"
+                                            class="overflow-hidden transition-all max-h-0 pt-3">
+                                            <ul class="space-y-3 text-[13px] text-gray-600 pl-3 pb-2">
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Categories
+                                                        Top 1</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Categories
+                                                        Top 2</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Shop
+                                                        Collection</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Breadcrumb
+                                                        IMG</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Breadcrumb
+                                                        Left</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Breadcrumb
+                                                        BG</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Load
+                                                        Button</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Pagination</a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li data-slot="sidebar:item" class="py-1">
+                                        <div class="flex justify-between items-center cursor-pointer font-medium"
+                                            data-slot="sidebar:trigger">
+                                            <span>PRODUCTS HOVER</span>
+                                            <i class="ri-add-line transition-all"></i>
+                                        </div>
+
+                                        <div data-slot="sidebar:content"
+                                            class="overflow-hidden transition-all max-h-0 pt-3">
+                                            <ul class="space-y-3 text-[13px] text-gray-600 pl-3 pb-2">
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Style 1</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Style 2</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Style 3</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Style 4</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Style 5</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Style 6</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Product
+                                                        Style 7</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Classic
+                                                        Spring</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li data-slot="sidebar:item" class="py-1">
+                                        <div class="flex justify-between items-center cursor-pointer font-medium"
+                                            data-slot="sidebar:trigger">
+                                            <span>MY PAGES</span>
+                                            <i class="ri-add-line transition-all"></i>
+                                        </div>
+
+                                        <div data-slot="sidebar:content"
+                                            class="overflow-hidden transition-all max-h-0 pt-3">
+                                            <ul class="space-y-3 text-[13px] text-gray-600 pl-3 pb-2">
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Wish
+                                                        List</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Search
+                                                        Result</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Shopping
+                                                        Cart</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Login/Register</a>
+                                                </li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Forget
+                                                        Password</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Order
+                                                        Tracking</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">My
+                                                        Account</a></li>
+                                                <li><a href="#"
+                                                        class="hover:text-primary transition-colors duration-300">Classic
+                                                        Spring</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <div data-slot="sidebar:item" class="pt-5">
+
+                            <div class="flex items-center justify-between text-sm font-medium cursor-pointer pb-3"
+                                data-slot="sidebar:trigger">
+                                <p>Pages</p>
+                                <i class="ri-add-line transition-all"></i>
+                            </div>
+
+                            <div data-slot="sidebar:content" class="overflow-hidden transition-all max-h-0 pt-1.5">
+
+                                <ul class="space-y-3 text-[13px] text-gray-500 pl-3 pb-2">
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">Blog
+                                            Default</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">Blog
+                                            List</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">Blog
+                                            Grid</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">Blog
+                                            Detail 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="hover:text-primary transition-colors duration-300">Blog
+                                            Detail 2</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center gap-3 mt-12">
+
+                        <button class="btn bg-gray-200 text-black !py-1.5 !px-4 w-full">
+                            <i class="ri-heart-3-line text-base"></i>
+                            <span>Wishlist</span>
+                        </button>
+
+                        <button class="btn bg-black text-white !py-1.5 !px-4 w-full">
+                            <i class="ri-user-line text-base"></i>
+                            <span>Login</span>
+                        </button>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ======== HEADER ENDS ========== -->
+
+    <!-- ========== BREADCRUMB ============= -->
+
+        <div class="bg-[#F5F3EE] h-36 md:h-40 rounded flex flex-col items-center justify-center gap-y-2.5">
+
+            <h1 class="font-bold text-xl lg:text-2xl">Book Store</h1>
+
+            <div class="flex items-center gap-1 text-gray-600 text-sm">
+
+                <a href="/" class="text-black/80 font-semibold">Home</a>
+
+                <i class="ri-arrow-right-s-line"></i>
+
+                <span>Book Store</span>
+
+            </div>
+
+        </div>
+
+    <!-- ========== BREADCRUMB END ============= -->
+
+
+    <!-- ===== MAIN CONTENT ===== -->
+
+    <div class="container section-lg space-y-12">
+
+        <div class="flex flex-wrap sm:flex-nowrap items-center gap-4  justify-center sm:justify-between">
+
+            <div class="dropdown relative inline-flex items-center gap-x-2">
+
+                <span class="hidden md:block font-medium text-gray-700 text-sm">Sort by:</span>
+
+                <button type="button"
+                    class="dropdown-toggle cursor-pointer inline-flex items-center border border-primary rounded-full py-1 gap-x-1 px-3 text-[13px]">
+                    <span class="dropdown-label">Best Selling</span>
+                    <i class="ri-arrow-down-s-line text-lg"></i>
+                </button>
+
+                <div
+                    class="dropdown-menu hidden absolute left-0 top-full rounded-lg min-w-48 p-2 bg-white z-10 shadow-lg">
+                    <ul class="py-2 font-medium text-[13px] text-gray-700">
+                        <li><a href="#" class="dropdown-option block px-4 py-2 rounded hover:bg-gray-100">Best
+                                Selling</a></li>
+                        <li><a href="#"
+                                class="dropdown-option block px-4 py-2 rounded hover:bg-gray-100">Alphabetically, A -
+                                Z</a></li>
+                        <li><a href="#"
+                                class="dropdown-option block px-4 py-2 rounded hover:bg-gray-100">Alphabetically, Z -
+                                A</a></li>
+                        <li><a href="#" class="dropdown-option block px-4 py-2 rounded hover:bg-gray-100">Price low to
+                                high</a></li>
+                        <li><a href="#" class="dropdown-option block px-4 py-2 rounded hover:bg-gray-100">Price high to
+                                low</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="inline-flex items-center border border-primary rounded-full py-2 gap-x-2.5 px-3.5">
+
+                    <a href="./grid_1.html">
+                        <img src="/assets/icon/grid_1.svg" class="w-3.5" alt="Grid 1">
+                    </a>
+
+                    <a href="./grid_2.html">
+                        <img src="/assets/icon/grid_2.svg" class="w-4.5" alt="Grid 1">
+                    </a>
+
+                    <a href="./grid_3.html" class="hidden md:block">
+                        <img src="/assets/icon/grid_3_active.svg" class="w-7" alt="Grid 1">
+                    </a>
+
+                    <a href="./index.html" class="hidden lg:block">
+                        <img src="/assets/icon/grid_4.svg" class="w-10" alt="Grid 1">
+                    </a>
+
+            </div>
+
+            <button data-slot="offcanvas:toggle" data-target="offcanvas-filter" type="button"
+                class="cursor-pointer inline-flex items-center border border-primary rounded-full py-1 gap-x-1 px-3 text-[13px]">
+                <span>Filters</span>
+                <i class="ri-arrow-down-s-line text-lg"></i>
+            </button>
+
+        </div>
+
+
+        <!-- ======= RUBY BESTSELLER ========= -->
+        <div class="space-y-8">
+
+            <h2 class="text-lg font-bold">Books Recommend</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 sm:gap-4">
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-50/50 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/6.png" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-3 space-y-1">
+
+                        <div class="flex items-center justify-between space-y-1.5">
+
+                            <a href='book_details.html' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                The Song of Achilles
+                            </a>
+
+                            <div class="items-center flex gap-x-3 text-[13px] font-semibold">
+                                <p class="">$26.00</p>
+                                <p class="text-gray-500 line-through text-xs">$50.00</p>
+                            </div>
+
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-50/50 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/5.jpg" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-3 space-y-1">
+
+                        <div class="flex items-center justify-between space-y-1.5">
+
+                            <a href='book_details.html' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                The Song of Achilles
+                            </a>
+
+                            <div class="items-center flex gap-x-3 text-[13px] font-semibold">
+                                <p class="">$26.00</p>
+                                <p class="text-gray-500 line-through text-xs">$50.00</p>
+                            </div>
+
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-50/50 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/7.png" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-3 space-y-1">
+
+                        <div class="flex items-center justify-between space-y-1.5">
+
+                            <a href='book_details.html' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                The Song of Achilles
+                            </a>
+
+                            <div class="items-center flex gap-x-3 text-[13px] font-semibold">
+                                <p class="">$26.00</p>
+                                <p class="text-gray-500 line-through text-xs">$50.00</p>
+                            </div>
+
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-50/50 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/8.png" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-3 space-y-1">
+
+                        <div class="flex items-center justify-between space-y-1.5">
+
+                            <a href='book_details.html' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                The Song of Achilles
+                            </a>
+
+                            <div class="items-center flex gap-x-3 text-[13px] font-semibold">
+                                <p class="">$26.00</p>
+                                <p class="text-gray-500 line-through text-xs">$50.00</p>
+                            </div>
+
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-50/50 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/9.png" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-3 space-y-1">
+
+                        <div class="flex items-center justify-between space-y-1.5">
+
+                            <a href='book_details.html' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                The Song of Achilles
+                            </a>
+
+                            <div class="items-center flex gap-x-3 text-[13px] font-semibold">
+                                <p class="">$26.00</p>
+                                <p class="text-gray-500 line-through text-xs">$50.00</p>
+                            </div>
+
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-50/50 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/6.png" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-3 space-y-1">
+
+                        <div class="flex items-center justify-between space-y-1.5">
+
+                            <a href='book_details.html' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                The Song of Achilles
+                            </a>
+
+                            <div class="items-center flex gap-x-3 text-[13px] font-semibold">
+                                <p class="">$26.00</p>
+                                <p class="text-gray-500 line-through text-xs">$50.00</p>
+                            </div>
+
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-50/50 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/5.jpg" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-3 space-y-1">
+
+                        <div class="flex items-center justify-between space-y-1.5">
+
+                            <a href='book_details.html' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                The Song of Achilles
+                            </a>
+
+                            <div class="items-center flex gap-x-3 text-[13px] font-semibold">
+                                <p class="">$26.00</p>
+                                <p class="text-gray-500 line-through text-xs">$50.00</p>
+                            </div>
+
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-50/50 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/7.png" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-3 space-y-1">
+
+                        <div class="flex items-center justify-between space-y-1.5">
+
+                            <a href='book_details.html' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                The Song of Achilles
+                            </a>
+
+                            <div class="items-center flex gap-x-3 text-[13px] font-semibold">
+                                <p class="">$26.00</p>
+                                <p class="text-gray-500 line-through text-xs">$50.00</p>
+                            </div>
+
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-50/50 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/8.png" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-3 space-y-1">
+
+                        <div class="flex items-center justify-between space-y-1.5">
+
+                            <a href='book_details.html' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                The Song of Achilles
+                            </a>
+
+                            <div class="items-center flex gap-x-3 text-[13px] font-semibold">
+                                <p class="">$26.00</p>
+                                <p class="text-gray-500 line-through text-xs">$50.00</p>
+                            </div>
+
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            Buy Now
+                        </button>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!-- ======= You Might Also Like ========= -->
+        <div class="space-y-8">
+
+            <h2 class="text-lg font-bold">You Might Also Like</h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 sm:gap-4">
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/3.jpg" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-4 space-y-1.5">
+
+                        <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                            Come & Get it
+                        </a>
+
+                        <div class="items-center flex gap-x-3 text-sm font-semibold">
+                            <p class="">$26.00</p>
+                            <p class="text-gray-500 line-through text-sm">$50.00</p>
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            <i class="ri-shopping-cart-2-line text-base font-light"></i>
+                            <span class="hidden md:block">Add To Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/2.jpg" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-4 space-y-1.5">
+
+                        <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                            Mad Honey
+                        </a>
+
+                        <div class="items-center flex gap-x-3 text-sm font-semibold">
+                            <p class="">$26.00</p>
+                            <p class="text-gray-500 line-through text-sm">$50.00</p>
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            <i class="ri-shopping-cart-2-line text-base font-light"></i>
+                            <span class="hidden md:block">Add To Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/4.jpg" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-4 space-y-1.5">
+
+                        <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                            Small World
+                        </a>
+
+                        <div class="items-center flex gap-x-3 text-sm font-semibold">
+                            <p class="">$26.00</p>
+                            <p class="text-gray-500 line-through text-sm">$50.00</p>
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            <i class="ri-shopping-cart-2-line text-base font-light"></i>
+                            <span class="hidden md:block">Add To Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/5.jpg" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-4 space-y-1.5">
+
+                        <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                            Normal People
+                        </a>
+
+                        <div class="items-center flex gap-x-3 text-sm font-semibold">
+                            <p class="">$26.00</p>
+                            <p class="text-gray-500 line-through text-sm">$50.00</p>
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            <i class="ri-shopping-cart-2-line text-base font-light"></i>
+                            <span class="hidden md:block">Add To Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/3.jpg" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-4 space-y-1.5">
+
+                        <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                            Come & Get it
+                        </a>
+
+                        <div class="items-center flex gap-x-3 text-sm font-semibold">
+                            <p class="">$26.00</p>
+                            <p class="text-gray-500 line-through text-sm">$50.00</p>
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            <i class="ri-shopping-cart-2-line text-base font-light"></i>
+                            <span class="hidden md:block">Add To Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/2.jpg" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-4 space-y-1.5">
+
+                        <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                            Mad Honey
+                        </a>
+
+                        <div class="items-center flex gap-x-3 text-sm font-semibold">
+                            <p class="">$26.00</p>
+                            <p class="text-gray-500 line-through text-sm">$50.00</p>
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            <i class="ri-shopping-cart-2-line text-base font-light"></i>
+                            <span class="hidden md:block">Add To Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/4.jpg" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-4 space-y-1.5">
+
+                        <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                            Small World
+                        </a>
+
+                        <div class="items-center flex gap-x-3 text-sm font-semibold">
+                            <p class="">$26.00</p>
+                            <p class="text-gray-500 line-through text-sm">$50.00</p>
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            <i class="ri-shopping-cart-2-line text-base font-light"></i>
+                            <span class="hidden md:block">Add To Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/5.jpg" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-4 space-y-1.5">
+
+                        <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                            Normal People
+                        </a>
+
+                        <div class="items-center flex gap-x-3 text-sm font-semibold">
+                            <p class="">$26.00</p>
+                            <p class="text-gray-500 line-through text-sm">$50.00</p>
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            <i class="ri-shopping-cart-2-line text-base font-light"></i>
+                            <span class="hidden md:block">Add To Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col border border-gray-100 rounded-lg">
+
+                    <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                        <img class="aspect-7/8 mx-auto w-[90%] object-contain rounded-md" 
+                        src="/assets/img/landing/book/4.jpg" alt="Book">
+
+                        <div class="flex justify-center items-center gap-2">
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-heart-3-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-shuffle-line"></i>
+                            </a>
+
+                            <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                <i class="ri-eye-line"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="p-4 space-y-1.5">
+
+                        <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                            Small World
+                        </a>
+
+                        <div class="items-center flex gap-x-3 text-sm font-semibold">
+                            <p class="">$26.00</p>
+                            <p class="text-gray-500 line-through text-sm">$50.00</p>
+                        </div>
+
+                        <button class="!w-full md:w-auto btn btn-primary !py-1.5 !px-12">
+                            <i class="ri-shopping-cart-2-line text-base font-light"></i>
+                            <span class="hidden md:block">Add To Cart</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        <!-- ======= Our Shop Categories ========= -->
+        <div class="space-y-8">
+
+            <h2 class="text-lg font-bold">Our Shop Categories</h2>
+
+            <div dir="ltr" class="swiper tf-sw-categories_a" data-preview="5" data-tablet="4" data-mobile-sm="2"
+                data-mobile="2" data-space-lg="15" data-space-md="10" data-space="10" data-pagination="2"
+                data-pagination-md="2" data-pagination-lg="1" data-loop="loop" data-auto-play="true">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide flex flex-col border border-gray-200 rounded-xl">
+
+                        <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                            <img class="max-h-[250px] mx-auto object-contain rounded-md" 
+                            src="/assets/img/landing/book/6.png" alt="Book">
+
+                            <div class="flex justify-center items-center gap-2">
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-heart-3-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-shuffle-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-eye-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="p-5 space-y-2.5 flex flex-col justify-center text-center">
+
+                            <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                Art & Music
+                            </a>
+
+                            <div class="flex items-center justify-center sm:justify-between flex-wrap gap-2 capitalize text-slate-500 text-[12px] md:!text-sm">
+                                <span>available: <span class="font-medium">30</span></span>
+                                <span>Sold Out:  <span class="font-medium">20</span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide flex flex-col border border-gray-200 rounded-xl">
+
+                        <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                            <img class="max-h-[250px] mx-auto object-contain rounded-md" 
+                            src="/assets/img/landing/book/13.jpg" alt="Book">
+
+                            <div class="flex justify-center items-center gap-2">
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-heart-3-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-shuffle-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-eye-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="p-5 space-y-2.5 flex flex-col justify-center text-center">
+
+                            <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                Biographic
+                            </a>
+
+                            <div class="flex items-center justify-center sm:justify-between flex-wrap gap-2 capitalize text-slate-500 text-[12px] md:!text-sm">
+                                <span>available: <span class="font-medium">30</span></span>
+                                <span>Sold Out:  <span class="font-medium">20</span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide flex flex-col border border-gray-200 rounded-xl">
+
+                        <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                            <img class="aspect-7/9 mx-auto object-contain rounded-md" 
+                            src="/assets/img/landing/book/14.png" alt="Book">
+
+                            <div class="flex justify-center items-center gap-2">
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-heart-3-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-shuffle-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-eye-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="p-5 space-y-2.5 flex flex-col justify-center text-center">
+
+                            <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                Business
+                            </a>
+
+                            <div class="flex items-center justify-center sm:justify-between flex-wrap gap-2 capitalize text-slate-500 text-[12px] md:!text-sm">
+                                <span>available: <span class="font-medium">30</span></span>
+                                <span>Sold Out:  <span class="font-medium">20</span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide flex flex-col border border-gray-200 rounded-xl">
+
+                        <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                            <img class="max-h-[250px] mx-auto object-contain rounded-md" 
+                            src="/assets/img/landing/book/15.jpg" alt="Book">
+
+                            <div class="flex justify-center items-center gap-2">
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-heart-3-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-shuffle-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-eye-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="p-5 space-y-2.5 flex flex-col justify-center text-center">
+
+                            <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                Comics
+                            </a>
+
+                            <div class="flex items-center justify-center sm:justify-between flex-wrap gap-2 capitalize text-slate-500 text-[12px] md:!text-sm">
+                                <span>available: <span class="font-medium">30</span></span>
+                                <span>Sold Out:  <span class="font-medium">20</span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide flex flex-col border border-gray-200 rounded-xl">
+
+                        <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                            <img class="max-h-[250px] mx-auto object-contain rounded-md" 
+                            src="/assets/img/landing/book/6.png" alt="Book">
+
+                            <div class="flex justify-center items-center gap-2">
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-heart-3-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-shuffle-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-eye-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="p-5 space-y-2.5 flex flex-col justify-center text-center">
+
+                            <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                Art & Music
+                            </a>
+
+                            <div class="flex items-center justify-center sm:justify-between flex-wrap gap-2 capitalize text-slate-500 text-[12px] md:!text-sm">
+                                <span>available: <span class="font-medium">30</span></span>
+                                <span>Sold Out:  <span class="font-medium">20</span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide flex flex-col border border-gray-200 rounded-xl">
+
+                        <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                            <img class="max-h-[250px] mx-auto object-contain rounded-md" 
+                            src="/assets/img/landing/book/13.jpg" alt="Book">
+
+                            <div class="flex justify-center items-center gap-2">
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-heart-3-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-shuffle-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-eye-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="p-5 space-y-2.5 flex flex-col justify-center text-center">
+
+                            <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                Biographic
+                            </a>
+
+                            <div class="flex items-center justify-center sm:justify-between flex-wrap gap-2 capitalize text-slate-500 text-[12px] md:!text-sm">
+                                <span>available: <span class="font-medium">30</span></span>
+                                <span>Sold Out:  <span class="font-medium">20</span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide flex flex-col border border-gray-200 rounded-xl">
+
+                        <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                            <img class="aspect-7/9 mx-auto object-contain rounded-md" 
+                            src="/assets/img/landing/book/14.png" alt="Book">
+
+                            <div class="flex justify-center items-center gap-2">
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-heart-3-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-shuffle-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-eye-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="p-5 space-y-2.5 flex flex-col justify-center text-center">
+
+                            <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                Business
+                            </a>
+
+                            <div class="flex items-center justify-center sm:justify-between flex-wrap gap-2 capitalize text-slate-500 text-[12px] md:!text-sm">
+                                <span>available: <span class="font-medium">30</span></span>
+                                <span>Sold Out:  <span class="font-medium">20</span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide flex flex-col border border-gray-200 rounded-xl">
+
+                        <div class="bg-gray-100 p-3 h-full rounded-lg space-y-3">
+
+                            <img class="max-h-[250px] mx-auto object-contain rounded-md" 
+                            src="/assets/img/landing/book/15.jpg" alt="Book">
+
+                            <div class="flex justify-center items-center gap-2">
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-heart-3-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-shuffle-line"></i>
+                                </a>
+
+                                <a href="javascript:void(0)" class="hover:bg-primary hover:text-white bg-white rounded-full flex items-center justify-center w-8 aspect-square text-base">
+                                    <i class="ri-eye-line"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="p-5 space-y-2.5 flex flex-col justify-center text-center">
+
+                            <a href='' class="hover:text-primary text-sm lg:!text-[15px] font-medium block !line-clamp-1">
+                                Comics
+                            </a>
+
+                            <div class="flex items-center justify-center sm:justify-between flex-wrap gap-2 capitalize text-slate-500 text-[12px] md:!text-sm">
+                                <span>available: <span class="font-medium">30</span></span>
+                                <span>Sold Out:  <span class="font-medium">20</span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="sw-dots sw-pagination-categories_a type-circle primary pt-10 justify-center white-circle-line"></div>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- ===== MAIN CONTENT ENDS ========== -->
+
+    <!-- =========== FOOTER START ============-->
+
+    <div class="bg-black py-10 mt-10 ">
+
+        <div class="mb-15 container m-auto relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-y-8 sm:gap-y-12 
+            px-6 sm:px-0 z-20">
+
+            <div class="w-full  mb-5 lg:mb-0">
+
+                <a href="/">
+                    <img alt="Logo" loading="lazy" class="w-32" src="/assets/img/logo/white_logo.png"
+                        style="color: transparent;">
+                </a>
+
+                <div class="space-y-4 pt-8 text-xs md:text-sm font-medium text-white/80">
+
+                    <p class="block">GET DIRECTION</p>
+
+                    <a class="block" href="mailto:">Hello@support.com</a>
+
+                    <a class="block" href="tel:+">+477 097-3948-098</a>
+
+                </div>
+
+            </div>
+
+            <div class="w-full ">
+
+                <h2 class="text-sm md:text-base font-semibold text-white mb-5">Information</h2>
+
+                <ul class="text-white/80 space-y-5 font-light list-none text-xs md:text-sm">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Stories</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">My Account</a></li>
+                </ul>
+            </div>
+
+            <div class="w-full">
+
+                <h2 class="text-sm md:text-base font-semibold text-white mb-5">Customer Services</h2>
+
+                <ul class="text-white/80 space-y-5 font-light list-none text-xs md:text-sm">
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Return & Refund</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Orders FAQs</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                </ul>
+            </div>
+
+            <div class="w-full pt-2 col-span-2">
+
+                <h2 class="text-sm md:text-base font-semibold text-white mb-10">Newsletter</h2>
+
+                <div class="flex flex-col space-y-6">
+
+                    <p class="text-white text-xs sm:text-sm">
+                        Subscribe to our newsletter to stay up to date on new features, announcements and more.
+                    </p>
+
+                    <form class="relative w-full max-w-md">
+
+                        <input type="email" required placeholder="Enter your email"
+                            class="block w-full pl-5 pr-16 py-3.5 text-xs md:text-sm !text-black bg-white rounded-full !outline-0" />
+
+                        <button type="submit"
+                            class="absolute top-1/2 -translate-y-1/2 right-1.5 bg-primary text-white rounded-full text-xs px-5 py-3">
+                            Send
+                        </button>
+
+                    </form>
+
+                    <div class="flex items-start gap-2">
+
+                        <input type="checkbox"
+                            class="w-4 h-4 !accent-text-red-500 !bg-transparent border-gray-300 rounded-sm focus:ring-blue-500 !rounded-full">
+
+                        <p class="text-xs sm:text-sm text-white/80 tracking-tight">
+                            By clicking subcribe, you agree to
+                            <a class="text-white underline" href="#">Terms of Service</a>
+                            and
+                            <a class="text-white underline" href="#">Privacy Policy.</a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="pt-10 border-t !border-gray-50">
+
+            <div class="container m-auto px-5 flex justify-between items-center flex-wrap text-sm gap-y-8">
+
+                <div class="flex items-center gap-3 text-white">
+                    <span>Payment:</span>
+                    <img src="/assets/img/payment_cards.svg" alt="Payment Lists" width="250">
+                </div>
+
+                <p class="text-white/70">
+                    Copyright
+                    <script> document.write(new Date().getFullYear()) </script>. All right reserved
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =========== FOOTER ENDS ============ -->
+
+
+    <!-- ========== SEARCH MODAL =========== -->
+
+    <div class="fixed inset-0 z-50 hidden flex items-start justify-center p-2 overflow-x-hidden overflow-y-auto"
+        id="static-modal" tabindex="-1">
+
+        <div class="fixed inset-0 bg-black opacity-50 z-[-1]" data-modal-backdrop-layer></div>
+
+        <div class="relative bg-white w-full max-w-6xl max-h-full rounded-xl md:py-6 py-5 px-5 md:px-12 ease-out transition-all sm:mx-auto opacity-0 duration-300"
+            data-modal-content>
+
+            <div class="flex items-center justify-between">
+
+                <h1 class="font-bold text-base">Search</h1>
+
+                <button type="button" data-modal-close
+                    class="bg-gray-200 rounded-full size-7 text-sm flex items-center justify-center cursor-pointer">
+                    <i class="ri-close-large-line"></i>
+                </button>
+
+            </div>
+
+            <div class="pt-8 space-y-5">
+
+                <div class="relative">
+                    <div
+                        class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-3.5 text-black">
+                        <i class="ri-search-line"></i>
+                    </div>
+                    <input
+                        class="py-3 ps-10 pe-4 block w-full rounded-lg text-xs md:text-sm focus:ring-2 !border-0 focus:ring-[#DB4444] bg-[#F3F8F7] outline-0"
+                        type="search">
+                </div>
+
+                <div class="space-y-3">
+
+                    <h2 class="text-sm font-semibold">Key features</h2>
+
+                    <div class="flex items-center gap-3 flex-wrap">
+
+                        <span
+                            class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-300 bg-white text-black">
+                            Men Dress
+                        </span>
+                        <span
+                            class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-300 bg-white text-black">
+                            Summer Collection
+                        </span>
+                        <span
+                            class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-300 bg-white text-black">
+                            Slim Fit
+                        </span>
+                        <span
+                            class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-300 bg-white text-black">
+                            Casual Wear
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========== SEARCH MODAL ENDS =========== -->
+
+    <!-- ========== PRODUCT FILTER DRAWER STARTS =========== -->
+
+    <div id="offcanvas-filter" class="offcanvas hidden fixed inset-0 z-50" data-slot="offcanvas:root">
+
+        <div data-slot="offcanvas:backdrop" class="absolute inset-0 bg-black opacity-50 backdrop-blur-sm z-40">
+        </div>
+
+        <div data-slot="offcanvas:panel"
+            class="relative z-100 h-full max-w-sm w-full bg-white border-e border-gray-200 transform -translate-x-full transition-transform duration-300 ease-in-out bg-white !overflow-y-auto p-5">
+
+            <div class="flex items-center justify-between">
+
+                <h2 class="font-semibold text-base">Filter</h2>
+
+                <button type="button" data-slot="offcanvas:close"
+                    class="bg-gray-200 rounded-full size-7 text-sm flex items-center justify-center cursor-pointer">
+                    <i class="ri-close-large-line"></i>
+                </button>
+
+            </div>
+
+            <div class="space-y-7 pt-6">
+
+                <div class="flex flex-col gap-y-3">
+
+                    <h2 class="text-sm font-bold">Product Categories</h2>
+
+                    <ul class="space-y-4 pl-3 text-[13px] pt-2">
+
+                        <li class="hover:text-primary">Bags (20) </li>
+                        <li class="hover:text-primary">Booking (30) </li>
+                        <li class="hover:text-primary">Clothing (30)</li>
+                        <li class="hover:text-primary text-primary">Women (30)</li>
+                        <li class="hover:text-primary">Shoes (20) </li>
+                        <li class="hover:text-primary">Uncategorized (15)</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="flex flex-col gap-y-3">
+
+                    <h2 class="text-sm font-bold">Available Stock</h2>
+
+                    <ul class="space-y-4 pl-3 text-[13px] pt-2">
+
+                        <div class="flex items-center">
+                            <input id="instock" type="checkbox" value="" class="size-4 !text-primary">
+                            <label for='instock' class="ms-2">In Stock (50)</label>
+                        </div>
+
+                        <div class="flex items-center">
+                            <input id="out_of_stock" type="checkbox" value="" class="size-4 !text-primary">
+                            <label for="out_of_stock" class="ms-2">Out of Stock (20)</label>
+                        </div>
+
+                    </ul>
+
+                </div>
+
+                <div class="flex flex-col gap-y-3">
+
+                    <h2 class="text-sm font-bold">Product Price</h2>
+
+                    <div class="space-y-3 text-[13px] pt-2">
+
+                        <div class="relative">
+
+                            <input type="number" placeholder="Min Price"
+                                class="form-control border-primary !py-3 !rounded-full">
+
+                            <div class="absolute inset-y-0 end-3 flex items-center pointer-events-none ps-4">
+                                <i class="ri-money-dollar-circle-line text-lg"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="relative">
+
+                            <input type="number" placeholder="Max Price"
+                                class="form-control border-primary !py-3 !rounded-full">
+
+                            <div class="absolute inset-y-0 end-3 flex items-center pointer-events-none ps-4">
+                                <i class="ri-money-dollar-circle-line text-lg"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col gap-y-3">
+
+                    <h2 class="text-sm font-bold">Available Stock</h2>
+
+                    <div class="space-y-3 pl-3 pt-2">
+
+                        <div class="flex items-center flex-wrap gap-4 capitalize font-medium text-[11px]">
+
+                            <a href="javascript:void(0)"
+                                class="size-6 md:size-8 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                xs
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="size-6 md:size-8 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                s
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="size-6 md:size-8 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                M
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="size-6 md:size-8 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                L
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="size-6 md:size-8 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                2XS
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="size-6 md:size-8 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                3XL
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="h-6 md:h-8 px-4 border border-primary inline-flex items-center justify-center 
+                            align-middle text-center rounded-md hover:bg-gray-300 hover:border-0 hover:text-black duration-200 transition-colors">
+                                Feee size
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col gap-y-3">
+
+                    <h2 class="text-sm font-bold">Color</h2>
+
+                    <div class="space-y-3 pl-3 pt-2">
+
+                        <div class="flex flex-wrap gap-4 text-xs">
+
+                            <a href="javascript:void(0)"
+                                class="w-max py-1.5 px-3 border border-primary flex items-center justify-center gap-x-2 rounded-md">
+
+                                <div class="size-4 rounded-full bg-pink-300"></div>
+
+                                <span>Pink</span>
+
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="w-max py-1.5 px-3 border border-primary flex items-center justify-center gap-x-2 rounded-md">
+
+                                <div class="size-4 rounded-full bg-red-600"></div>
+
+                                <span>Red</span>
+
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="w-max py-1.5 px-3 border border-primary flex items-center justify-center gap-x-2 rounded-md">
+
+                                <div class="size-4 rounded-full bg-[#F8EFDD]"></div>
+
+                                <span>Beige</span>
+
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="w-max py-1.5 px-3 border border-primary flex items-center justify-center gap-x-2 rounded-md">
+
+                                <div class="size-4 rounded-full bg-purple-600"></div>
+
+                                <span>Purple</span>
+
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="w-max py-1.5 px-3 border border-primary flex items-center justify-center gap-x-2 rounded-md">
+
+                                <div class="size-4 rounded-full bg-orange-400"></div>
+
+                                <span>Orange</span>
+
+                            </a>
+
+                            <a href="javascript:void(0)"
+                                class="w-max py-1.5 px-3 border border-primary flex items-center justify-center gap-x-2 rounded-md">
+
+                                <div class="size-4 rounded-full bg-blue-400"></div>
+
+                                <span>Blue</span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="flex flex-col gap-y-3">
+                    <h2 class="text-sm font-bold">Available Brands</h2>
+
+                    <ul class="space-y-4 pl-3 text-[13px] pt-2">
+                        <li class="flex items-center">
+                            <input id="brand-nike" type="checkbox" value="Nike" class="size-4 !text-primary">
+                            <label for="brand-nike" class="ms-2">Nike (50)</label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="brand-adidas" type="checkbox" value="Adidas" class="size-4 !text-primary">
+                            <label for="brand-adidas" class="ms-2">Adidas (20)</label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="brand-gucci" type="checkbox" value="Gucci" class="size-4 !text-primary">
+                            <label for="brand-gucci" class="ms-2">Gucci (20)</label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="brand-hermes" type="checkbox" value="Hermes" class="size-4 !text-primary">
+                            <label for="brand-hermes" class="ms-2">Hermes (20)</label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="brand-zalando" type="checkbox" value="Zalando" class="size-4 !text-primary">
+                            <label for="brand-zalando" class="ms-2">Zalando (20)</label>
+                        </li>
+
+                        <li class="flex items-center">
+                            <input id="brand-lv" type="checkbox" value="Louis Vuitton" class="size-4 !text-primary">
+                            <label for="brand-lv" class="ms-2">Louis Vuitton (20)</label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========== PRODUCT FILTER DRAWER  ENDS =========== -->
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>

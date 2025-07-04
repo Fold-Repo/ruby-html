@@ -118,6 +118,11 @@ body {
     color: var(--color-primary);
 }
 
+.group:hover .group-hover-bg-primary {
+    background-color: var(--color-primary);
+}
+
+
 .hover\:bg-primary:hover {
     background-color: var(--color-primary) !important;
 }
